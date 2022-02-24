@@ -11,20 +11,18 @@ from .models import person
 
 
 def inputpage(request):
-     if request.method == 'POST':
+    form= registration()
+    if request.method == 'POST':
         fm = registration(request.POST)
-        people = person.objects.all()
-
         if fm.is_valid():
-            N = fm.cleaned_data['name']
-            E = fm.cleaned_data['email']
-            P = fm.cleaned_data['Job_Title']
-            reg = person(name=N, email=E, Job_Title=P)
-            reg.save()
-     else:
+            fm.save()    
+        NewUser = fm.cleaned_data.get('username')
+
+        
+    else:
         fm = registration()
-     people = person.objects.all()
-     return render(request, 'signature/input.html', {
+    people = person.objects.all()
+    return render(request, 'signature/input.html', {
         'form': fm,
         'pep': people
     })
