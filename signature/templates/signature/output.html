@@ -13,7 +13,7 @@
   <tr>
     <td style="FONT-SIZE: 10pt; FONT-FAMILY: Arial, sans-serif; COLOR: #000000; line-height:12pt; padding-bottom:10px; padding-right:20px; text-align:center; width:170px" width="170" valign="top" align="center">
 	
-	<img  src="fb.png" alt="photograph" width="124" border="0" style="border:0; height:auto; width:124px"/> 
+	<img  src="{{items.Image}}" alt="photograph" width="124" border="0" style="border:0; height:auto; width:124px"/> 
 	
 	
 	
@@ -48,37 +48,29 @@
   <tr>
 		<table style="margin-top:10px;" border="0">
                     <tbody>
-                        <tr class="social">
-
-                            <td style="width: 22px;"><a href="{facebookURL}" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-square"></i></td>
-                            <td style="width: 22px;"><a href="{TwiterURL}" target="_blank" rel="noopener"><i class="fa-brands fa-twitter-square"></i></td>
-                            <td style="width: 22px;"><a href="{youtubeURL}" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></td>
-                            <td style="width: 22px;"><a href="{linkedURL}" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-square"></i></td>
-                            <td style="width: 22px;"><a href="{instagramURL}" target="_blank" rel="noopener"><i class="fa-brands fa-instagram-square"></i></td>
-                            <td style="width: 22px;"><a href="{pinterestURL}" target="_blank" rel="noopener"><i class="fa-brands fa-pinterest-square"></i></td>       
-                                        
-                        	
-                        
-			{% comment %} <td style="width: 22px;"><a href="{facebookURL}" target="_blank" rel="noopener"><img src="fb.png" alt="facebook icon" style="border:0; height:15px; width:15px" width="15" border="0"></a></td>
-			<td style="width: 22px;"><a href="{twitterURL}" target="_blank" rel="noopener"><img src="tt.png" alt="twitter icon" style="border:0; height:15px; width:15px" width="15" border="0"></a></td>
-			<td style="width: 22px;"><a href="{youtubeURL}" target="_blank" rel="noopener"><img src="yt.png" alt="youtube icon" style="border:0; height:15px; width:15px" width="15" border="0"></a></td>
-			<td style="width: 22px;"><a href="{linkedinURL}" target="_blank" rel="noopener"><img src="ln.png" alt="linkedin icon" style="border:0; height:15px; width:15px" width="15" border="0"></a></td>
-			<td style="width: 22px;"><a href="{instagramURL}" target="_blank" rel="noopener"><img src="it.png" alt="instagram icon" style="border:0; height:15px; width:15px" width="15" border="0"></a></td>
-			<td style="width: 22px;"><a href="{pinterestURL}" target="_blank" rel="noopener"><img src="pt.png" alt="pinterest icon" style="border:0; height:15px; width:15px" width="15" border="0"></a></td>		
-                         {% endcomment %}
-                    </tr></table>
+                        <tr > 
+                          {%load static%}                    
+			<td style="width: 22px; padding:10px;"><a href="{facebookURL}" target="_blank" rel="noopener"><img src="{% static '/signature/media/fb.png' %}" alt="facebook icon" style="border:0; height:25px; width:25px" width="15" border="0"></a></td>
+			<td style="width: 22px; padding:10px;"><a href="{twitterURL}" target="_blank" rel="noopener"><img src="{% static '/signature/media/twiter.png' %}" alt="twitter icon" style="border:0; height:25px; width:25px" width="15" border="0"></a></td>
+			<td style="width: 22px; padding:10px;"><a href="{githubURL}" target="_blank" rel="noopener"><img src="{% static '/signature/media/git.png' %}" alt="github icon" style="border:0; height:25px; width:25px" width="15" border="0"></a></td>
+			<td style="width: 22px; padding:10px;"><a href="{linkedinURL}" target="_blank" rel="noopener"><img src="{% static '/signature/media/le.png' %}" alt="linkedin icon" style="border:0; height:25px; width:25px" width="15" border="0"></a></td>
+			<td style="width: 22px; padding:10px;"><a href="{youtubeURL}" target="_blank" rel="noopener"><img src="{% static '/signature/media/yt.png' %}" alt="youtube icon" style="border:0; height:25px; width:25px" width="15" border="0"></a></td>
+		
+                          </tr></table>
                 
 
       </td>
       {%endfor%}
 
-{% else %}
+
 	<tr>
 		<td colspan="2" style="border-top:1px solid #000000; padding-top:10px;  max-width: 480px;">
-		<p style="font-size:8pt; line-height:11pt; COLOR: #ea7941; FONT-FAMILY: Arial, sans-serif;">The content of this email is confidential and intended for the recipient specified in message only. It is strictly forbidden to share any part of this message with any third party, without a written consent of the sender. If you received this message by mistake, please reply to this message and follow with its deletion, so that we can ensure such a mistake does not occur in the future.</p>
+		<p style="font-size:8pt; line-height:11pt; COLOR: #ea7941; FONT-FAMILY: Arial, sans-serif;">{items.Others}</p>
 		</td>
 	</tr>
   </tbody></table>
+  {% else %}
+  <h1> Not Found...<h2>
 
  
 {%endif%}
