@@ -4,7 +4,7 @@ from .models import person
 # Register your models here.
 
 class personadmin(admin.ModelAdmin):
-     list_display = ('name', 'email','Job_Title','Department','Company','Phone','Address','Image','Others','Address',
+     list_display = ('name', 'email','Job_Title','Department','Company','Phone','Address','Image','Address',
         'password','Facebook','Github','Twiter','Linkedin')
 
         

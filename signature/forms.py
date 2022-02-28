@@ -8,13 +8,15 @@ from .models import person
 class registration(forms.ModelForm):
     class Meta:
         model = person
-        fields = ['name','email','Job_Title','Department','Company','Phone','Address','Image','Others','Address',
+        fields = ['name','email','Job_Title','Department','Company','Phone','Address','Image','Address',
         'password','Facebook','Github','Twiter','Linkedin']
         
         # models.TextField: {'widget': Textarea(attrs={'rows':4, 'cols':40})},
-        # widgets = {
-        #     'name': forms.TextInput(attrs={'class': 'form-control'}),
-        #     'email': forms.EmailInput(attrs={'class': 'form-control'}),
-        #     'Others': forms.TextInput(attrs={'rows':4, 'cols':40})
-        #     # 'password': forms.PasswordInput(render_value=True, attrs={'class': 'form-control'})
-        # }
+        widgets = {
+            'Facebook': forms.URLInput(attrs={'class': 'form-control','placeholder':'https://www.Facebook.com/...' }),
+            'Github': forms.URLInput(attrs={'class': 'form-control','placeholder':'https://www.Github.com/...'}),
+            'Twiter': forms.URLInput(attrs={'class': 'form-control','placeholder':'https://www.Twiter.com/...' }),
+            'Linkedin': forms.URLInput(attrs={'class': 'form-control','placeholder':'https://www.Linkedin.com/...' }),
+            
+            # 'password': forms.PasswordInput(render_value=True, attrs={'class': 'form-control'})
+        }
