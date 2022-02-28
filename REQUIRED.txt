@@ -3,3 +3,7 @@
 
 
  ## need adding multiple tab
+
+
+ ---- for textfield
+ ### https://stackoverflow.com/questions/910169/resize-fields-in-django-admin
