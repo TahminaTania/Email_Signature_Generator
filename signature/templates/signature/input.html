@@ -3,7 +3,7 @@
 
 {%block content%}
 <div class="row"> 
-    <div class="col-sm-4" >   
+    <div class="col-sm-4">   
         
 <div class="tab" style="display:flex; justify-content:space-between;">
   <button class="tablinks" onclick="openCity(event, 'General')">General</button>
@@ -11,55 +11,44 @@
   <button class="tablinks" onclick="openCity(event, 'Social-Media')">Social-Media</button>
 </div>
 
-<form method="POST" action="">
+<form method="POST" action="" >
     {% csrf_token %}
 <div id="General" class="tabcontent bg-info">
 			
 			<div class="d-flex justify-content-center form_container">
               <li style="list-style:none">  
             
-                <div class="input-group mb-3">
+                <div class="input-group mt-3 mb-4">
                     <div class="input-group-append">
-                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        <span class="input-group-text" style="width:40px"><i class="fas fa-user"></i></span>
                     </div>
                     {{form.name}}
                 </div>
-                <div class="input-group mb-3">
+                <div class="input-group mb-4">
                     <div class="input-group-append">
-                        <span class="input-group-text"><i class="fas fa-envelope-square"></i></span>
+                        <span class="input-group-text" style="width:40px"><i class="fas fa-envelope-square"></i></span>
                     </div>
                     {{form.email}}
                 </div>
-                <div class="input-group mb-3">
+                <div class="input-group mb-4">
                     <div class="input-group-append">
-                        <span class="input-group-text"><i class="fa-regular fa-id-card"></i></span>
+                        <span class="input-group-text"style="width:40px"><i class="fa-regular fa-id-card"></i></span>
                     </div>
                     {{form.Job_Title}}
                 </div>
-                <div class="input-group mb-3">
+                <div class="input-group mb-4">
                     <div class="input-group-append">
-                        <span class="input-group-text"><i class="fa-solid fa-users"></i></span>
+                        <span class="input-group-text"style="width:40px"><i class="fa-solid fa-users"></i></span>
                     </div>
                     {{form.Department}}
                 </div>
-                <div class="input-group mb-3">
+                <div class="input-group mb-5">
                     <div class="input-group-append">
-                        <span class="input-group-text"><i class="fa-solid fa-building-columns"></i></span>
+                        <span class="input-group-text"style="width:40px"><i class="fa-solid fa-building-columns"></i></span>
                     </div>
                     {{form.Company}}
                 </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-append">
-                        <span class="input-group-text"><i class="fa-solid fa-location-dot"></i></span>
-                    </div>
-                    {{form.Address}}
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-append">
-                        <span class="input-group-text"><i class="fa-solid fa-phone-volume"></i></span>
-                    </div>
-                    {{form.Phone}}
-                </div>
+                
             </li>
                
 </div>
@@ -77,24 +66,27 @@
 <div id="Personal" class="tabcontent" style="background-color: #6ddecd ">
     <div class="d-flex justify-content-center form_container"style="width:fit-content">
 
-        <li style="list-style:none"> 
-        <div class="input-group mb-3">  
-            <label for="exampleFormControlFile1">Upload your Image</label>
-            {{form.Image}}
-            <div id="emailHelp" class="form-text">We'll never share your image with anyone else.</div>
-          </div>
-          <div class="input-group mb-3">
+        <li style="list-style:none; margin:15px;"> 
+        
+          <div class="input-group mb-3" >
             <div class="input-group-append">
-                <span class="input-group-text"><i class="fa-solid fa-location-dot"></i></span>
+                <span class="input-group-text" style="width:35px; height:30px;"><i class="fa-solid fa-location-dot"></i></span>
             </div>
             {{form.Address}}
+            <div id="emailHelp" class="form-text">Don't share any imformation which can Violate Your Privacy</div>
         </div>
-        <div class="input-group mb-3">
+        <div class="input-group mb-5">
             <div class="input-group-append">
-                <span class="input-group-text"><i class="fa-solid fa-phone-volume"></i></span>
+                <span class="input-group-text" style="width:35px; height:30px;"><i class="fa-solid fa-phone-volume"></i></span>
             </div>
             {{form.Phone}}
+            <div id="emailHelp" class="form-text">Try to share your Public number</div>
         </div>
+        <div class="input-group mb-4" >  
+            <label for="exampleFormControlFile1" class="mb-2"><b>Upload your Image </b></label>
+            {{form.Image}}
+            <div id="emailHelp" class="form-text">Plaase upload an formal 30X30 image</div>
+          </div>
 
 
           
@@ -128,7 +120,7 @@
         </li>
         {% comment %} </form> {% endcomment %} 
     </div>
-    <div class="d-grid gap-2 col-6 mx-auto">
+    <div class="d-grid gap-2 col-6 mx-auto mt-3 mb-3">
         <input class="btn btn-lg btn-dark" type="submit" value="Apply">
     </div>
 </div>
