@@ -8,7 +8,8 @@ from .models import person
 class registration(forms.ModelForm):
     class Meta:
         model = person
-        fields = ['name','email','Job_Title','Department','Company','Phone','Address']
+        fields = ['name','email','Job_Title','Department','Company','Phone','Address','Image','Others','Address',
+        'password','Facebook','Github','Twiter','Linkedin']
         # widgets = {
         #     'name': forms.TextInput(attrs={'class': 'form-control'}),
         #     'email': forms.EmailInput(attrs={'class': 'form-control'}),

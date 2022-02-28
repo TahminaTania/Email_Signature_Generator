@@ -32,3 +32,9 @@
     border: 1px solid #ccc;
     border-top: none;
   }
+
+  .textfield{
+    height: 15px;
+    width: 15px;
+
+  }

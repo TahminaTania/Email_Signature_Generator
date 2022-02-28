@@ -3,18 +3,21 @@
 
 {%block content%}
 <div class="row"> 
-    <div class="col-sm-4" >
+    <div class="col-sm-4" >   
+        
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'General')">General</button>
   <button class="tablinks" onclick="openCity(event, 'Professional')">Professional</button>
   <button class="tablinks" onclick="openCity(event, 'Social')">Social</button>
 </div>
 
+<form method="POST" action="">
+    {% csrf_token %}
 <div id="General" class="tabcontent bg-info">
 			
 			<div class="d-flex justify-content-center form_container">
-            <form method="POST" action="">
-                {% csrf_token %}
+              <li style="list-style:none">  
+            
                 <div class="input-group mb-3">
                     <div class="input-group-append">
                         <span class="input-group-text"><i class="fas fa-user"></i></span>
@@ -57,11 +60,12 @@
                     </div>
                     {{form.Phone}}
                 </div>
-            
-                <div class="d-grid gap-2 col-6 mx-auto">
+            </li>
+                {% comment %} <div class="d-grid gap-2 col-6 mx-auto">
                     <input class="btn btn-lg btn-dark" type="submit" value="Apply">
-                </div>
-    </form> </div>
+                </div> {% endcomment %}
+    {% comment %} </form>  {% endcomment %}
+</div>
 
     <script>
         var form_fields = document.getElementsByTagName('input')
@@ -76,37 +80,33 @@
 </div>
 
 <div id="Professional" class="tabcontent" style="background-color: #6ddecd ">
-    <div class="d-flex justify-content-center form_container">
-    <form method="POST" action="">
-        {% csrf_token %}
-        
-        
-       
-        <div class="input-group mb-3">
+    <div class="d-flex justify-content-center form_container"style="width:fit-content">
+
+        <li style="list-style:none"> 
+        <div class="input-group mb-3">  
             <label for="exampleFormControlFile1">Upload your Image</label>
+            {{form.Image}}
             <div id="emailHelp" class="form-text">We'll never share your image with anyone else.</div>
-            <input type="file" class="form-control-file" id="exampleFormControlFile1">
           </div>
           <div class="mb-3">
             <label class="form-label">Your Certification or expertise</label>
-            <textarea class="form-control" name="certificate" rows="3"></textarea>
+            <div class="textfield" style="width:fit-content">
+            {{form.Others}} </div>
           </div>
-        <div class="d-grid gap-2 col-6 mx-auto">
-            <input class="btn btn-lg btn-dark" type="submit" value="Apply">
-        </div>
-    </form>
+    </li> 
 </div> 
 
 </div>
 
 <div id="Social" class="tabcontent" style= "background-color: #6d94de">
     <div class="d-flex justify-content-center form_container">
-        <form method="POST" action="">
-            {% csrf_token %}
+        
+            <li style="list-style:none"> 
 
             <div class="mb-3">
                 <label class="form-label"><b>Facebook </b></label>
-                <input type="link" class="form-control" name="facebookURL" Placeholder="https://www.facebook.com/...">
+                {{form.Facebook}}
+                {% comment %} <input type="link" class="form-control" name="facebookURL" Placeholder="https://www.facebook.com/..."> {% endcomment %}
             </div>
            
             <div class="mb-3">
@@ -117,18 +117,21 @@
                 <label class="form-label"><b>Twiter</b></label>
                 <input type="link" class="form-control" name="twitterURL" Placeholder="https://www.twiter.com/...">
             </div>
-            <div class="mb-3">
+             <div class="mb-3">
                 <label class="form-label"><b>Linkedin</b></label>
                 <input type="link" class="form-control" name="linkedinURL" Placeholder="https://www.linkedin.com/...">
-            </div>
-            
-            <div class="d-grid gap-2 col-6 mx-auto">
-                <input class="btn btn-lg btn-dark" type="submit" value="Apply">
-            </div>
-        </form>
+            </div> 
+        </li>
+        {% comment %} </form> {% endcomment %} 
     </div>
-
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <input class="btn btn-lg btn-dark" type="submit" value="Apply">
+    </div>
 </div>
+
+</form>
+
+
 
 <script>
 function openCity(evt, cityName) {

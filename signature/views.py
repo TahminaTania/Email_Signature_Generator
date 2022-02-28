@@ -20,7 +20,11 @@ def inputpage(request):
         fm = registration(request.POST)
         if fm.is_valid():
             cd=fm.cleaned_data
-            shout = person(name = cd['name'], email= cd['email'],Job_Title = cd['Job_Title'],Department = cd['Department'],Company = cd['Company'],Address = cd['Address'],Phone = cd['Phone'])
+            shout = person(name = cd['name'], email= cd['email'],Job_Title = cd['Job_Title'],Department = cd['Department'],Company = cd['Company'],Address = cd['Address'],Phone = cd['Phone'],
+            Image = cd['Image'],
+            Others = cd['Others'],
+            Facebook = cd['Facebook'],
+            Github = cd['Github'])
             shout.save()
             fm = registration()
             return redirect('input')  
