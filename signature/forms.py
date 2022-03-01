@@ -1,4 +1,4 @@
-from django.forms import ModelForm
+from django.forms import ModelForm,ImageField
 from django.contrib.auth.forms import UserCreationForm
 # from django.contrib.auth.models import User
 from django import forms
@@ -12,11 +12,13 @@ class registration(forms.ModelForm):
         'password','Facebook','Github','Twiter','Linkedin']
         
         # models.TextField: {'widget': Textarea(attrs={'rows':4, 'cols':40})},
+        
         widgets = {
             'Facebook': forms.URLInput(attrs={'class': 'form-control','placeholder':'https://www.Facebook.com/...' }),
             'Github': forms.URLInput(attrs={'class': 'form-control','placeholder':'https://www.Github.com/...'}),
             'Twiter': forms.URLInput(attrs={'class': 'form-control','placeholder':'https://www.Twiter.com/...' }),
             'Linkedin': forms.URLInput(attrs={'class': 'form-control','placeholder':'https://www.Linkedin.com/...' }),
+            
             
             # 'password': forms.PasswordInput(render_value=True, attrs={'class': 'form-control'})
         }

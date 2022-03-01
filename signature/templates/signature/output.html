@@ -1,192 +1,14 @@
 {% extends 'signature/base.html' %}
-{% block content%}
-<style>
-import url(https://fonts.googleapis.com/css?family=Dosis:600,200|Great+Vibes);
-*, *:after, *:before {
-box-sizing: border-box;
--moz-box-sizing: border-box;
-}
-* {margin:0;padding:0;border: 0 none;position: relative;}
-[class="fa"]:before {font-family: 'fontawesome', sans-serif;}
-
-html {
-background: #f5f5f5;
-width: 100%;
-height: 100%;
-font-family: dosis, sans-serif;
-font-weight: 300;
-color: #fff;
-}
-
-section {
-background: #31A66C;
-width: 80vw;
-max-width: 40rem;
-min-width: 390px;
-height: 25rem;
-margin: 4rem auto;
-box-shadow: 0 0 6px rgba(0,0,0,.4);
-}
-article {
-position: absolute;
-left: 0;
-top: 5rem;
-right: 0;
-bottom: 0;
-padding: 1rem 2rem 0;
-overflow: auto;
-transition: .7s;
-transform: scale(0);
-transform-origin: center right;
-transition-delay: .1s;
-}
-article:before {
-color: rgba(0,0,0,.2);
-font-size: 4rem;
-font-weight: 100;
-position: absolute;
-bottom: 1rem;
-right: 1rem;
-}
-h2 {
-font-size: 2.5rem;
-font-weight: 600;
-text-align: center;
-color: rgba(0,0,0,.6);
-}
-body > h2 {height: auto;}
-h2 img {
-width: 120px;
-height: auto;
-background: #f9f9f9;
-border: 5px solid rgba(0,0,0,.7);
-border-radius: 50%;
-padding: 5px;
-display: block;
-margin: 0 auto;
-box-shadow: 0 0 7px rgba(0,0,0,.5);
-}
-h2 span {
-font-family: Great Vibes;
-font-weight: 400;
-display: block;
-margin-bottom: 1rem;
-}
-footer ul {
-width: 100%;
-color: #037B49;
-}
-footer li {
-list-style-type: none;
-float: left;
-width: 20%;
-text-align: center;
-font-size: 3rem;
-font-weight: 100; 
-}
-footer li::before {
-display: block;
-text-align: center;
-font-size: 3rem;
-font-weight: 100;
-}
-p, dl, ol {
-line-height: 1.5;
-font-size: 1.3rem;
-}
-ol li {margin: 0 0 .5rem 1rem;}
-dt {
-font-size: 1.6rem;
-font-weight: 600;
-text-indent: 1.5rem;
-}
-nav {
-background: #fff;
-width: 100%;
-height: 5rem;
-box-shadow: 0 0 6px rgba(0,0,0,.4);
-}
-
-nav img{
-  padding:5px;
-  margin-top: 15px;
-  height: 50px;
-  width:50px;
-  opacity:1
-}
-img:hover {
-  background-color: #1E6743;
-}
-nav:after {
-content:'';
-width: 25%;
-height: 5rem;
-background: #BEE3D1;
-position: absolute;
-transition: .5s;
-}
-input {
-display: none;
-}
-label {
-width: 25%;
-float: left;
-color: #BEE3D1;
-text-align: center;
-cursor: pointer;
-transition: .5s;
-z-index: 2;
-}
-label:hover {color: #1E6743;}
-label:before {
-display: block;
-font-size: 3rem;
-line-height: 5rem;
-z-index: 2;
-}
-#layout1:checked ~ nav [for='layout1'],
-#layout2:checked ~ nav [for='layout2'],
-#layout3:checked ~ nav [for='layout3'],
-#layout4:checked ~ nav [for='layout4'] {
-color: #1E6743;
-font-weight: 600;
-}
-#layout2:checked ~ nav [for='layout2'] {}
-#layout1:checked ~ nav [for='layout1'] {}
-
-#layout1:checked ~ nav:after {
-left: 0;
-}
-#layout2:checked ~ nav:after {
-left:25%;
-border-top: 0 none;
-}
-#layout3:checked ~ nav:after {
-left: 50%;
-}
-#layout4:checked ~ nav:after {
-left: 75%;
-}
-
-#layout1:checked ~ .uno,
-#layout2:checked ~ .dos,
-#layout3:checked ~ .tres,
-#layout4:checked ~ .cuatro {
-display: block;
-transform: scale(1);
-transition-delay: .5s; 
-}
-a {color: rgba(0,0,0,.4)}
-a:hover {color: rgba(0,0,0,.2)}
-</style>
-
+{% block output%}
+{%load static%}
+<link rel="stylesheet" href="{% static 'signature/css/outputtan.css'%}">
 <section>
 <input type="radio" id="layout1" value="1" name="tractor" checked='checked' /> 
 <input type="radio" id="layout2" value="2" name="tractor" /> 
 <input type="radio" id="layout3" value="3" name="tractor" />
 <input type="radio" id="layout4" value="4" name="tractor" />
 <nav> 
-  {%load static%}
+ 
  
 <label for="layout1" class="d-flex justify-content-center"><img src="{% static '/signature/media/layout1.svg' %}" alt="Design-1" style="width:fit-content"></label>
 <label for="layout2" class="d-flex justify-content-center"><img src="{% static '/signature/media/layout2.svg' %}" alt="Design-2" style="width:fit-content"></label>
@@ -194,20 +16,22 @@ a:hover {color: rgba(0,0,0,.2)}
 <label for="layout4" class="d-flex justify-content-center"><img src="{% static '/signature/media/layout-4.svg' %}" alt="Design-4" style="width:fit-content"></label>
 </nav>
 
-<article class='uno'  >
+<article class='uno'>
  
 {%if pers %} 
 <table style="FONT-FAMILY: Arial, sans-serif; COLOR: #000000; width:480px;" cellspacing="0" cellpadding="0" border="0">
     {% for items in pers %}
   <tbody>
   <tr>
+    {% if items.Image%}
     <td style="FONT-SIZE: 10pt; FONT-FAMILY: Arial, sans-serif; COLOR: #000000; line-height:12pt; padding-bottom:10px; padding-right:20px; text-align:center; width:170px" width="170" valign="top" align="center">
-	
-	<img  src="{{items.Image}}" alt="photograph" width="124" border="0" style="border:0; height:auto; width:124px"/> 
-	
-	
-	
+	<img class="profile" src="{{items.Image.url}}" alt="photograph" width="124" border="0" style=" border: 3px solid #555; height:auto; width:124px"/> 
 	 </td>
+    {%else%}
+    <td style="FONT-SIZE: 10pt; FONT-FAMILY: Arial, sans-serif; COLOR: #000000; line-height:12pt; padding-bottom:10px; padding-right:20px; text-align:center; width:170px" width="170" valign="top" align="center">
+      <img  src="{% static '/signature/media/blank profile.png' %}" alt="photograph" width="124" border="0" style="border:0; height:auto; width:124px"/> 
+       </td>
+       {%endif%}
     
 	<td style="width: 310px; FONT-FAMILY: Arial, sans-serif; padding-bottom:10px" valign="top">
 	
@@ -217,19 +41,19 @@ a:hover {color: rgba(0,0,0,.2)}
 	<br><br>
 	
 
-		<span style="FONT-SIZE: 9pt;"><img src="mobile-icon.png" alt="phone-icon" style="border:0; height:12px; width:12px" width="12" height="12" border="0">&nbsp; {{items.Phone}} <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>
-                <span style="FONT-SIZE: 9pt;"><img src="phone-icon.png" alt="phone-icon" style="border:0; height:12px; width:12px" width="12" height="12" border="0">&nbsp; {{items.Phone}}</span>
+		<span style="FONT-SIZE: 10pt;"><img src="{% static '/signature/media/mbl.png'%}" alt="phone-icon" style="border-radius: 50%; height:15px; width:15px" width="12" height="12" border="0">&nbsp; {{items.Phone}} <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>
+                <span style="FONT-SIZE: 10pt;"><img src="{% static '/signature/media/phone.jpg'%}" alt="phone-icon" style="border-radius: 50%; height:15px; width:15px" width="12" height="12" border="0">&nbsp; {{items.Phone}}</span>
 
-                <span style="FONT-SIZE: 9pt;"><br><img src="email-icon.png" alt="phone-icon" style="border:0; height:12px; width:12px" width="12" height="12" border="0">&nbsp; {{items.email}}</span>
+                <span style="FONT-SIZE: 10pt;"><br><img src="{% static '/signature/media/mail.jpg'%}" alt="phone-icon" style="border-radius: 50%; height:15px; width:15px" width="12" height="12" border="0">&nbsp; {{items.email}}</span>
 
-                <span style="FONT-SIZE: 9pt;">
+                <span style="FONT-SIZE: 10pt;">
                     <br>
-                    <img src="address-icon.png" alt="address-icon" style="border:0; height:12px; width:12px" width="12" height="12" border="0" align="absmiddle"><span>&nbsp; {{items.Address}}</span>
+                    <img src="{% static '/signature/media/address.jpg'%}" alt="address-icon" style="border-radius: 50%; height:15px; width:15px" width="12" height="12" border="0" align="absmiddle"><span>&nbsp; {{items.Address}}</span>
                 </span>
 
-                <span style="FONT-SIZE: 9pt;">
+                <span style="FONT-SIZE: 10pt;">
                     <br>
-                    <img src="website-icon.png" alt="website-icon" style="border:0; height:12px; width:12px" width="12" height="12" border="0" align="absmiddle">&nbsp; <a href="http://{website}" target="_blank" rel="noopener" style=" text-decoration:none;"><strong style="color:#000000; font-family:Arial, sans-serif; font-size:9pt">{{items.email}}</strong></a>
+                    <img src="{% static '/signature/media/website.png'%}" alt="website-icon" style="border-radius: 50%; height:15px; width:15px" width="12" height="12" border="0" align="absmiddle">&nbsp; <a href="http://{website}" target="_blank" rel="noopener" style=" text-decoration:none;"><strong style="color:#000000; font-family:Arial, sans-serif; font-size:9pt">{{items.email}}</strong></a>
                 </span>
                 
 
@@ -239,41 +63,83 @@ a:hover {color: rgba(0,0,0,.2)}
 		<table style="margin-top:10px;" border="0">
                     <tbody>
                         <tr > 
-                          {%load static%}                    
-			<td style="width: 22px; padding:10px;"><a href="{facebookURL}" target="_blank" rel="noopener"><img src="{% static '/signature/media/fb.png' %}" alt="facebook icon" style="border:0; height:25px; width:25px" width="15" border="0"></a></td>
-			<td style="width: 22px; padding:10px;"><a href="{twitterURL}" target="_blank" rel="noopener"><img src="{% static '/signature/media/twiter.png' %}" alt="twitter icon" style="border:0; height:25px; width:25px" width="15" border="0"></a></td>
-			<td style="width: 22px; padding:10px;"><a href="{githubURL}" target="_blank" rel="noopener"><img src="{% static '/signature/media/git.png' %}" alt="github icon" style="border:0; height:25px; width:25px" width="15" border="0"></a></td>
-			<td style="width: 22px; padding:10px;"><a href="{linkedinURL}" target="_blank" rel="noopener"><img src="{% static '/signature/media/le.png' %}" alt="linkedin icon" style="border:0; height:25px; width:25px" width="15" border="0"></a></td>
-			<td style="width: 22px; padding:10px;"><a href="{youtubeURL}" target="_blank" rel="noopener"><img src="{% static '/signature/media/yt.png' %}" alt="youtube icon" style="border:0; height:25px; width:25px" width="15" border="0"></a></td>
+                                          
+			<td style="width: 22px; padding:10px;"><a href="{{items.Facebook}}"  rel="noopener"><img src="{% static '/signature/media/fb.png' %}" alt="facebook icon" style="border:0; height:25px; width:25px" width="15" border="0"></a></td>
+			<td style="width: 22px; padding:10px;"><a href="{{items.Twiter}}"  rel="noopener"><img src="{% static '/signature/media/twiter.png' %}" alt="twitter icon" style="border:0; height:25px; width:25px" width="15" border="0"></a></td>
+			<td style="width: 22px; padding:10px;"><a href="{{items.Github}}"  rel="noopener"><img src="{% static '/signature/media/git.png' %}" alt="github icon" style="border:0; height:25px; width:25px" width="15" border="0"></a></td>
+			<td style="width: 22px; padding:10px;"><a href="{{items.Linkedin}}"  rel="noopener"><img src="{% static '/signature/media/le.png' %}" alt="linkedin icon" style="border:0; height:25px; width:25px" width="15" border="0"></a></td>
+			<td style="width: 22px; padding:10px;"><a href="{{items.Facebook}}"  rel="noopener"><img src="{% static '/signature/media/yt.png' %}" alt="youtube icon" style="border:0; height:25px; width:25px" width="15" border="0"></a></td>
 		
                           </tr></table>
                 
 
-      </td>
+      </td></tbody>
       {%endfor%}
-
-
-	<tr>
-		<td colspan="2" style="border-top:1px solid #000000; padding-top:10px;  max-width: 480px;">
-		<p style="font-size:8pt; line-height:11pt; COLOR: #ea7941; FONT-FAMILY: Arial, sans-serif;">{items.Others}</p>
-		</td>
-	</tr>
-  </tbody></table>
+  </table>
   {% else %}
   <h1> Not Found...<h2>
 
  
-{%endif%}  </article>
+{%endif%} </article>
 
 
 
 
 <article class='dos fa fa-wrench'>
+  {%if pers %} 
+  {% for items in pers%}
+<div style="padding:35px;float:left; display:flex;">
+  <img src="{{items.Image.url}}" alt="photograph" width="124" border="0" style="border-radius:50%;"/>
+   
+</div>
+  <div style="padding:35px;font-family:Cursive; letter-spacing:2px; word-spacing:10px;font-size:20pt; margin-left:25px;">
+   <span> {{items.name}} </span> 
+  
+  <div style="display:grid-container;font-weight: normal;font-family:Cursive;word-spacing:0;letter-spacing:0;font-size:11pt;padding:10px;"> 
 
+   <div style="margin-top:9px;">
+    <span style="color:blue;">Designation:</span> <span>{{items.Job_Title}}</span>
+   </div>
+   <div style="margin-top:9px;">
+    <span style="color:blue;">Comapany:</span><span>{{items.Company}}</span>
+   </div>
+   <div style="margin-top:9px;">
+    <span style="color:blue;">Email:</span> <span>{{items.email}}</span>
+   </div>
+   <div style="margin-top:9px;">
+    <span style="color:blue;">Website:</span> <span>{{items.Website}}</span>
+   </div>
+   <div style="margin-top:9px;">
+    <span style="color:blue;">Address :</span> <span>{{items.Address}}</span>
+   </div>
+   <div style="margin-top:9px;">
+    <span style="color:blue;">Contact-Number:</span> <span>{{items.Phone}}</span>
+   </div>
+   <div style="margin-left:100px; padding:10px;">
+		<table >                            
+			<td style="width: 22px; padding:10px;"><a href="{{items.Facebook}}"  rel="noopener"><img src="{% static '/signature/media/fb.png' %}" alt="facebook icon" style="border-radius:50%;; height:25px; width:25px" width="15" border="0"></a></td>
+			<td style="width: 22px; padding:10px;"><a href="{{items.Twiter}}"  rel="noopener"><img src="{% static '/signature/media/twiter.png' %}" alt="twitter icon" style="border-radius:50%;; height:25px; width:25px" width="15" border="0"></a></td>
+			<td style="width: 22px; padding:10px;"><a href="{{items.Github}}"  rel="noopener"><img src="{% static '/signature/media/git.png' %}" alt="github icon" style="border-radius:50%;; height:25px; width:25px" width="15" border="0"></a></td>
+			<td style="width: 22px; padding:10px;"><a href="{{items.Linkedin}}"  rel="noopener"><img src="{% static '/signature/media/le.png' %}" alt="linkedin icon" style="border-radius:50%;; height:25px; width:25px" width="15" border="0"></a></td>
+			<td style="width: 22px; padding:10px;"><a href="{{items.Facebook}}"  rel="noopener"><img src="{% static '/signature/media/yt.png' %}" alt="youtube icon" style="border-radius:50%;; height:25px; width:25px" width="15" border="0"></a></td>
+	                         </table>
+     </div>
 
-<p>Si hay algún fenómeno en la web que sea lo más parecido a las setas eso son los blogs, cursos y enseñanzas web. Todo lo relativo a la divulgación, de cualquier materia o parcela del conocimiento humano, angelical o mefistofélico, tiene su oferta, sus "maestros" y sus cocinillas visionarios.</p>
+  
+</div>
+
+{%endfor%}
+{%endif%}
+
 </article>
+
+
+
+
+
+
 <article class='tres fa fa-beer'>
+
 <ol>
 <li>Dimensionado de imágenes y objetos en CSS</li>
 <li>Evita pulsaciones no deseadas al hacer scroll</li>
@@ -294,7 +160,7 @@ a:hover {color: rgba(0,0,0,.2)}
 </section>
 
 
-{%endblock content%}
+{%endblock output%}
 
 
 

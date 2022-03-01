@@ -1,17 +1,15 @@
 {% extends 'signature/base.html' %}
-
-
 {%block content%}
-<div class="row"> 
-    <div class="col-sm-4">   
-        
+
 <div class="tab" style="display:flex; justify-content:space-between;">
   <button class="tablinks" onclick="openCity(event, 'General')">General</button>
   <button class="tablinks" onclick="openCity(event, 'Personal')">Personal</button>
   <button class="tablinks" onclick="openCity(event, 'Social-Media')">Social-Media</button>
 </div>
 
-<form method="POST" action="" >
+{% comment %} enctype="multipart/form-data" is important for uploading image also, in view request.files {% endcomment %}
+
+<form method="POST" action="" enctype="multipart/form-data" > 
     {% csrf_token %}
 <div id="General" class="tabcontent bg-info">
 			
@@ -118,17 +116,14 @@
                 <input type="link" class="form-control" name="linkedinURL" Placeholder="https://www.linkedin.com/...">
             </div> 
         </li>
-        {% comment %} </form> {% endcomment %} 
+        
     </div>
     <div class="d-grid gap-2 col-6 mx-auto mt-3 mb-3">
         <input class="btn btn-lg btn-dark" type="submit" value="Apply">
     </div>
 </div>
 
-</form>
-
-
-
+</form> 
 <script>
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
@@ -145,28 +140,6 @@ function openCity(evt, cityName) {
 }
 </script>
 </div>
-
-<div class="col-sm-8">
-        <h4 class="text-center alert alert-info">Current Stored Data</h4>
-        
-        </div>
-
-</div>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-{% endblock content%}
+{%endblock content%}
 
 

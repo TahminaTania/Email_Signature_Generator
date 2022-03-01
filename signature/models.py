@@ -10,7 +10,7 @@ class person(models.Model):
     Department= models.CharField(max_length=20,null=True, blank=True) 
     Company= models.CharField(max_length=20,null=True, blank=True)
     Phone= models.CharField(max_length=20,null=True, blank=True)
-    Image = models.ImageField(null=True, blank=True)
+    Image = models.ImageField(upload_to='upload/',null=True,blank=True)
     # Others=models.TextField(max_length=30,null=True, blank=True)
     Address= models.CharField(max_length=200, null=True, blank=True)
     password = models.CharField(max_length=10, null=True, blank=True)

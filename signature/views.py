@@ -1,4 +1,4 @@
-from audioop import reverse
+
 from django.shortcuts import redirect, render,redirect,HttpResponseRedirect
 from django.http import HttpResponse
 from .forms import registration
@@ -17,7 +17,7 @@ from django.contrib import messages
 def inputpage(request):
     form= registration()
     if request.method == 'POST':
-        fm = registration(request.POST)
+        fm = registration(request.POST,request.FILES) 
         if fm.is_valid():
             cd=fm.cleaned_data
             shout = person(name = cd['name'], email= cd['email'],Job_Title = cd['Job_Title'],Department = cd['Department'],Company = cd['Company'],Address = cd['Address'],Phone = cd['Phone'],
@@ -57,9 +57,9 @@ def outputpage(request):
             Company=request.POST.get('Company')
             Phone=request.POST.get('Phone')
             Address=request.POST.get('Address')
-            password=request.POST.get('password')
+            Image= request.POST.get('Image')
             details= person(name=name, email=email, Job_Title =Job_Title,Department=Department,Company=Company,
-            Phone=Phone,Address=Address)
+            Phone=Phone,Address=Address,Image=Image)
             details.save()
     pers= person.objects.all()   
     return render(request, 'signature/output.html', {
