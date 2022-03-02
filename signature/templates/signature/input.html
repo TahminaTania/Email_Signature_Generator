@@ -1,10 +1,10 @@
 {% extends 'signature/base.html' %}
 {%block content%}
 
-<div class="tab" style="display:flex; justify-content:space-between;">
-  <button class="tablinks" onclick="openCity(event, 'General')">General</button>
-  <button class="tablinks" onclick="openCity(event, 'Personal')">Personal</button>
-  <button class="tablinks" onclick="openCity(event, 'Social-Media')">Social-Media</button>
+<div class="tab" style="padding:10px;">
+  <button class="tablinks" onclick="openpage(event, 'General')">General</button>
+  <button class="tablinks" onclick="openpage(event, 'Personal')">Personal</button>
+  <button class="tablinks" onclick="openpage(event, 'Social')">Social</button>
 </div>
 
 {% comment %} enctype="multipart/form-data" is important for uploading image also, in view request.files {% endcomment %}
@@ -18,31 +18,31 @@
             
                 <div class="input-group mt-3 mb-4">
                     <div class="input-group-append">
-                        <span class="input-group-text" style="width:40px"><i class="fas fa-user"></i></span>
+                        <span class="input-group-text" style="width:40px; height:40;"><i class="fas fa-user"></i></span>
                     </div>
                     {{form.name}}
                 </div>
                 <div class="input-group mb-4">
                     <div class="input-group-append">
-                        <span class="input-group-text" style="width:40px"><i class="fas fa-envelope-square"></i></span>
+                        <span class="input-group-text" style="width:40px;height:40;"><i class="fas fa-envelope-square"></i></span>
                     </div>
                     {{form.email}}
                 </div>
                 <div class="input-group mb-4">
                     <div class="input-group-append">
-                        <span class="input-group-text"style="width:40px"><i class="fa-regular fa-id-card"></i></span>
+                        <span class="input-group-text"style="width:40px;height:40;"><i class="fa-regular fa-id-card"></i></span>
                     </div>
                     {{form.Job_Title}}
                 </div>
                 <div class="input-group mb-4">
                     <div class="input-group-append">
-                        <span class="input-group-text"style="width:40px"><i class="fa-solid fa-users"></i></span>
+                        <span class="input-group-text"style="width:40px;height:40;"><i class="fa-solid fa-users"></i></span>
                     </div>
                     {{form.Department}}
                 </div>
                 <div class="input-group mb-5">
                     <div class="input-group-append">
-                        <span class="input-group-text"style="width:40px"><i class="fa-solid fa-building-columns"></i></span>
+                        <span class="input-group-text"style="width:40px;height:40;"><i class="fa-solid fa-building-columns"></i></span>
                     </div>
                     {{form.Company}}
                 </div>
@@ -61,71 +61,78 @@
         </script>
 </div>
 
-<div id="Personal" class="tabcontent" style="background-color: #6ddecd ">
-    <div class="d-flex justify-content-center form_container"style="width:fit-content">
+<div id="Personal" class="tabcontent bg-info">
+    <div class="d-flex justify-content-center form_container" >
 
-        <li style="list-style:none; margin:15px;"> 
+        <li style="list-style:none;"> 
         
-          <div class="input-group mb-3" >
+          <div class="input-group mt-3 mb-4" >
             <div class="input-group-append">
-                <span class="input-group-text" style="width:35px; height:30px;"><i class="fa-solid fa-location-dot"></i></span>
+                <span class="input-group-text" style="width:40px;height:40;"><i class="fa-solid fa-location-dot"></i></span>
             </div>
             {{form.Address}}
-            <div id="emailHelp" class="form-text">Don't share any imformation which can Violate Your Privacy</div>
+            {% comment %} <div id="emailHelp" class="form-text">Don't share any imformation which can Violate Your Privacy</div> {% endcomment %}
         </div>
-        <div class="input-group mb-5">
+        <div class="input-group mt-2 mb-5">
             <div class="input-group-append">
-                <span class="input-group-text" style="width:35px; height:30px;"><i class="fa-solid fa-phone-volume"></i></span>
+                <span class="input-group-text" style="width:40px;height:40;"><i class="fa-solid fa-phone-volume"></i></span>
             </div>
             {{form.Phone}}
-            <div id="emailHelp" class="form-text">Try to share your Public number</div>
+            {% comment %} <div id="emailHelp" class="form-text">Try to share your Public number</div> {% endcomment %}
         </div>
-        <div class="input-group mb-4" >  
-            <label for="exampleFormControlFile1" class="mb-2"><b>Upload your Image </b></label>
-            {{form.Image}}
-            <div id="emailHelp" class="form-text">Plaase upload an formal 30X30 image</div>
-          </div>
+
+        
+         {% comment %} LOok for responsive imagefield, this field runing full page {% endcomment %}
+         <div class="input-group mt-3 mb-5" >   
+             <h6>Upload Your Image Here :</h6>
+             
+            {% comment %} <label class="form-label" style="color:black;"><b>Image :</b></label>  {% endcomment %}
+            <div class="col-sm-9">
+            {{form.Image}} </div>
+            {% comment %} <div id="emailHelp" class="form-text">Plaase upload an formal 30X30 image</div> {% endcomment %}
+          </div> </div> 
 
 
           
     </li> 
 </div> 
 
-</div>
 
-<div id="Social-Media" class="tabcontent" style= "background-color: #6d94de">
+<div id="Social" class="tabcontent" style= "background-color: #6d94de">
     <div class="d-flex justify-content-center form_container">
         
-            <li style="list-style:none"> 
+            <li style="list-style:none;"> 
 
-            <div class="mb-3">
-                <label class="form-label"><b>Facebook</b></label>
-                {{form.Facebook}}
+            <div class="input-group mb-4"> 
+                <label class="form-label" style="color:black;"><b>Facebook:</b></label>
+                <div> {{form.Facebook}} </div>
             </div>
            
-            <div class="mb-3">
-                <label class="form-label"><b>GitHub</b></label>
-                {{form.Github}}
+            <div class="input-group mb-4">
+                <label class="form-label" style="color:black;"><b>GitHub:</b></label>
+                <div>{{form.Github}} </div>
             </div>
-            <div class="mb-3">
-                <label class="form-label"><b>Twiter</b></label>
-                <input type="link" class="form-control" name="twitterURL" Placeholder="https://www.twiter.com/...">
+            <div class="input-group mb-4">
+                <label class="form-label" style="color:black;"><b>Twiter:</b></label>
+                <div>{{form.Twiter}} </div>
+               
             </div>
-             <div class="mb-3">
-                <label class="form-label"><b>Linkedin</b></label>
-                <input type="link" class="form-control" name="linkedinURL" Placeholder="https://www.linkedin.com/...">
+             <div class="input-group mb-4">
+                <label class="form-label" style="color:black;"><b>Linkedin:</b></label>
+                <div> {{form.Linkedin}} </div>
             </div> 
         </li>
         
     </div>
-    <div class="d-grid gap-2 col-6 mx-auto mt-3 mb-3">
-        <input class="btn btn-lg btn-dark" type="submit" value="Apply">
+    
+    <div class="d-grid text-center gap-2 col-6 mx-auto mt-3 mb-3">
+        <input class="btn btn-lg btn-Success" type="submit" value="Apply">
     </div>
 </div>
 
 </form> 
 <script>
-function openCity(evt, cityName) {
+function openpage(evt, tabname) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
@@ -135,11 +142,37 @@ function openCity(evt, cityName) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(tabname).style.display = "block";
   evt.currentTarget.className += " active";
 }
 </script>
 </div>
 {%endblock content%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% comment %} 
+
+###### -----------------------------output-------------------- 
+{% endcomment %}
+
+
 
 

@@ -38,8 +38,6 @@ def inputpage(request):
 def outputpage(request):
     form= registration()
     if request.method == 'POST':
-        # pers = person.objects.all()
-        # pers.delete()
         fm = registration(request.POST)
         if fm.is_valid():
             cd=fm.cleaned_data
