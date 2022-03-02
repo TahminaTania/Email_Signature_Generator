@@ -173,10 +173,10 @@ function openCity(evt, cityName) {
  
 {%if pers %} 
 <table style="FONT-FAMILY: Arial, sans-serif; COLOR: #000000; width:480px;" cellspacing="0" cellpadding="0" border="0">
-    {% for items in pers %}
+    
   <tbody>
   <tr>
-    {% if items.Image%}
+    {% if pers.Image%}
     <td style="FONT-SIZE: 10pt; FONT-FAMILY: Arial, sans-serif; COLOR: #000000; line-height:12pt; padding-bottom:10px; padding-right:20px; text-align:center; width:170px" width="170" valign="top" align="center">
 	<img class="profile" src="{{items.Image.url}}" alt="photograph" width="124" border="0" style=" border: 3px solid #555; height:auto; width:124px"/> 
 	 </td>
@@ -188,25 +188,25 @@ function openCity(evt, cityName) {
     
 	<td style="width: 310px; FONT-FAMILY: Arial, sans-serif; padding-bottom:10px" valign="top">
 	
-	<span style="FONT-SIZE: 20pt; COLOR: #000000; FONT-FAMILY: Arial, sans-serif;"><strong>{{items.name}}</strong></span>
-        <span style="FONT-SIZE: 12pt; COLOR: #000000;"><br>{{items.Department}} <span>| </span></span>
-	<span style="FONT-SIZE: 12pt; COLOR: #000000;">{{items.Company}}</span>
+	<span style="FONT-SIZE: 20pt; COLOR: #000000; FONT-FAMILY: Arial, sans-serif;"><strong>{{pers.name}}</strong></span>
+        <span style="FONT-SIZE: 12pt; COLOR: #000000;"><br>{{pers.Department}} <span>| </span></span>
+	<span style="FONT-SIZE: 12pt; COLOR: #000000;">{{pers.Company}}</span>
 	<br><br>
 	
 
-		<span style="FONT-SIZE: 10pt;"><img src="{% static '/signature/media/mbl.png'%}" alt="phone-icon" style="border-radius: 50%; height:15px; width:15px" width="12" height="12" border="0">&nbsp; {{items.Phone}} <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>
-                <span style="FONT-SIZE: 10pt;"><img src="{% static '/signature/media/phone.jpg'%}" alt="phone-icon" style="border-radius: 50%; height:15px; width:15px" width="12" height="12" border="0">&nbsp; {{items.Phone}}</span>
+		<span style="FONT-SIZE: 10pt;"><img src="{% static '/signature/media/mbl.png'%}" alt="phone-icon" style="border-radius: 50%; height:15px; width:15px" width="12" height="12" border="0">&nbsp; {{pers.Phone}} <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>
+                <span style="FONT-SIZE: 10pt;"><img src="{% static '/signature/media/phone.jpg'%}" alt="phone-icon" style="border-radius: 50%; height:15px; width:15px" width="12" height="12" border="0">&nbsp; {{pers.Phone}}</span>
 
-                <span style="FONT-SIZE: 10pt;"><br><img src="{% static '/signature/media/mail.jpg'%}" alt="phone-icon" style="border-radius: 50%; height:15px; width:15px" width="12" height="12" border="0">&nbsp; {{items.email}}</span>
+                <span style="FONT-SIZE: 10pt;"><br><img src="{% static '/signature/media/mail.jpg'%}" alt="phone-icon" style="border-radius: 50%; height:15px; width:15px" width="12" height="12" border="0">&nbsp; {{pers.email}}</span>
 
                 <span style="FONT-SIZE: 10pt;">
                     <br>
-                    <img src="{% static '/signature/media/address.jpg'%}" alt="address-icon" style="border-radius: 50%; height:15px; width:15px" width="12" height="12" border="0" align="absmiddle"><span>&nbsp; {{items.Address}}</span>
+                    <img src="{% static '/signature/media/address.jpg'%}" alt="address-icon" style="border-radius: 50%; height:15px; width:15px" width="12" height="12" border="0" align="absmiddle"><span>&nbsp; {{pers.Address}}</span>
                 </span>
 
                 <span style="FONT-SIZE: 10pt;">
                     <br>
-                    <img src="{% static '/signature/media/website.png'%}" alt="website-icon" style="border-radius: 50%; height:15px; width:15px" width="12" height="12" border="0" align="absmiddle">&nbsp; <a href="http://{website}" target="_blank" rel="noopener" style=" text-decoration:none;"><strong style="color:#000000; font-family:Arial, sans-serif; font-size:9pt">{{items.email}}</strong></a>
+                    <img src="{% static '/signature/media/website.png'%}" alt="website-icon" style="border-radius: 50%; height:15px; width:15px" width="12" height="12" border="0" align="absmiddle">&nbsp; <a href="http://{website}" target="_blank" rel="noopener" style=" text-decoration:none;"><strong style="color:#000000; font-family:Arial, sans-serif; font-size:9pt">{{pers.email}}</strong></a>
                 </span>
                 
 
@@ -217,7 +217,7 @@ function openCity(evt, cityName) {
                     <tbody>
                         <tr > 
                                           
-			<td style="width: 22px; padding:10px;"><a href="{{items.Facebook}}" target="_blank" rel="noopener"><img src="{% static '/signature/media/fb.png' %}" alt="facebook icon" style="border:0; height:25px; width:25px" width="15" border="0"></a></td>
+			<td style="width: 22px; padding:10px;"><a href="{{pers.Facebook}}" target="_blank" rel="noopener"><img src="{% static '/signature/media/fb.png' %}" alt="facebook icon" style="border:0; height:25px; width:25px" width="15" border="0"></a></td>
 			<td style="width: 22px; padding:10px;"><a href="{twitterURL}" target="_blank" rel="noopener"><img src="{% static '/signature/media/twiter.png' %}" alt="twitter icon" style="border:0; height:25px; width:25px" width="15" border="0"></a></td>
 			<td style="width: 22px; padding:10px;"><a href="{githubURL}" target="_blank" rel="noopener"><img src="{% static '/signature/media/git.png' %}" alt="github icon" style="border:0; height:25px; width:25px" width="15" border="0"></a></td>
 			<td style="width: 22px; padding:10px;"><a href="{linkedinURL}" target="_blank" rel="noopener"><img src="{% static '/signature/media/le.png' %}" alt="linkedin icon" style="border:0; height:25px; width:25px" width="15" border="0"></a></td>
@@ -227,7 +227,7 @@ function openCity(evt, cityName) {
                 
 
       </td></tbody>
-      {%endfor%}
+    
   </table>
   {% else %}
   <h1> Not Found...<h2>

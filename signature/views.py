@@ -1,4 +1,3 @@
-
 from django.shortcuts import redirect, render,redirect,HttpResponseRedirect
 from django.http import HttpResponse
 from .forms import registration
@@ -6,14 +5,7 @@ from .models import person
 from django.contrib import messages
 
 
-
-
-# def index(request):
-#     return HttpResponse("Hello, world.")
-
 # Create your views here.
-
-
 def inputpage(request):
     form= registration()
     if request.method == 'POST':
@@ -46,24 +38,28 @@ def inputpage(request):
 def outputpage(request):
     form= registration()
     if request.method == 'POST':
-        pers = person.objects.all()
-        pers.delete()
-        out = registration(request.POST)
-        if out.is_valid():
-            name=request.cleaned_data.get('name')
-            email=request.POST.get('email')
-            Job_Title=request.POST.get('Job_Title')
-            Department=request.POST.get('Department')
-            Company=request.POST.get('Company')
-            Phone=request.POST.get('Phone')
-            Address=request.POST.get('Address')
-            Image= request.POST.get('Image')
-            details= person(name=name, email=email, Job_Title =Job_Title,Department=Department,Company=Company,
-            Phone=Phone,Address=Address,Image=Image)
-            details.save()
-    pers= person.objects.all()   
+        # pers = person.objects.all()
+        # pers.delete()
+        fm = registration(request.POST)
+        if fm.is_valid():
+            cd=fm.cleaned_data
+            shout = person(name = cd['name'], email= cd['email'],Job_Title = cd['Job_Title'],Department = cd['Department'],Company = cd['Company'],Address = cd['Address'],Phone = cd['Phone'],
+            Image = cd['Image'],
+            Facebook = cd['Facebook'],
+            Linkedin = cd['Linkedin'],
+            Twiter = cd['Twiter'],
+            Github = cd['Github'])
+            shout.save()
+            fm = registration()
+            return redirect('output') 
+        else:
+          fm = registration() 
+
+    pers= person.objects.last()
+    fm = registration()   
     return render(request, 'signature/output.html', {
-        'pers':pers
+        'pers':pers,
+        'form':fm
     })
  
 
