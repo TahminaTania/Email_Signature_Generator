@@ -2,21 +2,21 @@
 {% block output%}
 {%load static%}
 <link rel="stylesheet" href="{% static 'signature/css/outputtan.css'%}">
-<section>
+<section class="col-10 offset-1">
 <input type="radio" id="layout1" value="1" name="tractor" checked='checked' /> 
 <input type="radio" id="layout2" value="2" name="tractor" /> 
 <input type="radio" id="layout3" value="3" name="tractor" />
 <input type="radio" id="layout4" value="4" name="tractor" />
-<nav> 
- 
- 
-<label for="layout1" class="d-flex justify-content-center"><img src="{% static '/signature/media/layout1.svg' %}" alt="Design-1" style="width:fit-content"></label>
-<label for="layout2" class="d-flex justify-content-center"><img src="{% static '/signature/media/layout2.svg' %}" alt="Design-2" style="width:fit-content"></label>
-<label for="layout3" class="d-flex justify-content-center"><img src="{% static '/signature/media/layout3.svg' %}" alt="Design-3" style="width:fit-content"></label>
-<label for="layout4" class="d-flex justify-content-center"><img src="{% static '/signature/media/layout-4.svg' %}" alt="Design-4" style="width:fit-content"></label>
+
+<nav>
+<label for="layout1" class="d-flex justify-content-center"><img src="{% static '/signature/media/layout1.svg' %}" alt="Design-1" style="height:50px; width:100px;"></label>
+<label for="layout2" class="d-flex justify-content-center"><img src="{% static '/signature/media/layout2.svg' %}" alt="Design-2" style="height:50px; width:100px;"></label>
+<label for="layout3" class="d-flex justify-content-center"><img src="{% static '/signature/media/layout3.svg' %}" alt="Design-3" style="height:50px; width:100px;"></label>
+<label for="layout4" class="d-flex justify-content-center"><img src="{% static '/signature/media/layout-4.svg' %}" alt="Design-4" style="height:50px; width:100px;"></label>
 </nav>
 
 <article class='uno'>
+  
  
 {%if pers %} 
 <table style="FONT-FAMILY: Arial, sans-serif; COLOR: #000000; width:480px;" cellspacing="0" cellpadding="0" border="0">
@@ -80,12 +80,14 @@
   <h1> Not Found...<h2>
 
  
-{%endif%} </article>
+{%endif%} 
+ 
+</article>
 
 
 
 
-<article class='dos fa fa-wrench'>
+<article class='dos'>
   {%if pers %} 
   
 
@@ -142,7 +144,7 @@
 </article>
 
 
-<article class='tres fa fa-beer'>
+<article class='tres'>
   {%if pers %} 
   
   <div style= "display:flex;float:left;">
@@ -199,15 +201,62 @@
 </article>
 
 
-<article class='cuatro fa fa-copy'>
-<dl>
-<dt>Guía de Transiciones Css</dt>
-<dd>Todas y cada una de las propiedades css que componen el grupo de las transitions con demos.</dd>
-<dt>@Font-face y sus problemas</dt>
-<dd>Los problemas más comunes y sus soluciones, que suelen presentarse al utilizar la regla @font-face de Css para mostrar los textos en tipografías distintas a las safety fonts.</dd>
-</dl>
+<article class='cuatro' style="background:grey; font-family:sans-serif;color:black; font-size:10pt;">
+  <div class="col-md-10 offset-1" style="">
+    <div class="row">
+      <div class="col-md-6">
+        {% if pers.Image%}
+          <div style="FONT-SIZE: 10pt; FONT-FAMILY: Arial, sans-serif; COLOR: #000000; line-height:12pt; padding-bottom:10px; padding-right:20px; text-align:center; width:170px" width="170" valign="top" align="center">
+            <img src="{{pers.Image.url}}" alt="photograph" width="124" border="0" style="border-radius:50%;"/>
+          </div>
+        {%else%}
+          <div style="FONT-SIZE: 10pt; FONT-FAMILY: Arial, sans-serif; COLOR: #000000; line-height:12pt; padding-bottom:10px; padding-right:20px; text-align:center; width:170px" width="170" valign="top" align="center">
+            <img  src="{% static '/signature/media/blank profile.png' %}" alt="photograph" width="124" border="0" style="border:0; height:auto; width:124px"/> 
+          </div>
+        {%endif%}
+        <div>
+          <span style="FONT-SIZE: 16pt; COLOR: #000000; FONT-FAMILY: Arial, sans-serif;"><strong>{{pers.Job_Title}}</strong></span>
+          <span style="FONT-SIZE: 12pt; COLOR: #000000;"><br>{{pers.Department}} <span>| </span></span>
+          <span style="FONT-SIZE: 12pt; COLOR: #000000;">{{pers.Company}}</span>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div>
+          <span style="FONT-SIZE: 20pt; COLOR: #000000; FONT-FAMILY: Arial, sans-serif;"><strong>{{pers.name}}</strong></span>
+        </div>
+        <div>
+          <div style="margin-top:9px;">
+            <span style="color:blue;">Email:</span> <span>{{pers.email}}</span>
+           </div>
+           <div style="margin-top:9px;">
+            <span style="color:blue;">Website:</span> <span>{{pers.Website}}</span>
+           </div>
+           <div style="margin-top:9px;">
+            <span style="color:blue;">Address :</span> <span>{{pers.Address}}</span>
+           </div>
+           <div style="margin-top:9px;">
+            <span style="color:blue;">Contact-Number:</span> <span>{{pers.Phone}}</span>
+           </div> 
+        </div>
+        <div>
+          <table >                            
+            <td style="width: 22px; padding:10px;"><a href="{{pers.Facebook}}"  rel="noopener"><img src="{% static '/signature/media/fb.png' %}" alt="facebook icon" style="border-radius:50%;; height:25px; width:25px" width="15" border="0"></a></td>
+            <td style="width: 22px; padding:10px;"><a href="{{pers.Twiter}}"  rel="noopener"><img src="{% static '/signature/media/twiter.png' %}" alt="twitter icon" style="border-radius:50%;; height:25px; width:25px" width="15" border="0"></a></td>
+            <td style="width: 22px; padding:10px;"><a href="{{pers.Github}}"  rel="noopener"><img src="{% static '/signature/media/git.png' %}" alt="github icon" style="border-radius:50%;; height:25px; width:25px" width="15" border="0"></a></td>
+            <td style="width: 22px; padding:10px;"><a href="{{pers.Linkedin}}"  rel="noopener"><img src="{% static '/signature/media/le.png' %}" alt="linkedin icon" style="border-radius:50%;; height:25px; width:25px" width="15" border="0"></a></td>
+            <td style="width: 22px; padding:10px;"><a href="{{pers.Facebook}}"  rel="noopener"><img src="{% static '/signature/media/yt.png' %}" alt="youtube icon" style="border-radius:50%;; height:25px; width:25px" width="15" border="0"></a></td>
+                                 </table>
+        </div>
+        
+        </div>
+      </div>
+  </div>
+
 </article>
+
 </section>
+</div>
 
 
 {%endblock output%}
