@@ -7,7 +7,7 @@ html {
 }
 .tab {
     overflow: hidden;
-    border: 1px solid #ccc;
+    border: 2px solid rgba(39, 33, 33, 0.623);
     background-color: #f1f1f1;
   }
   
@@ -18,7 +18,7 @@ html {
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 14px 14px;
     transition: 0.3s;
   }
   

@@ -1,7 +1,7 @@
 {% extends 'signature/base.html' %}
 {%block content%}
 
-<div class="tab" style="padding:10px;">
+<div class="tab">
   <button class="tablinks" onclick="openpage(event, 'General')">General</button>
   <button class="tablinks" onclick="openpage(event, 'Personal')">Personal</button>
   <button class="tablinks" onclick="openpage(event, 'Social')">Social</button>
@@ -50,15 +50,6 @@
             </li>
                
 </div>
-
-    <script>
-        var form_fields = document.getElementsByTagName('input')
-        form_fields[1].placeholder='Username..';
-        form_fields[2].placeholder='Email..';
-        form_fields[3].placeholder='Enter your job title';
-        form_fields[4].placeholder='Department';
-        form_fields[5].placeholder='Enter your company name';
-        </script>
 </div>
 
 <div id="Personal" class="tabcontent bg-info">
@@ -87,7 +78,7 @@
              <h6>Upload Your Image Here :</h6>
              
             {% comment %} <label class="form-label" style="color:black;"><b>Image :</b></label>  {% endcomment %}
-            <div class="col-sm-9">
+            <div class="col-sm-5 offset-2">
             {{form.Image}} </div>
             {% comment %} <div id="emailHelp" class="form-text">Plaase upload an formal 30X30 image</div> {% endcomment %}
           </div> </div> 
@@ -105,21 +96,21 @@
 
             <div class="input-group mb-4"> 
                 <label class="form-label" style="color:black;"><b>Facebook:</b></label>
-                <div> {{form.Facebook}} </div>
+                <div class="col-sm-10 offset-1"> {{form.Facebook}} </div>
+            </div>
+            <div class="input-group mb-4"> 
+                <label class="form-label" style="color:black;"><b>Github:</b></label>
+                <div class="col-sm-10 offset-1"> {{form.Github}} </div>
             </div>
            
             <div class="input-group mb-4">
-                <label class="form-label" style="color:black;"><b>GitHub:</b></label>
-                <div>{{form.Github}} </div>
-            </div>
-            <div class="input-group mb-4">
                 <label class="form-label" style="color:black;"><b>Twitter:</b></label>
-                <div>{{form.Twiter}} </div>
+                <div class="col-sm-10">{{form.Twiter}} </div>
                
             </div>
              <div class="input-group mb-4">
                 <label class="form-label" style="color:black;"><b>Linkedin:</b></label>
-                <div> {{form.Linkedin}} </div>
+                <div class="col-sm-10 offset-1"> {{form.Linkedin}} </div>
             </div> 
         </li>
         
