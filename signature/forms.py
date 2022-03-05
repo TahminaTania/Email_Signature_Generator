@@ -13,7 +13,7 @@ class registration(forms.ModelForm):
     class Meta:
         model = person
         fields = ['name','email','Job_Title','Department','Company','Phone','Address','Image','Address',
-        'password','Facebook','Github','Twiter','Linkedin']
+        'password','Facebook','Github','Twiter','Linkedin','Website']
         
         # models.TextField: {'widget': Textarea(attrs={'rows':4, 'cols':40})},
         
@@ -31,7 +31,7 @@ class registration(forms.ModelForm):
             'Github': forms.URLInput(attrs={'class': 'form-control','placeholder':'https://www.Github.com/...'}),
             'Twiter': forms.URLInput(attrs={'class': 'form-control','placeholder':'https://www.Twiter.com/...' }),
             'Linkedin': forms.URLInput(attrs={'class': 'form-control','placeholder':'https://www.Linkedin.com/...' }),
-            # 'Phone': forms.CharField(attrs={'class': 'form-control','placeholder':'https://www.Linkedin.com/...'}),
+            'Website': forms.CharField(attrs={'class': 'form-control','placeholder':'Enter Your website Link'}),
             
             
             # 'password': forms.PasswordInput(render_value=True, attrs={'class': 'form-control'})

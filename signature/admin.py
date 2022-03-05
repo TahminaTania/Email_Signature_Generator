@@ -5,7 +5,7 @@ from .models import person
 
 class personadmin(admin.ModelAdmin):
      list_display = ('name', 'email','Job_Title','Department','Company','Phone','Address','Image','Address',
-        'password','Facebook','Github','Twiter','Linkedin')
+        'password','Facebook','Github','Twiter','Linkedin','Website')
 
         
 
