@@ -14,8 +14,12 @@
 <label for="layout3" class="d-flex justify-content-center"><img src="{% static '/signature/media/layout3.svg' %}" alt="Design-3" style="height:50px; width:60px;padding:10px;"></label>
 <label for="layout4" class="d-flex justify-content-center"><img src="{% static '/signature/media/layout-4.svg' %}" alt="Design-4" style="height:50px; width:60px;padding:10px;"></label>
 </nav>
-<div>
-</div>
+
+  <div class="mt-4 mb-4">
+    <a href="{% url 'edit'%}"><input class="btn btn-lg btn-danger" type="submit" value="EDIT"> </a>
+  </div>
+  
+
 
 <article class='uno'>
   <div class="mt-5"> 
@@ -250,7 +254,7 @@
       <div class="col-5 mt-5">
         <div>
         {% if pers.Image%}
-          <img src="{{pers.Image.url}}" alt="photograph" width="124" border="0" style="border-radius:50%;"/>
+          <img src="{{pers.Image.url}}" alt="photograph" width="124" border="0" style="border-radius:10%;"/>
         {%else%}
             <img  src="{% static '/signature/media/blank profile.png' %}" alt="photograph" width="124" border="0" style="border:0; height:auto; width:124px"/> 
         {%endif%} </div>
@@ -313,8 +317,9 @@
   </div>
 
 </article>
-
 </section>
+
+
 </div>
 
 

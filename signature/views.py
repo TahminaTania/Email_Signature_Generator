@@ -5,6 +5,7 @@ from .models import person
 from django.contrib import messages
 
 
+
 # Create your views here.
 def inputpage(request):
     form= registration()
@@ -20,7 +21,7 @@ def inputpage(request):
             Github = cd['Github'])
             shout.save()
             fm = registration()
-            return redirect('input')  
+            return redirect('output')  
                    
     else:
         fm = registration()
@@ -38,7 +39,7 @@ def inputpage(request):
 def outputpage(request):
     form= registration()
     if request.method == 'POST':
-        fm = registration(request.POST)
+        fm = registration(request.POST,request.FILES)
         if fm.is_valid():
             cd=fm.cleaned_data
             shout = person(name = cd['name'], email= cd['email'],Job_Title = cd['Job_Title'],Department = cd['Department'],Company = cd['Company'],Address = cd['Address'],Phone = cd['Phone'],
@@ -58,6 +59,22 @@ def outputpage(request):
     return render(request, 'signature/output.html', {
         'pers':pers,
         'form':fm
+    })
+    
+
+### i got an error here, it's duplicating person data in database not updating them, so i have to it with pk=id, mean in model and in admin, and thn have to call that id in (request, Id) and objects.get(pk=id)..... curently as it's not hampering my project + it's unnoticable, i am keeping this in this
+def Edit(request):
+    if request.method == 'POST':
+        new = person.objects.last()
+        update = registration(request.POST, instance=new)
+        if update.is_valid():
+            update.save()
+    else:
+        new = person.objects.last()
+        update = registration(instance=new)
+    return render(request,'signature/edit.html',{
+        'form': update,
+        
     })
  
 

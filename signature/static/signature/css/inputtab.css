@@ -93,6 +93,9 @@ html {
 		box-shadow: none !important;
 		outline: 0px !important;
 	}
+	.tabcontent.show {
+		display: block;
+	}
 
 
 

@@ -123,7 +123,9 @@
 
 </form> 
 <script>
-function openpage(evt, tabname) {
+  
+
+ function openpage(evt, tabname) { 
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
@@ -136,9 +138,21 @@ function openpage(evt, tabname) {
   document.getElementById(tabname).style.display = "block";
   evt.currentTarget.className += " active";
 }
-</script>
+openpage(event, 'General')
+</script> 
 </div>
 {%endblock content%}
+
+{%block output%}
+{%load static%}
+<div class="col-md-12 mt-5">
+<div class="text-center alert alert-danger">
+<h4>Create 100+ free email Signature With Us </h4>
+
+<img class="col-md-12" src="{% static '/signature/media/upstal.png'%}" alt="" style="width:fit-content;">
+</div>
+</div>
+{%endblock output%}
 
 
 
