@@ -74,14 +74,14 @@
 
         
          {% comment %} LOok for responsive imagefield, this field runing full page {% endcomment %}
-         <div class="input-group mt-3 mb-5" >   
+         <div class="input-group mt-3 mb-1" >   
              <h6>Upload Your Image Here :</h6>
-             
+            </div>
             {% comment %} <label class="form-label" style="color:black;"><b>Image :</b></label>  {% endcomment %}
-            <div class="col-sm-5 offset-2">
+            <div class="col-5 offset-2 mb-5">
             {{form.Image}} </div>
             {% comment %} <div id="emailHelp" class="form-text">Plaase upload an formal 30X30 image</div> {% endcomment %}
-          </div> </div> 
+          </div> 
 
 
           
@@ -94,22 +94,27 @@
         
             <li style="list-style:none;"> 
 
-            <div class="input-group mb-4"> 
-                <label class="form-label" style="color:black;"><b>Facebook:</b></label>
+            <div class="input-group mb-4">
+                <div class="col-6"> 
+                <label class="form-label" style="color:black;"><b>Facebook:</b></label> </div>
+                
                 <div class="col-sm-10 offset-1"> {{form.Facebook}} </div>
             </div>
             <div class="input-group mb-4"> 
-                <label class="form-label" style="color:black;"><b>Github:</b></label>
+                <div class="col-6"> 
+                <label class="form-label" style="color:black;"><b>Github:</b></label> </div>
                 <div class="col-sm-10 offset-1"> {{form.Github}} </div>
             </div>
            
             <div class="input-group mb-4">
-                <label class="form-label" style="color:black;"><b>Twitter:</b></label>
+                <div class="col-6"> 
+                <label class="form-label" style="color:black;"><b>Twitter:</b></label> </div>
                 <div class="col-sm-10">{{form.Twiter}} </div>
                
             </div>
              <div class="input-group mb-4">
-                <label class="form-label" style="color:black;"><b>Linkedin:</b></label>
+                <div class="col-6"> 
+                <label class="form-label" style="color:black;"><b>Linkedin:</b></label> </div>
                 <div class="col-sm-10 offset-1"> {{form.Linkedin}} </div>
             </div> 
         </li>

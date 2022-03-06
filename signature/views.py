@@ -63,8 +63,9 @@ def outputpage(request):
     
 
 ### i got an error here, it's duplicating person data in database not updating them, so i have to it with pk=id, mean in model and in admin, and thn have to call that id in (request, Id) and objects.get(pk=id)..... curently as it's not hampering my project + it's unnoticable, i am keeping this in this
-def Edit(request):
+def Edit(request,pers_name):
     if request.method == 'POST':
+        print(pers_name) 
         new = person.objects.last()
         update = registration(request.POST, instance=new)
         if update.is_valid():
@@ -74,6 +75,7 @@ def Edit(request):
         update = registration(instance=new)
     return render(request,'signature/edit.html',{
         'form': update,
+        
         
     })
  

@@ -13,14 +13,7 @@
 <label for="layout2" class="d-flex justify-content-center"><img src="{% static '/signature/media/layout2.svg' %}" alt="Design-2" style="height:50px; width:60px;padding:10px;"></label>
 <label for="layout3" class="d-flex justify-content-center"><img src="{% static '/signature/media/layout3.svg' %}" alt="Design-3" style="height:50px; width:60px;padding:10px;"></label>
 <label for="layout4" class="d-flex justify-content-center"><img src="{% static '/signature/media/layout-4.svg' %}" alt="Design-4" style="height:50px; width:60px;padding:10px;"></label>
-</nav>
-
-  <div class="mt-4 mb-4">
-    <a href="{% url 'edit'%}"><input class="btn btn-lg btn-danger" type="submit" value="EDIT"> </a>
-  </div>
-  
-
-
+</nav>  
 <article class='uno'>
   <div class="mt-5"> 
 {%if pers %} 
@@ -86,6 +79,7 @@
 
  
 {%endif%} 
+
   </div>
 </article>
 
@@ -317,10 +311,18 @@
   </div>
 
 </article>
+
 </section>
-
-
 </div>
+
+<div class=" col-12 mt-1">
+  <div class="row">
+    <div class="col-6"></div>
+    
+    <div class="col-4 offset-1 mb-5">
+  <a href="/edit/{{pers.name}}"><input class="btn btn-lg btn-danger" type="submit" value="EDIT"> </a>
+</div> 
+</div> </div>
 
 
 {%endblock output%}
