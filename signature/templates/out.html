@@ -1,0 +1,30 @@
+{% extends 'signature/input.html' %}
+{% block output%}
+<div class="tab">
+    <button class="tablinks" onclick="openpage(event, 'tem1')">template1</button>
+    <button class="tablinks" onclick="openpage(event, 'tem2')">template2</button>
+    <button class="tablinks" onclick="openpage(event, 'tem3')">template3</button>
+  </div>
+  
+  <div id="tem1" class="tabcontent">
+      hello
+      {%block template1 %}
+      {%endblock template1%}
+    
+   
+  </div>
+  
+  <div id="tem2" class="tabcontent">
+    {%block template2 %}
+      {%endblock template2%}
+  </div>
+  
+  <div id="tem3" class="tabcontent">
+    {%block template3 %}
+      {%endblock template3%}
+  </div>
+  
+  
+     
+  {%endblock output%}
+  

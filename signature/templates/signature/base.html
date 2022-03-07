@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="{% static 'signature/css/bootstrap.css'%}">
 		<link rel="stylesheet" href="{% static 'signature/css/inputtab.css'%}">
 		<script src="https://kit.fontawesome.com/af8513a429.js" crossorigin="anonymous"></script>
+        <script src="{%static 'signature/js/main.js'%}"></script>
+        
     </head>
     {%block body%}
         <!--[if lt IE 7]>
@@ -35,12 +37,26 @@
 			<h4 class="text-center alert alert-info" style="background-color: #6d94de"></h4>
 		</footer> 
         
-        <script src="{%static 'signature/js/main.js'%}"></script>
+      
         <script src="{%static 'signature/js/jquery.js'%}"></script>
+        <script src="dist/clipboard.min.js"></script>
         <script src="{%static 'signature/js/popper.js'%}"></script>
         <script src="{%static 'signature/js/bootstrap.js'%}"></script>
 		<script src="{%static 'signature/js/font awesome.js'%}" crossorigin="anonymous"></script>
         
-        <script src="" async defer></script>
+        {% comment %} <script src="" async defer>
+            $(function(){
+                var clipboard =new ClipboardJS('.copybutton');
+                $(this).html('Copied!!');
+                var that = $(this);
+                var intrvrl= setInterval(function(){
+                    that.html('copy');
+                    clearInterval(intrvrl);},
+                    1000);
+            });
+
+        });
+
+        </script> {% endcomment %}
 		{%endblock body%}
 </html>

@@ -9,15 +9,17 @@
 <input type="radio" id="layout4" value="4" name="tractor" />
 
 <nav>
-<label for="layout1" class="d-flex justify-content-center"><img src="{% static '/signature/media/layout1.svg' %}" alt="Design-1" style="height:50px; width:60px; padding:10px;"></label>
-<label for="layout2" class="d-flex justify-content-center"><img src="{% static '/signature/media/layout2.svg' %}" alt="Design-2" style="height:50px; width:60px;padding:10px;"></label>
-<label for="layout3" class="d-flex justify-content-center"><img src="{% static '/signature/media/layout3.svg' %}" alt="Design-3" style="height:50px; width:60px;padding:10px;"></label>
-<label for="layout4" class="d-flex justify-content-center"><img src="{% static '/signature/media/layout-4.svg' %}" alt="Design-4" style="height:50px; width:60px;padding:10px;"></label>
+<label for="layout1" class="tablinks"><img src="{% static '/signature/media/layout1.svg' %}" alt="Design-1" style="height:50px; width:60px; padding:10px;"></label>
+<label for="layout2" class="tablinks"><img src="{% static '/signature/media/layout2.svg' %}" alt="Design-2" style="height:50px; width:60px;padding:10px;"></label>
+<label for="layout3" class="tablinks"><img src="{% static '/signature/media/layout3.svg' %}" alt="Design-3" style="height:50px; width:60px;padding:10px;"></label>
+<label for="layout4" class="tablinks"><img src="{% static '/signature/media/layout-4.svg' %}" alt="Design-4" style="height:50px; width:60px;padding:10px;"></label>
+{% comment %} <label for="layout4" class="d-flex justify-content-center"><img src="{% static '/signature/media/layout-4.svg' %}" alt="Design-4" style="height:50px; width:60px;padding:10px;"></label> {% endcomment %}
 </nav> 
 
 
 
 <article class='uno' id='uno'>
+ 
   <div class="mt-5"> 
 {%if pers %} 
 <table style="FONT-FAMILY: Arial, sans-serif; COLOR: #000000; width:480px;" cellspacing="0" cellpadding="0" border="0">
@@ -77,6 +79,7 @@
       </td></tbody>
  
   </table>
+  
   {% else %}
   <h1> Not Found...<h2>
 
@@ -84,7 +87,7 @@
 {%endif%} 
 
   </div>
-</article>
+</article> 
 
 
 
@@ -246,99 +249,32 @@
 
 <article class='cuatro' style="background:white; font-family:sans-serif;color:black; font-size:10pt;">
 
-  <div class="container mt-1" style="">
-    <div class="row">
-      <div class="col-5 mt-5">
-        <div>
-        {% if pers.Image%}
-          <img src="{{pers.Image.url}}" alt="photograph" width="124" border="0" style="border-radius:10%;"/>
-        {%else%}
-            <img  src="{% static '/signature/media/blank profile.png' %}" alt="photograph" width="124" border="0" style="border:0; height:auto; width:124px"/> 
-        {%endif%} </div>
-        <div>
-          <span style="FONT-SIZE: 14pt; COLOR: #000000; font-family: Arial;"><strong>{{pers.Job_Title}}</strong></span>
-          <span style="FONT-SIZE: 12pt; COLOR: #000000;"><br>{{pers.Department}} <span>| </span></span>
-          <span style="FONT-SIZE: 12pt; COLOR: #000000;">{{pers.Company}}</span>
-        </div>
-      </div>
-
-      <div class="col-7">
-        <div>
-          <span style="FONT-SIZE: 20pt; COLOR: #000000; FONT-FAMILY: Arial, sans-serif;"><strong>{{pers.name}}</strong></span>
-        </div>
-        <div class="col-10 offset-0.5"
-        <div>
-          <div style="margin-top:9px;">
-            <span style="color:blue;">Email:</span> <span>{{pers.email}}</span>
-           </div>
-           <div style="margin-top:9px;">
-            <span style="color:blue;">Website:</span> <span>{{pers.Website}}</span>
-           </div>
-           <div style="margin-top:9px;">
-            <span style="color:blue;">Address :</span> <span>{{pers.Address}}</span>
-           </div>
-           <div style="margin-top:9px;">
-            <span style="color:blue;">Contact-Number:</span> <span>{{pers.Phone}}</span>
-           </div> 
-        </div> 
-        <div class="col-md-12">
-          <table>
-            {% if pers.Facebook %}                            
-            <td style="width: 22px; padding:10px;"><a href="{{pers.Facebook}}"  rel="noopener"><img src="{% static '/signature/media/fb.png' %}" alt="facebook icon" style="border-radius:50%;; height:25px; width:25px" width="15" border="0"></a></td>
-            {%endif%}
-
-            {% if pers.Twiter%}
-            <td style="width: 22px; padding:10px;"><a href="{{pers.Twiter}}"  rel="noopener"><img src="{% static '/signature/media/twiter.png' %}" alt="twitter icon" style="border-radius:50%;; height:25px; width:25px" width="15" border="0"></a></td>
-            {%endif%}
-
-            {%if pers.Github%}
-            <td style="width: 22px; padding:10px;"><a href="{{pers.Github}}"  rel="noopener"><img src="{% static '/signature/media/git.png' %}" alt="github icon" style="border-radius:50%;; height:25px; width:25px" width="15" border="0"></a></td>
-            {%endif%}
-
-            {%if pers.Linkedin%}
-            <td style="width: 22px; padding:10px;"><a href="{{pers.Linkedin}}"  rel="noopener"><img src="{% static '/signature/media/le.png' %}" alt="linkedin icon" style="border-radius:50%;; height:25px; width:25px" width="15" border="0"></a></td>
-            {%endif%}
-            {%if pers.Youtube%}
-            <td style="width: 22px; padding:10px;"><a href="{{pers.Youtube}}"  rel="noopener"><img src="{% static '/signature/media/yt.png' %}" alt="youtube icon" style="border-radius:50%;; height:25px; width:25px" width="15" border="0"></a></td>
-            {%endif%}                 
-          </table>
-        </div> </div>
-        
-        </div>
-      </div>
-        
-        
-        
-      </div>
-      </div>    
-  </div>
-
+  
 </article>
 
-    <div class=" col-12 mt-1">
-      <div class="row">
-        <div class="col-6">
+    
          
-        </div>
-         
-        <div class="col-4 offset-1 mb-5">
+        <div class="col-4 mt-3 mb-5" style="display:inline-block;">
+
           <a href="/edit/{{pers.name}}"><input class="btn btn-lg btn-danger" type="submit" value="EDIT"> </a>
-          <br> <br>
-          <button  class="text-center alert alert-info" onclick="copyText()" >Copy</button>
+          {% comment %} <button  class="copybutton" data-clipboard-target="#uno"  >Copy-Template</button> {% endcomment %}
+          <button  class="copybutton btn btn-lg btn-primary" data-clipboard-target="#uno" onclick="copyText()" >Copy</button>
         </div> 
-       
-      </div>
-    </div>
+      
+    
 
 </section>
-</div>
 
+
+<script>
+  function Copy() { 
+    
+  }
+
+</script>
 
        
   
-<script>
-  
-</script>
 
 
 

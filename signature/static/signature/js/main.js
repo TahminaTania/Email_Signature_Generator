@@ -1,18 +1,5 @@
 
-function openpage(evt, tabname) { 
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(tabname).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-openpage(event, 'General')
+
 
 
 
@@ -29,11 +16,24 @@ openpage(event, 'General')
 // })
 
 
-function copyText() {
-      
-    /* Copy text into clipboard */
 
-}
+// function copyText() {
+//     // var Copy = document.getElementsByClassName('uno')
+    
+//     var copyText = document.getElementsByClassName('uno')
+//     copyText.select();
+//     copyText.setSelectionRange(0, 99999)
+//     document.execCommand('copy')
+//     console.log('Copied Text')
+   
+//     navigator.clipboard.writeText(Copy)
+//     .then(() => { alert(`Copied!`) })
+//   .catch((error) => { alert(`Copy failed! ${error}`) })
+//  }
+      
+    
+
+
  
 
 
