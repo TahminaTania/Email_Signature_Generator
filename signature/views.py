@@ -4,6 +4,7 @@ from django.http import HttpResponse
 from .forms import registration
 from .models import person
 from django.contrib import messages
+from django.views.generic import UpdateView
 
 
 
@@ -67,16 +68,15 @@ def outputpage(request):
 def Edit(request,pers_name):
     if request.method == 'POST':
         new = person.objects.last()
-        update = registration(request.POST, instance=new)
-        if update.is_valid():
-            update.save()
+        form = registration(request.POST,instance=new)
+        if form.is_valid():
+            form.save()
     else:
         new = person.objects.last()
-        update = registration(instance=new)
+        form = registration(instance=new)
     return render(request,'signature/edit.html',{
-        'form': update,
-        
-        
+        'form': form, 
+        'id':id     
         
     })
  
