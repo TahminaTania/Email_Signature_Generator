@@ -257,8 +257,8 @@
         <div class="col-4 mt-3 mb-5" style="display:inline-block;">
 
           <a href="/edit/{{pers.name}}"><input class="btn btn-lg btn-danger" type="submit" value="EDIT"> </a>
-          {% comment %} <button  class="copybutton" data-clipboard-target="#uno"  >Copy-Template</button> {% endcomment %}
-          <button  class="copybutton btn btn-lg btn-primary" data-clipboard-target="#uno" onclick="copyText()" >Copy</button>
+          {% comment %} <button  class="btn" data-clipboard-target="uno"  >Copy-Template</button> {% endcomment %}
+          <button  class="btn btn-lg btn-primary" data-clipboard-target="#uno" onclick="copyText()" >Copy</button>
         </div> 
       
     
@@ -267,10 +267,13 @@
 
 
 <script>
+
+  
   function Copy() { 
     
-  }
 
+
+  }
 </script>
 
        
