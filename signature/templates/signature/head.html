@@ -1,0 +1,22 @@
+{% extends 'signature/base.html' %}
+{%block head%}
+{%load static%}
+ <div class="col-12" id="head">
+    <div class="row">
+        <div class="col-sm-2" id="logo">
+            <img src={% static '/signature/media/logo.jpeg'%}>
+        </div>
+        <div class="col-sm-3" id="search-bar">
+        
+            <input type='text' placeholder="      SEARCH...... " class="sbar" > 
+            <i class="fa fa-search"></i>   
+        </div>
+        <div class="col-sm-5"  id="topnav">
+            <a class="active" href="">Email-Signature</a>
+            <a href="">Home</a>
+            <a href="">Log-In</a>
+        </div>
+  </div>
+</div>    
+
+{%endblock head%}

@@ -19,7 +19,6 @@
 
 
 <article class='uno' id='uno'>
- 
   <div class="mt-5"> 
 {%if pers %} 
 <table style="FONT-FAMILY: Arial, sans-serif; COLOR: #000000; width:480px;" cellspacing="0" cellpadding="0" border="0">
@@ -254,11 +253,12 @@
 
     
          
-        <div class="col-4 mt-3 mb-5" style="display:inline-block;">
+        <div class="col-12 mb-5" style="display:inline-block; padding:5px;">
+          <input type="text" value="Hello World" id="myInput">
 
           <a href="/edit/{{pers.name}}"><input class="btn btn-lg btn-danger" type="submit" value="EDIT"> </a>
           {% comment %} <button  class="btn" data-clipboard-target="uno"  >Copy-Template</button> {% endcomment %}
-          <button  class="btn btn-lg btn-primary" data-clipboard-target="#uno" onclick="copyText()" >Copy</button>
+          <button  class="btn btn-lg btn-primary"  onclick="Copy()" >Copy</button>
         </div> 
       
     
@@ -266,13 +266,21 @@
 </section>
 
 
-<script>
+<script>  
+  function Copy(article) { 
+    var copyText = document.getElementsByClassName("uno");
 
+    /* Select the text field */
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /* For mobile devices */
   
-  function Copy() { 
+     /* Copy the text inside the text field */
+    navigator.clipboard.writeText(copyText.value);
+  
+    /* Alert the copied text */
+    alert("Copied the text: " + copyText.value);
+ 
     
-
-
   }
 </script>
 

@@ -8,32 +8,41 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="{% static 'signature/css/bootstrap.css'%}">
+        <link rel="stylesheet" href="{% static 'signature/css/base.css'%}">
 		<link rel="stylesheet" href="{% static 'signature/css/inputtab.css'%}">
 		<script src="https://kit.fontawesome.com/af8513a429.js" crossorigin="anonymous"></script>
         <script src="{%static 'signature/js/main.js'%}"></script>
+
         
     </head>
     {%block body%}
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+      
         <div class="container mt-1">
-            <h2 class="text-center alert alert-primary"> Create Your Email Signature</h2>
+            {% comment %} <h2 class="text-center alert alert-primary"> Create Your Email Signature</h2> {% endcomment %}
+           <div class="row"> 
+               <div class="col-12">
+               {%block head%}
+               {%endblock head%} 
+            </div>
+           </div>
+           
            
 		 <div class="row"> 
 			<div class="col-sm-4">
 				<h4 class="text-center alert alert-info">Insert Your Informations</h4>
 				{% block content %}
 				{% endblock content %}
+            
 			
-			  <div class="col-sm-8">
-				  <h4 class="text-center alert alert-info">Choose From Here</h4>
-				   {%block output%}{%endblock output%}	
-			     </div>
-			</div>
+                <div class="col-sm-8">
+                    <h4 class="text-center alert alert-info">Choose From Here</h4>
+                    {%block output%}{%endblock output%}	
+                </div>
+            </div>
+			
 		 </div>
         </div>
-		<footer class="container mt-1"> 
+		<footer class="container mt-5" style="padding-top:30px;"> 
 			<h4 class="text-center alert alert-info" style="background-color: #6d94de"></h4>
 		</footer> 
         
