@@ -271,11 +271,12 @@
 
 
 <script>  
-  
+
+  var activeTabId = 'layout1'; 
     function Copy(){
      
    
-      var activeTabId = document.querySelector('input[name="tractor"]:checked').innerText;  
+      {% comment %} var activeTabId = document.querySelector('input[name="tractor"]:checked').innerText;   {% endcomment %}
     
         var range = document.createRange();
         
