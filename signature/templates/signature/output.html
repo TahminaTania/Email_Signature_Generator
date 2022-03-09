@@ -2,19 +2,20 @@
 {% block output%}
 {%load static%}
 <link rel="stylesheet" href="{% static 'signature/css/outputtan.css'%}">
-<section class="col-10 offset-1">
-<input type="radio" id="layout1" value="1" name="tractor" checked='checked' /> 
-<input type="radio" id="layout2" value="2" name="tractor" /> 
-<input type="radio" id="layout3" value="3" name="tractor" />
-<input type="radio" id="layout4" value="4" name="tractor" />
+<section class="col-10 offset-1" id="sect">
+
+<input type="radio" class="top" id="layout1" value="1" name="tractor" checked='checked' /> 
+<input type="radio" class="top" id="layout2" value="2" name="tractor" /> 
+<input type="radio" class="top" id="layout3" value="3" name="tractor" />
+<input type="radio" class="top" id="layout4" value="4" name="tractor" />
 
 <nav>
-<label for="layout1" class="tablinks"><img src="{% static '/signature/media/layout1.svg' %}" alt="Design-1" style="height:50px; width:60px; padding:10px;"></label>
-<label for="layout2" class="tablinks"><img src="{% static '/signature/media/layout2.svg' %}" alt="Design-2" style="height:50px; width:60px;padding:10px;"></label>
-<label for="layout3" class="tablinks"><img src="{% static '/signature/media/layout3.svg' %}" alt="Design-3" style="height:50px; width:60px;padding:10px;"></label>
-<label for="layout4" class="tablinks"><img src="{% static '/signature/media/layout-4.svg' %}" alt="Design-4" style="height:50px; width:60px;padding:10px;"></label>
+<label for="layout1" ><img src="{% static '/signature/media/layout1.svg' %}" alt="Design-1" style="height:50px; width:60px; padding:10px;"></label>
+<label for="layout2" ><img src="{% static '/signature/media/layout2.svg' %}" alt="Design-2" style="height:50px; width:60px;padding:10px;"></label>
+<label for="layout3" ><img src="{% static '/signature/media/layout3.svg' %}" alt="Design-3" style="height:50px; width:60px;padding:10px;"></label>
+<label for="layout4" ><img src="{% static '/signature/media/layout-4.svg' %}" alt="Design-4" style="height:50px; width:60px;padding:10px;"></label>
 {% comment %} <label for="layout4" class="d-flex justify-content-center"><img src="{% static '/signature/media/layout-4.svg' %}" alt="Design-4" style="height:50px; width:60px;padding:10px;"></label> {% endcomment %}
-</nav> 
+</nav>  
 
 
 
@@ -266,20 +267,29 @@
 </section>
 
 
-<script>  
-  function Copy(article) { 
-    var copyText = document.getElementsByClassName("uno");
 
-    /* Select the text field */
-    copyText.select();
-    copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+
+<script>  
   
-     /* Copy the text inside the text field */
-    navigator.clipboard.writeText(copyText.value);
-  
-    /* Alert the copied text */
-    alert("Copied the text: " + copyText.value);
- 
+    function Copy(){
+     
+   
+      var activeTabId = document.querySelector('input[name="tractor"]:checked').innerText;  
+    
+        var range = document.createRange();
+        
+        range.selectNode(document.getElementById(activeTabId));
+        window.getSelection().removeAllRanges(); /* clear current selection*/
+        window.getSelection().addRange(range); /* to select text*/
+        document.execCommand("copy");
+        activeTabId.select();
+        window.getSelection().removeAllRanges();
+
+       {% comment %} alert("Copied the text: " + activeTabId.value); {% endcomment %}
+   
+    
+   
     
   }
 </script>

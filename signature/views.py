@@ -58,7 +58,7 @@ def outputpage(request):
 
     pers= person.objects.last()
     fm = registration()   
-    return render(request, 'signature/out.html', {
+    return render(request, 'signature/output.html', {
         'pers':pers,
         'form':fm
     })
