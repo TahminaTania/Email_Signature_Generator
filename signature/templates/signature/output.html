@@ -279,7 +279,6 @@
       {% comment %} var activeTabId = document.querySelector('input[name="tractor"]:checked').innerText;   {% endcomment %}
     
         var range = document.createRange();
-        
         range.selectNode(document.getElementById(activeTabId));
         window.getSelection().removeAllRanges(); /* clear current selection*/
         window.getSelection().addRange(range); /* to select text*/

@@ -1,10 +1,49 @@
+from pickle import NONE
 from unicodedata import name
 from django.shortcuts import redirect, render,redirect,HttpResponseRedirect
 from django.http import HttpResponse
-from .forms import registration
+from .forms import registration,Uregistration
 from .models import person
 from django.contrib import messages
 from django.views.generic import UpdateView
+
+from django.contrib.auth import authenticate, login, logout
+from django.contrib import messages
+
+
+# Create your views here.
+
+
+def RegForm(request):
+    form = Uregistration()
+    if request.method == 'POST':
+        form = Uregistration(request.POST)
+        if form.is_valid():
+            form.save()
+            NewUser = form.cleaned_data.get('username')
+            messages.success(
+                request, 'An Account just created for- ' + NewUser + ' Please log in')
+            return redirect('log')
+    return render(request, 'signature/reg.html', {
+        'form': form
+    })
+
+
+def logForm(request):
+
+    if request.method == 'POST':
+        print("hellloooooo")
+        email= request.POST.get('email')
+        password = request.POST.get('password')
+        user = authenticate(request, email=email, password=password)
+        if user is not NONE:
+            login(request, user)
+            return redirect('output')
+        else:
+            messages.info(request, 'User name Or password is incorrect')
+    return render(request, 'signature/login.html', {
+
+    })
 
 
 
@@ -68,7 +107,8 @@ def outputpage(request):
 def Edit(request,pers_name):
     if request.method == 'POST':
         new = person.objects.last()
-        form = registration(request.POST,instance=new)
+        form = registration(data=request.POST, files=request.FILES, instance=new)
+        # form = registration(request.POST,request.FILES,instance=new)
         if form.is_valid():
             form.save()
     else:
