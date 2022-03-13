@@ -6,6 +6,7 @@ from .forms import registration,Uregistration
 from .models import person
 from django.contrib import messages
 from django.views.generic import UpdateView
+from django.views import View
 
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
@@ -32,7 +33,7 @@ def RegForm(request):
 def logForm(request):
 
     if request.method == 'POST':
-        print("hellloooooo")
+        
         email= request.POST.get('email')
         password = request.POST.get('password')
         user = authenticate(request, email=email, password=password)
@@ -48,6 +49,7 @@ def logForm(request):
 
 
 # Create your views here.
+
 def inputpage(request):
     form= registration()
     if request.method == 'POST':
@@ -74,12 +76,18 @@ def inputpage(request):
      
 
 
-## we need to read a single record , i mean last input 
-#### ------ incomplete work( it showing all data from admin) --https://www.webforefront.com/django/singlemodelrecords.html
 
-def outputpage(request):
+class outputpage(View):
+ def get(self,request):
     form= registration()
-    if request.method == 'POST':
+    pers= person.objects.last()
+    pers.save()
+    fm = registration()   
+    return render(request, 'signature/output.html', {
+        'pers':pers,
+        'form':fm
+    })
+ def post(self,request):
         fm = registration(request.POST,request.FILES)
         if fm.is_valid():
             cd=fm.cleaned_data
@@ -95,12 +103,30 @@ def outputpage(request):
         else:
           fm = registration() 
 
-    pers= person.objects.last()
-    fm = registration()   
-    return render(request, 'signature/out.html', {
-        'pers':pers,
-        'form':fm
-    })
+
+
+
+
+
+#  if request.method == 'POST':
+#         fm = registration(request.POST,request.FILES)
+#         if fm.is_valid():
+#             cd=fm.cleaned_data
+#             shout = person(name = cd['name'], email= cd['email'],Job_Title = cd['Job_Title'],Department = cd['Department'],Company = cd['Company'],Address = cd['Address'],Phone = cd['Phone'],
+#             Image = cd['Image'],
+#             Facebook = cd['Facebook'],
+#             Linkedin = cd['Linkedin'],
+#             Twiter = cd['Twiter'],
+#             Github = cd['Github'])
+#             shout.save()
+#             fm = registration()
+#             return redirect('output') 
+#         else:
+#           fm = registration()    
+
+
+
+
     
 
 ### i got an error here, it's duplicating person data in database not updating them, so i have to it with pk=id, mean in model and in admin, and thn have to call that id in (request, Id) and objects.get(pk=id)..... curently as it's not hampering my project + it's unnoticable, i am keeping this in this

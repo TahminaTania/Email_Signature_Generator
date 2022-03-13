@@ -1,344 +1,64 @@
 {% extends 'signature/input.html' %}
 {% block output%}
-{%load static%}
-<link rel="stylesheet" href="{% static 'signature/css/outputtan.css'%}">
-<section class="col-10 offset-1" id="sect">
-
-<input type="radio" class="top" id="layout1" value="1" name="tractor" checked='checked' /> 
-<input type="radio" class="top" id="layout2" value="2" name="tractor" /> 
-<input type="radio" class="top" id="layout3" value="3" name="tractor" />
-<input type="radio" class="top" id="layout4" value="4" name="tractor" />
-
-<nav>
-<label for="layout1" ><img src="{% static '/signature/media/layout1.svg' %}" alt="Design-1" style="height:50px; width:60px; padding:10px;"></label>
-<label for="layout2" ><img src="{% static '/signature/media/layout2.svg' %}" alt="Design-2" style="height:50px; width:60px;padding:10px;"></label>
-<label for="layout3" ><img src="{% static '/signature/media/layout3.svg' %}" alt="Design-3" style="height:50px; width:60px;padding:10px;"></label>
-<label for="layout4" ><img src="{% static '/signature/media/layout-4.svg' %}" alt="Design-4" style="height:50px; width:60px;padding:10px;"></label>
-{% comment %} <label for="layout4" class="d-flex justify-content-center"><img src="{% static '/signature/media/layout-4.svg' %}" alt="Design-4" style="height:50px; width:60px;padding:10px;"></label> {% endcomment %}
-</nav>  
-
-
-
-<article class='uno' id='uno'>
-  <div class="mt-5"> 
-{%if pers %} 
-<table style="FONT-FAMILY: Arial, sans-serif; COLOR: #000000; width:480px;" cellspacing="0" cellpadding="0" border="0">
-   
-  <tbody>
-  <tr>
-    {% if pers.Image%}
-    <td style="FONT-SIZE: 10pt; FONT-FAMILY: Arial, sans-serif; COLOR: #000000; line-height:12pt; padding-bottom:10px; padding-right:20px; text-align:center; width:170px" width="170" valign="top" align="center">
-	<img class="profile" src="{{pers.Image.url}}" alt="photograph" width="124" border="0" style=" border: 3px solid #555; height:auto; width:124px"/> 
-	 </td>
-    {%else%}
-    <td style="FONT-SIZE: 10pt; FONT-FAMILY: Arial, sans-serif; COLOR: #000000; line-height:12pt; padding-bottom:10px; padding-right:20px; text-align:center; width:170px" width="170" valign="top" align="center">
-      <img  src="{% static '/signature/media/blank profile.png' %}" alt="photograph" width="124" border="0" style="border:0; height:auto; width:124px"/> 
-       </td>
-       {%endif%}
-    
-	<td style="width: 310px; FONT-FAMILY: Arial, sans-serif; padding-bottom:10px" valign="top">
-	
-	<span style="FONT-SIZE: 20pt; COLOR: #000000; FONT-FAMILY: Arial, sans-serif;"><strong>{{pers.name}}</strong></span>
-        <span style="FONT-SIZE: 12pt; COLOR: #000000;"><br>{{pers.Department}} <span>| </span></span>
-	<span style="FONT-SIZE: 12pt; COLOR: #000000;">{{pers.Company}}</span>
-	<br><br>
-	
-
-		<span style="FONT-SIZE: 10pt;"><img src="{% static '/signature/media/mbl.png'%}" alt="phone-icon" style="border-radius: 50%; height:15px; width:15px" width="12" height="12" border="0">&nbsp; {{pers.Phone}} <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>
-                <span style="FONT-SIZE: 10pt;"><img src="{% static '/signature/media/phone.jpg'%}" alt="phone-icon" style="border-radius: 50%; height:15px; width:15px" width="12" height="12" border="0">&nbsp; {{pers.Phone}}</span>
-
-                <span style="FONT-SIZE: 10pt;"><br><img src="{% static '/signature/media/mail.jpg'%}" alt="phone-icon" style="border-radius: 50%; height:15px; width:15px" width="12" height="12" border="0">&nbsp; {{pers.email}}</span>
-
-                <span style="FONT-SIZE: 10pt;">
-                    <br>
-                    <img src="{% static '/signature/media/address.jpg'%}" alt="address-icon" style="border-radius: 50%; height:15px; width:15px" width="12" height="12" border="0" align="absmiddle"><span>&nbsp; {{pers.Address}}</span>
-                </span>
-
-                <span style="FONT-SIZE: 10pt;">
-                    <br>
-                    <img src="{% static '/signature/media/website.png'%}" alt="website-icon" style="border-radius: 50%; height:15px; width:15px" width="12" height="12" border="0" align="absmiddle">&nbsp; <a href="http://{website}" target="_blank" rel="noopener" style=" text-decoration:none;"><strong style="color:#000000; font-family:Arial, sans-serif; font-size:9pt">{{pers.email}}</strong></a>
-                </span>
-                
-
-	</td></tr>
-    
-  <tr>
-		<table style="margin-top:10px;" border="0">
-                    <tbody>
-                        <tr > 
-                                          
-			<td style="width: 22px; padding:10px;"><a href="{{pers.Facebook}}"  rel="noopener"><img src="{% static '/signature/media/fb.png' %}" alt="facebook icon" style="border:0; height:25px; width:25px" width="15" border="0"></a></td>
-			<td style="width: 22px; padding:10px;"><a href="{{pers.Twiter}}"  rel="noopener"><img src="{% static '/signature/media/twiter.png' %}" alt="twitter icon" style="border:0; height:25px; width:25px" width="15" border="0"></a></td>
-			<td style="width: 22px; padding:10px;"><a href="{{pers.Github}}"  rel="noopener"><img src="{% static '/signature/media/git.png' %}" alt="github icon" style="border:0; height:25px; width:25px" width="15" border="0"></a></td>
-			<td style="width: 22px; padding:10px;"><a href="{{pers.Linkedin}}"  rel="noopener"><img src="{% static '/signature/media/le.png' %}" alt="linkedin icon" style="border:0; height:25px; width:25px" width="15" border="0"></a></td>
-			<td style="width: 22px; padding:10px;"><a href="{{pers.Facebook}}"  rel="noopener"><img src="{% static '/signature/media/yt.png' %}" alt="youtube icon" style="border:0; height:25px; width:25px" width="15" border="0"></a></td>
-		
-                          </tr></table> </tr>
-                
-
-      </td></tbody>
- 
-  </table>
-  
-  {% else %}
-  <h1> Not Found...<h2>
-
- 
-{%endif%} 
-
-  </div>
-</article> 
-
-
-
-
-<article class='dos'>
-  <div class="mt-5"> 
-    {%if pers %} 
-    <table style="font-family: Arial, sans-serif; COLOR: #000000; width:480px;" cellspacing="0" cellpadding="0" border="0">
-       
-      <tbody>
-      <tr>
-        {% if pers.Image%}
-        <td style="FONT-SIZE: 10pt; FONT-FAMILY: Arial, sans-serif; COLOR: #000000; line-height:12pt; padding-bottom:10px; padding-right:20px; text-align:center; width:170px" width="170" valign="top" align="center">
-      <img class="profile" src="{{pers.Image.url}}" alt="photograph" width="124" border="0" style=" border: 3px solid white; height:auto; width:124px;border-radius:50%;"/> 
-       </td>
-        {%else%}
-        <td style="FONT-SIZE: 10pt; FONT-FAMILY: Arial, sans-serif; COLOR: #000000; line-height:12pt; padding-bottom:10px; padding-right:20px; text-align:center; width:170px" width="170" valign="top" align="center">
-          <img  src="{% static '/signature/media/blank profile.png' %}" alt="photograph" width="124" border="0" style="border:0; height:auto; width:124px"/> 
-           </td>
-           {%endif%}
-        
-      <td style="width: 310px; FONT-FAMILY: Arial, sans-serif; padding-bottom:10px" valign="top">
-      
-      <span style="FONT-SIZE: 20pt; COLOR: #000000; FONT-FAMILY: Arial, sans-serif;"><strong>{{pers.name}}</strong></span>
-            <span style="FONT-SIZE: 12pt; COLOR: #000000;"><br>{{pers.Department}} <span>| </span></span>
-      <span style="FONT-SIZE: 12pt; COLOR: #000000;">{{pers.Company}}</span>
-      <br><br>
-      
-    
-        <span style="FONT-SIZE: 10pt;"><img src="{% static '/signature/media/mbl.png'%}" alt="phone-icon" style="border-radius: 50%; height:15px; width:15px" width="12" height="12" border="0">&nbsp; {{pers.Phone}} <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>
-                    <span style="FONT-SIZE: 10pt;"><img src="{% static '/signature/media/phone.jpg'%}" alt="phone-icon" style="border-radius: 50%; height:15px; width:15px" width="12" height="12" border="0">&nbsp; {{pers.Phone}}</span>
-    
-                    <span style="FONT-SIZE: 10pt;"><br><img src="{% static '/signature/media/mail.jpg'%}" alt="phone-icon" style="border-radius: 50%; height:15px; width:15px" width="12" height="12" border="0">&nbsp; {{pers.email}}</span>
-    
-                    <span style="FONT-SIZE: 10pt;">
-                        <br>
-                        <img src="{% static '/signature/media/address.jpg'%}" alt="address-icon" style="border-radius: 50%; height:15px; width:15px" width="12" height="12" border="0" align="absmiddle"><span>&nbsp; {{pers.Address}}</span>
-                    </span>
-    
-                    <span style="FONT-SIZE: 10pt;">
-                        <br>
-                        <img src="{% static '/signature/media/website.png'%}" alt="website-icon" style="border-radius: 50%; height:15px; width:15px" width="12" height="12" border="0" align="absmiddle">&nbsp; <a href="http://{website}" target="_blank" rel="noopener" style=" text-decoration:none;"><strong style="color:#000000; font-family:Arial, sans-serif; font-size:9pt">{{pers.email}}</strong></a>
-                    </span>
-                    <span style="">  
-                      <table class="mt-3">
-                        {% if pers.Facebook %}                            
-                        <td style="width: 22px; padding:10px;"><a href="{{pers.Facebook}}"  rel="noopener"><img src="{% static '/signature/media/fb.png' %}" alt="facebook icon" style="border-radius:50%;; height:25px; width:25px" width="15" border="0"></a></td>
-                        {%endif%}
-            
-                        {% if pers.Twiter%}
-                        <td style="width: 22px; padding:10px;"><a href="{{pers.Twiter}}"  rel="noopener"><img src="{% static '/signature/media/twiter.png' %}" alt="twitter icon" style="border-radius:50%;; height:25px; width:25px" width="15" border="0"></a></td>
-                        {%endif%}
-            
-                        {%if pers.Github%}
-                        <td style="width: 22px; padding:10px;"><a href="{{pers.Github}}"  rel="noopener"><img src="{% static '/signature/media/git.png' %}" alt="github icon" style="border-radius:50%;; height:25px; width:25px" width="15" border="0"></a></td>
-                        {%endif%}
-            
-                        {%if pers.Linkedin%}
-                        <td style="width: 22px; padding:10px;"><a href="{{pers.Linkedin}}"  rel="noopener"><img src="{% static '/signature/media/le.png' %}" alt="linkedin icon" style="border-radius:50%;; height:25px; width:25px" width="15" border="0"></a></td>
-                        {%endif%}
-                        {%if pers.Youtube%}
-                        <td style="width: 22px; padding:10px;"><a href="{{pers.Youtube}}"  rel="noopener"><img src="{% static '/signature/media/yt.png' %}" alt="youtube icon" style="border-radius:50%;; height:25px; width:25px" width="15" border="0"></a></td>
-                        {%endif%}                 
-                      </table>
-                    </span>
-                    
-    
-      </td></tr>
-        
-      
-    
-          </td></tbody>
-     
-      </table>
-      {% else %}
-      <h1> Not Found...<h2>
-    
-     
-    {%endif%} 
+<div class="col-12"> 
+  <div class="row">
+    <div class="col-6" id="template">
+      <div class="text-center alert alert-primary">
+        <h2>Template-1</h2>  
+        {%block Template-1%}
+        {%endblock%}
       </div>
- 
-
-</article>
-
-
-<article class='tres'>
-
-  <div class="mt-5"> 
-    {%if pers %} 
-    <table style="font-family: Arial, sans-serif; COLOR: #000000; width:480px;" cellspacing="0" cellpadding="0" border="0">
-       
-      <tbody>
-      <tr>
-      <td style="width: 310px; FONT-FAMILY: Arial, sans-serif; padding-bottom:10px" valign="top">
-      
-      <span style="FONT-SIZE: 20pt; COLOR: #000000; FONT-FAMILY: Arial, sans-serif;"><strong>{{pers.name}}</strong></span>
-            <span style="FONT-SIZE: 12pt; COLOR: #000000;"><br>{{pers.Department}} <span>| </span></span>
-      <span style="FONT-SIZE: 12pt; COLOR: #000000;">{{pers.Company}}</span>
-      <br><br>
-      
-    
-        <span style="FONT-SIZE: 10pt;"><img src="{% static '/signature/media/mbl.png'%}" alt="phone-icon" style="border-radius: 50%; height:15px; width:15px" width="12" height="12" border="0">&nbsp; {{pers.Phone}} <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>
-                    <span style="FONT-SIZE: 10pt;"><img src="{% static '/signature/media/phone.jpg'%}" alt="phone-icon" style="border-radius: 50%; height:15px; width:15px" width="12" height="12" border="0">&nbsp; {{pers.Phone}}</span>
-    
-                    <span style="FONT-SIZE: 10pt;"><br><img src="{% static '/signature/media/mail.jpg'%}" alt="phone-icon" style="border-radius: 50%; height:15px; width:15px" width="12" height="12" border="0">&nbsp; {{pers.email}}</span>
-    
-                    <span style="FONT-SIZE: 10pt;">
-                        <br>
-                        <img src="{% static '/signature/media/address.jpg'%}" alt="address-icon" style="border-radius: 50%; height:15px; width:15px" width="12" height="12" border="0" align="absmiddle"><span>&nbsp; {{pers.Address}}</span>
-                    </span>
-    
-                    <span style="FONT-SIZE: 10pt;">
-                        <br>
-                        <img src="{% static '/signature/media/website.png'%}" alt="website-icon" style="border-radius: 50%; height:15px; width:15px" width="12" height="12" border="0" align="absmiddle">&nbsp; <a href="http://{website}" target="_blank" rel="noopener" style=" text-decoration:none;"><strong style="color:#000000; font-family:Arial, sans-serif; font-size:9pt">{{pers.email}}</strong></a>
-                    </span>
-                    <td>
-                      {% if pers.Image%}
-                        <td style="FONT-SIZE: 10pt; FONT-FAMILY: Arial, sans-serif; COLOR: #000000; line-height:12pt; padding-bottom:10px; padding-right:20px; text-align:center; width:170px" width="170" valign="top" align="center">
-                        <img class="profile" src="{{pers.Image.url}}" alt="photograph" width="124" border="0" style=" border: 3px solid white; height:auto; width:124px;border-radius:50%;"/> 
-                         </td>
-                      {%else%}
-                         <td style="FONT-SIZE: 10pt; FONT-FAMILY: Arial, sans-serif; COLOR: #000000; line-height:12pt; padding-bottom:10px; padding-right:20px; text-align:center; width:170px" width="170" valign="top" align="center">
-                         <img  src="{% static '/signature/media/blank profile.png' %}" alt="photograph" width="124" border="0" style="border:0; height:auto; width:124px"/> 
-                         </td>
-                       {%endif%}
-                        <table style="margin-top:10px;" border="0">
-                                        <tbody>
-                                            <tr> 
-                                                              
-                          <td style="width: 22px; padding:10px;"><a href="{{pers.Facebook}}"  rel="noopener"><img src="{% static '/signature/media/fb.png' %}" alt="facebook icon" style="border:0; height:25px; width:25px" width="15" border="0"></a></td>
-                          <td style="width: 22px; padding:10px;"><a href="{{pers.Twiter}}"  rel="noopener"><img src="{% static '/signature/media/twiter.png' %}" alt="twitter icon" style="border:0; height:25px; width:25px" width="15" border="0"></a></td>
-                          <td style="width: 22px; padding:10px;"><a href="{{pers.Github}}"  rel="noopener"><img src="{% static '/signature/media/git.png' %}" alt="github icon" style="border:0; height:25px; width:25px" width="15" border="0"></a></td>
-                          <td style="width: 22px; padding:10px;"><a href="{{pers.Linkedin}}"  rel="noopener"><img src="{% static '/signature/media/le.png' %}" alt="linkedin icon" style="border:0; height:25px; width:25px" width="15" border="0"></a></td>
-                          <td style="width: 22px; padding:10px;"><a href="{{pers.Facebook}}"  rel="noopener"><img src="{% static '/signature/media/yt.png' %}" alt="youtube icon" style="border:0; height:25px; width:25px" width="15" border="0"></a></td>
-                        
-                                              </tr></table> 
-                      
-                    </td>
-  
-      </td></tr>
-     
-        
-      
-    
-          </td></tbody>
-     
-      </table>
-      {% else %}
-      <h1> Not Found...<h2>
-    
-     
-    {%endif%} 
+    </div>
+    <div class="col-6" id="template"> 
+      <div class="text-center alert alert-primary"> 
+        <h2>Template-2</h2>
+        {%block Template-2%}
+        {%endblock%}
+      </div>  
+    </div>
+    </div>
+</div>
+<div class="col-12"> 
+  <div class="row">
+    <div class="col-6" id="template">
+      <div class="text-center alert alert-primary">
+        <h2>Template-3</h2>  
+        {%block Template-3%}
+        {%endblock%}
       </div>
- 
+    </div>
+    <div class="col-6" id="template"> 
+      <div class="text-center alert alert-primary"> 
+        <h2>Template-4</h2>
+        {%block Template-4%}
+        {%endblock%}
+      </div>  
+    </div>
+    </div>
+</div>   
 
- 
-</article>
+
+<div class="col-12"> 
+  <div class="row">
+    <div class="col-6"  id="template">
+      <div class="text-center alert alert-primary">
+        <h2>Template-5</h2>  
+        {%block Template-5%}
+        {%endblock%}
+      </div>
+    </div>
+    <div class="col-6" id="template"> 
+      <div class="text-center alert alert-primary"> 
+        <h2>Template-6</h2>
+        {%block Template-6%}
+        {%endblock%}
+      </div>  
+    </div>
+    </div>
+</div>    
 
 
-<article class='cuatro' style="background:white; font-family:sans-serif;color:black; font-size:10pt;">
 
   
-</article>
-
-    
-         
-        <div class="col-12 mb-5" style="display:inline-block; padding:5px;">
-          <input type="text" value="Hello World" id="myInput">
-
-          <a href="/edit/{{pers.name}}"><input class="btn btn-lg btn-danger" type="submit" value="EDIT"> </a>
-          {% comment %} <button  class="btn" data-clipboard-target="uno"  >Copy-Template</button> {% endcomment %}
-          <button  class="btn btn-lg btn-primary"  onclick="Copy()" >Copy</button>
-        </div> 
-      
-    
-
-</section>
-
-
-
-
-
-<script>  
-
-  var activeTabId = 'layout1'; 
-    function Copy(){
-     
-   
-      {% comment %} var activeTabId = document.querySelector('input[name="tractor"]:checked').innerText;   {% endcomment %}
-    
-        var range = document.createRange();
-        range.selectNode(document.getElementById(activeTabId));
-        window.getSelection().removeAllRanges(); /* clear current selection*/
-        window.getSelection().addRange(range); /* to select text*/
-        document.execCommand("copy");
-        activeTabId.select();
-        window.getSelection().removeAllRanges();
-
-       {% comment %} alert("Copied the text: " + activeTabId.value); {% endcomment %}
-   
-    
-   
-    
-  }
-</script>
-
-       
-  
-
-
-
-
-
-
 
 {%endblock output%}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
