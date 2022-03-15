@@ -15,22 +15,22 @@
 //     console.log(copied);
 // })
 
+  
 
+function Copy(){
+  // navigator.clipboard.writeText(template);
+   var activeTabId = 'template'; 
+   var range = document.createRange();
+    range.selectNode(document.getElementById(activeTabId));
+    window.getSelection().removeAllRanges(); /* clear current selection*/
+    window.getSelection().addRange(range); /* to select text*/
+    document.execCommand("copy");
+    activeTabId.select();
+    window.getSelection().removeAllRanges();
+    alert("Copied the text: " + activeTabId.value);
+ } 
+ 
 
-// function copyText() {
-//     // var Copy = document.getElementsByClassName('uno')
-    
-//     var copyText = document.getElementsByClassName('uno')
-//     copyText.select();
-//     copyText.setSelectionRange(0, 99999)
-//     document.execCommand('copy')
-//     console.log('Copied Text')
-   
-//     navigator.clipboard.writeText(Copy)
-//     .then(() => { alert(`Copied!`) })
-//   .catch((error) => { alert(`Copy failed! ${error}`) })
-//  }
-      
     
 
 

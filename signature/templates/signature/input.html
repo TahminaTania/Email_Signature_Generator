@@ -1,7 +1,187 @@
 {% extends 'signature/base.html' %}
 {%block input%}
 <h4 class="text-center alert alert-info">Input</h4>
+<div class="row">
+    <div class="col-md-12"> 
+        <div class="tab">
+            <div class="row">
+                <div class="col-md-4 "><button class="tablinks" onclick="opentab(event, 'General')">General</button> </div>
+                <div class="col-md-4 "><button class="tablinks" onclick="opentab(event, 'Personal')">Personal</button> </div>
+                <div class="col-md-4 "> <button class="tablinks" onclick="opentab(event, 'Social')">Social</button></div>
+            </div>
+        </div>
 
+
+     <form method="POST" action="" enctype="multipart/form-data" > 
+        {% csrf_token %}
+
+
+        <!-- Tab content -->
+        <div id="General" class="tabcontent">
+             
+            <div class="d-flex justify-content-center form_container">
+                <li style="list-style:none">  
+                    <div class="input-group mt-3 mb-4">
+                      <div class="input-group-append">
+                          <span class="input-group-text" style="width:40px; height:40;"><i class="fas fa-user"></i></span>
+                      </div>
+                      {{form.name}}
+                    </div>
+                   <div class="input-group mb-4">
+                      <div class="input-group-append">
+                          <span class="input-group-text" style="width:40px;height:40;"><i class="fas fa-envelope-square"></i></span>
+                      </div>
+                      {{form.email}}
+                    </div>
+                    <div class="input-group mb-4">
+                      <div class="input-group-append">
+                          <span class="input-group-text"style="width:40px;height:40;"><i class="fa-regular fa-id-card"></i></span>
+                      </div>
+                      {{form.Job_Title}}
+                    </div>
+                    <div class="input-group mb-4">
+                      <div class="input-group-append">
+                          <span class="input-group-text"style="width:40px;height:40;"><i class="fa-solid fa-users"></i></span>
+                      </div>
+                      {{form.Department}}
+                    </div>
+                    <div class="input-group mb-5">
+                      <div class="input-group-append">
+                          <span class="input-group-text"style="width:40px;height:40;"><i class="fa-solid fa-building-columns"></i></span>
+                      </div>
+                      {{form.Company}}
+                    </div>
+                    
+                    <div class="d-grid text-center col-12">
+                        <input class="btn btn-lg btn-Success" id="next-btn" type="submit" value="NEXT">
+                    </div>
+                 </li>   
+            </div>
+           
+        </div>
+
+        <div id="Personal" class="tabcontent">
+            
+            <div class="d-flex justify-content-center form_container">
+                <li style="list-style:none">  
+                    <div class="input-group mt-3 mb-4">
+                      <div class="input-group-append">
+                          <span class="input-group-text">Address </span>
+                      </div>
+                      {{form.Address}}
+                    </div>
+                    <div class="input-group mb-4">
+                        <div class="input-group-append">
+                            <span class="input-group-text">Website </span>
+                        </div>
+                        {{form.Website}}
+                    </div>
+                     
+                    <div class="input-group mb-4">
+                        <div class="input-group-append">
+                            <span class="input-group-text"> Phone  </span>
+                        </div>
+                        {{form.Phone}}
+                      </div>
+                    <div>
+                        <div class="form-group">
+                        <div>
+                            <p><strong>Upload Your Image Here :</strong></p>
+                        </div>
+                        {{form.Image}}
+                        </div>
+                        <div class="d-grid text-center col-12">
+                            <input class="btn btn-lg btn-Success" id="next-btn" type="submit" value="NEXT">
+                        </div>
+                 </li>   
+            </div>
+        </div>
+            
+       
+        
+        <div id="Social" class="tabcontent">
+            <div class="d-flex justify-content-center form_container">
+                <li style="list-style:none">  
+                    <div class="input-group mt-3 mb-4">
+                      <div class="input-group-append">
+                          <span class="input-group-text">Facebook </span>
+                      </div>
+                      {{form.Facebook}}
+                    </div>
+                   <div class="input-group mb-4">
+                      <div class="input-group-append">
+                          <span class="input-group-text">Twiter </span>
+                      </div>
+                      {{form.Twiter}}
+                    </div>
+                    <div class="input-group mb-4">
+                      <div class="input-group-append">
+                          <span class="input-group-text">Github </span>
+                      </div>
+                      {{form.Github}}
+                    </div>
+                    <div class="input-group mb-4">
+                      <div class="input-group-append">
+                          <span class="input-group-text">Linkedin </span>
+                      </div>
+                      {{form.Linkedin}}
+                    </div>
+                    <div class="input-group mb-5">
+                      <div class="input-group-append">
+                          <span class="input-group-text">YouTube</span>
+                      </div>
+                      {{form.Youtube}}
+                    </div>
+
+                    <div class="d-grid text-center col-12">
+                        <input class="btn btn-lg btn-Success" id="next-btn" type="submit" value="NEXT">
+                    </div>
+                 </li>   
+            </div>
+        
+        </div>
+        
+    </div>    
+</div>
+
+
+ <div id="includedContent"></div>
+
+
+
+
+
+<script>
+   
+        function opentab(evt, tabname) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+        
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+            }
+        
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+        
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(tabname).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        opentab(event, 'General')
+
+
+       
+        $(function(){
+            $("#includedContent").load("output.html"); 
+        });
+           
+</script>
 {%endblock input%}
 
 

@@ -5,7 +5,7 @@ from .models import person,profiles
 # Register your models here.
 
 class users(admin.ModelAdmin):
-     list_display = ('id','name', 'email','Job_Title','Department','Company','Phone','Address','Image','Address',
+     list_display = ('id','name', 'email','Job_Title','Department','Company','Phone','Mobile','Address','Image','Address',
         'password','Facebook','Github','Twiter','Linkedin','Website')
 
         
