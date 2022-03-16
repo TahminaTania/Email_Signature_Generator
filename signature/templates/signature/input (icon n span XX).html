@@ -1,6 +1,6 @@
 {% extends 'signature/base.html' %}
 {%block input%}
-<h4 class="text-center alert alert-info">Input-form field Here</h4>
+<h4 class="text-center alert alert-info">Input</h4>
 <div class="row">
     <div class="col-md-12"> 
         <div class="tab">
@@ -21,25 +21,40 @@
              
             <div class="d-flex justify-content-center form_container">
                 <li style="list-style:none">  
-                    <div class="input-group mt-3 mb-4"> 
+                    <div class="input-group mt-3 mb-4">
+                      <div class="input-group-append">
+                          <span class="input-group-text" style="width:40px; height:40;"><i class="fas fa-user"></i></span>
+                      </div>
                       {{form.name}}
                     </div>
-                   <div class="input-group mb-4"> 
+                   <div class="input-group mb-4">
+                      <div class="input-group-append">
+                          <span class="input-group-text" style="width:40px;height:40;"><i class="fas fa-envelope-square"></i></span>
+                      </div>
                       {{form.email}}
                     </div>
                     <div class="input-group mb-4">
+                      <div class="input-group-append">
+                          <span class="input-group-text"style="width:40px;height:40;"><i class="fa-regular fa-id-card"></i></span>
+                      </div>
                       {{form.Job_Title}}
                     </div>
                     <div class="input-group mb-4">
+                      <div class="input-group-append">
+                          <span class="input-group-text"style="width:40px;height:40;"><i class="fa-solid fa-users"></i></span>
+                      </div>
                       {{form.Department}}
                     </div>
                     <div class="input-group mb-5">
+                      <div class="input-group-append">
+                          <span class="input-group-text"style="width:40px;height:40;"><i class="fa-solid fa-building-columns"></i></span>
+                      </div>
                       {{form.Company}}
                     </div>
                     
-                     <div class="d-grid text-center col-12">
-                        <input class="btn btn-lg btn-info" id="next-btn" value="NEXT">
-                    </div> 
+                    {% comment %} <div class="d-grid text-center col-12">
+                        <input class="btn btn-lg btn-Success" id="next-btn" onclick="next(1)" value="NEXT">
+                    </div> {% endcomment %}
                  </li>   
             </div>
            
@@ -50,13 +65,22 @@
             <div class="d-flex justify-content-center form_container">
                 <li style="list-style:none">  
                     <div class="input-group mt-3 mb-4">
+                      <div class="input-group-append">
+                          <span class="input-group-text">Address </span>
+                      </div>
                       {{form.Address}}
                     </div>
                     <div class="input-group mb-4">
+                        <div class="input-group-append">
+                            <span class="input-group-text">Website </span>
+                        </div>
                         {{form.Website}}
                     </div>
                      
                     <div class="input-group mb-4">
+                        <div class="input-group-append">
+                            <span class="input-group-text"> Phone  </span>
+                        </div>
                         {{form.Phone}}
                       </div>
                     <div>
@@ -79,22 +103,34 @@
             <div class="d-flex justify-content-center form_container">
                 <li style="list-style:none">  
                     <div class="input-group mt-3 mb-4">
+                      <div class="input-group-append">
+                          <span class="input-group-text">Facebook </span>
+                      </div>
                       {{form.Facebook}}
                     </div>
                    <div class="input-group mb-4">
+                      <div class="input-group-append">
+                          <span class="input-group-text">Twiter </span>
+                      </div>
                       {{form.Twiter}}
                     </div>
                     <div class="input-group mb-4">
+                      <div class="input-group-append">
+                          <span class="input-group-text">Github </span>
+                      </div>
                       {{form.Github}}
                     </div>
                     <div class="input-group mb-4">
+                      <div class="input-group-append">
+                          <span class="input-group-text">Linkedin </span>
+                      </div>
                       {{form.Linkedin}}
                     </div>
                     <div class="input-group mb-5">
+                      <div class="input-group-append">
+                          <span class="input-group-text">YouTube</span>
+                      </div>
                       {{form.Youtube}}
-                    </div>
-                    <div class="d-grid text-center col-12">
-                        <input class="btn btn-lg btn-info" id="next-btn" value="SUBMIT">
                     </div>
 
                  </li>   

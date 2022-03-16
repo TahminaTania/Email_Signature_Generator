@@ -26,7 +26,7 @@ class registration(forms.ModelForm):
             'Phone': forms.TextInput(attrs={'class': 'form-control','placeholder':'Enter Your Phone Number'}),
             'Mobile': forms.TextInput(attrs={'class': 'form-control','placeholder':'Enter Your Mobile Number'}),
             'Address': forms.TextInput(attrs={'class': 'form-control','placeholder':'Enter Your Address'}),
-            'Image': forms.FileInput(attrs={'class':'form-control form-control-sm','type':'file'}),
+            'Image': forms.FileInput(attrs={'class':'form-control-file'}),
             'Facebook': forms.URLInput(attrs={'class': 'form-control','placeholder':'https://www.Facebook.com/...' }),
             'Github': forms.URLInput(attrs={'class': 'form-control','placeholder':'https://www.Github.com/...'}),
             'Twiter': forms.URLInput(attrs={'class': 'form-control','placeholder':'https://www.Twiter.com/...' }),

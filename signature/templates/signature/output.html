@@ -6,35 +6,34 @@
 <div class="col-md-12"> 
   <div class="row">
     <div class="col-md-6" id="template" onclick="Copy()">
-      <div class="text-center"> 
-        {%block Template-1%}
-        
-        
-<div class="col-md-12" width="466" border="0" cellspacing="0" cellpadding="0" style="font-family: Montserrat, Arial, Helvetica, sans-serif;">
-
+      <div class=""> 
+        {%block Template-1%}   
+<div class="col-md-12" id="table" >
   <div class="row"> 
-      <div  class="col-md-3" style="border-right:5px solid #007fe6;">
-        <img class="img-fluid" src="Images/pic.jpg" width="50" height="50" alt=""> 
+      <div  class="col-md-4 d-flex align-items-center justify-content-center" id="photo">
+        <img class="img-fluid" src="/static/signature/media/blank profile.png" alt=""> 
       </div>
     
-      <div  class="col-md-9">
+      <div class="col-md-8">
         
-        <div style="font-size:1.4vw; color:#007fe6; line-height:25px;">Robert Long <span style="font-size:1.2vw; color:#333333;"> Designer</span></div>
+         <div class="text-center" id="name">Robert Long <span> Designer</span></div>
+        <div id="others">
           <div class="details">
-          
-          <div style="font-size:1vw; color:#999999; line-height:18px;">7743 Street, Blue Park, Suite 233, Smalltown,Stateville, USA 774386</div>
-          <div style="font-size:1vw; color:#999999; line-height:20px; padding-top:3px;"><span style="color:#007fe6;">t</span> +1 (234) 567 - 890  |  <span style="color:#007fe6;">m</span> 0123 - 456 - 789</div>
-          <div style="font-size:1vw; color:#999999; line-height:18px;"><span style="color:#007fe6;">e</span> <a href="#" style="color:#999; text-decoration:none;">contact@robertlong.com</a> | <span style="color:#007fe6;">w</span> <a href="#"  style="color:#999;  text-decoration:none;">www.robertlong.com</a></div>
-          </div>  
+            
+            <div >7743 Street, Blue Park, Suite 233, Smalltown,Stateville, USA 774386</div>
+            <div><span>t</span> +1 (234) 567 - 890  |  <span>m</span> 0123 - 456 - 789</div>
+            <div><span>e</span> <a href="#">contact@robertlong.com</a> | <span>w</span> <a href="#">www.robertlong.com</a></div>
+          </div> 
+        </div> 
         <ul>
-          <li valign="bottom" style="padding-top:5px;"><a href="#"><img style="padding-right:5px;" src="Images/icon_fb.png" width="18" height="17" alt="" /></a>
-            <a href="#"><img style="padding-right:5px;" src="Images/icon_tw.png" width="18" height="17" alt="" /></a>
-            <a href="#"><img style="padding-right:5px;" src="Images/icon_li.png" width="18" height="17" alt="" /></a>
-            <a href="#"><img style="padding-right:5px;" src="Images/icon_gl.png" width="18" height="17" alt="" /></a>                        
+          <li valign="bottom">
+            <a href="#"><img src="/static/signature/media/icon_fb.png"  alt="" /></a>
+            <a href="#"><img src="/static/signature/media/icon_tw.png"  alt="" /></a>
+            <a href="#"><img src="/static/signature/media/icon_li.png"  alt="" /></a>
+            <a href="#"><img src="/static/signature/media/icon_gl.png"  alt="" /></a>                        
                                  
           </li>
         </ul>
-       
       </div>
   </div>  
 </div>
@@ -42,52 +41,56 @@
       </div>
     </div>
     <div class="col-md-6" id="template"> 
-      <div class="text-center" onclick="Copy()"> 
-        <h2>Template-2</h2>
-        {%block Template-2%}
-        <style type="text/css">
-          @import url(https://fonts.googleapis.com/css?family=Montserrat);
+      <div class=""> 
+        {%block Template-2%}  
+        <div id="table">
+          <div class="text-center"id="name"> Robert Long</div>
+          <div class="text-center"id="job"> DESIGNER</div>
+          <div class="details" id="border-down"> 
+            <ul> 
+              <li><span>t</span> +1 (234) 567 - 890 <span>m</span> 0123 - 456 - 789 </li>
+              <li><span>e</span> <a href="#">contact@robertlong.com</a> | <span>w</span> <a href="#">www.robertlong.com</a></li>    
+            </ul>
+          </div>
           
-            
-          </style>
-          
-          
-          
-          <table width="286" border="0" cellspacing="0" cellpadding="0" style="font-family: Montserrat, Arial, Helvetica, sans-serif;">
-          
-          <tbody> 
-          
-            <tr>
-              <td width="286" style="font-size:26px; color:#007fe6; line-height:25px;"><table width="325" border="0" cellspacing="0" cellpadding="0">
-                <tr>
-                  <td width="420" style="font-size:26px; color:#007fe6; line-height:25px; font-weight:900;">Robert Long</td>
-                </tr>
-                <tr>
-                  <td style="padding-top:5PX; color:#333333">DESIGNER</td>
-                </tr>
-                <tr>
-                  <td style="font-size:11px; color:#999999; line-height:20px; padding-top:12px;"><span style="color:#007fe6;">t</span> +1 (234) 567 - 890 <span style="color:#007fe6;">m</span> 0123 - 456 - 789</td>
-                </tr>
-                <tr>
-                 <td style="font-size:11px; color:#999999; line-height:18px; border-bottom:#007fe6 solid 3px; padding-bottom:16px;"><span style="color:#007fe6;">e</span> <a href="#" style="color:#999; text-decoration:none;">contact@robertlong.com</a> | <span style="color:#007fe6;">w</span> <a href="#"  style="color:#999;  text-decoration:none;">www.robertlong.com</a></td>
-                </tr>
-              </table></td>
-            </tr>
-            </tbody>  
-          </table>
-        {%endblock%}
+        </div>
+
+          {%endblock%}
       </div>  
     </div>
     </div>
 </div>
 
 
+{% comment %}---------------------- row no two------------- 
+i am just copy pasting table templates {% endcomment %}
+
+
 <div class="col-md-12"> 
   <div class="row">
     <div class="col-md-6" id="template">
-      <div class="text-center">
-        <h2>Template-3</h2>  
+     
+      <div class="">
         {%block Template-3%}
+        <div class="row">
+         <div class="col-md-12">
+           <div id="into">
+           <ul>
+             <li><div id="photo"><img class="img-fluid" src="/static/signature/media/blank profile.png" alt=""></div></li>
+             <li><div id="name">Robert Long</div></li>
+             <li><div id="job">Designer</div></li>
+            </ul>
+            </div>
+           <div class="details"> 
+            <ul>
+              <li><div id="address">7743 Street, Blue Park, Suite 233, Smalltown,Stateville, USA 774386</div></li>
+              <li><div><span><i class="fa-solid fa-phone"></i></span> +1 (234) 567 - 890  |  <span><i class="fa-solid fa-mobile"></i></span> 0123 - 456 - 789</div></li>
+              <li><span><i class="fa-solid fa-envelope"></i></span> <a href="#">contact@robertlong.com</a> | <span>w</span> <a href="#">www.robertlong.com</a></li>
+            </ul> 
+          </div>
+
+         </div>
+        </div>
         {%endblock%}
       </div>
     </div>
@@ -95,6 +98,7 @@
       <div class="text-center"> 
         <h2>Template-4</h2>
         {%block Template-4%}
+       
         {%endblock%}
       </div>  
     </div>
