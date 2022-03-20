@@ -1,19 +1,24 @@
-/* --------------------centerize */
-
 
 
 #template{
-  /* background:white; */
+  background:white;
   border: 1px solid #EAEAEA;
   position: relative;
   display:flex;
   align-items: center;
   justify-content: center;
+  padding:5px;
   
+}
+#template:hover{
+  /* background:#5A46F1; */
+  color:white;
+  background:#c2c0d3;
 }
 
 #others{
   border-left:3px solid #007fe6;
+  padding: 10px;
 }
 #output-container{
   justify-content: center;
@@ -30,8 +35,6 @@
 #photo img{
   height:50px;
   width:50px;
-  
-
 }
 #name{
   font-size:12px;
@@ -42,9 +45,18 @@
   font-size:12px; 
   color:#333333;
 }
+#designation{
+  font-size:13px;
+  color:black; 
+  line-height:20px;
+  letter-spacing: 2px;
+}
 .details{
-  margin-left:10px;
-  white-space:normal;
+  /* margin-left:10px; */
+  font-size:10px; 
+  color:#999999; 
+  line-height:18px;
+  padding-top:3px;
   justify-content:center;
   font-size:10px; 
   color:#999999; 
@@ -57,7 +69,25 @@
 .details a{
   color:#999;
   text-decoration:none;
+}
 
+#address, #number ,#contract{
+  white-space: normal;
+  font-size:10px; 
+  color:#999999; 
+  line-height:16px;
+  padding-top:3px;
+
+}
+#address span,
+#number span,
+#contract span{
+  color:#007fe6;
+}
+
+#contract a{
+  color:#999;
+  text-decoration:none;
 }
 li{
   list-style: none;
@@ -67,29 +97,216 @@ li{
 
 li a img{
   padding-right:5px;
-  height:18px;
-  width: 17px;
-  
+  height:16px;
+  width: 18px; 
 }
 
 /* --------------template2 */
 
-
 #name{
   font-size:22px;
-   color:#007fe6; 
-   line-height:25px; 
-   font-weight:900;
+  color:#007fe6; 
+  line-height:25px; 
+  font-weight:900;
 }
 #job{
   font-size:20px;
-  padding-top:5PX;
+  padding-top:3px;
   color:#333333
 }
+
 #border-down{
   border-bottom: 3px solid #007fe6;
   
 }
-#into{
-  margin-left:10px;
+
+#name4{
+  font-size:20px; 
+  color:#007fe6;
+  line-height:22px;
+}
+#name4 span{
+  font-weight:900;
+}
+#designation4{
+  padding-top:3px;
+  color:#333333;
+  letter-spacing:12px; 
+  font-size:12px;
+  font-weight:bold;
+}
+#social a{
+  margin-top: 10px;
+  color:blue;
+  padding-right:15px;
+}
+
+ /*------------------------- 3rd file */
+ /* #photo-big{
+   width: fit-content;
+ } */
+#photo-big img{
+  height:100px;
+  width:100px;
+  margin-top: 10px;
+}
+#big-image{
+  margin:5px;
+}
+#name-5{
+  font-size:16px; 
+  color:#333333;
+}
+#name-5 span{
+  color:#007fe6;
+  font-size:14px;
+}
+
+#details{
+  font-size:11px;
+  color:#999999;
+  padding-top:6px; 
+  line-height:18px;
+  
+}
+#details li{
+  border-right:solid 1px #999999;
+}
+#details ul li #number{
+  font-size:11px;
+  color:#999999;
+  line-height:16px;
+  padding-top:5px;
+}
+#details ul li a{
+  color:#999;
+  text-decoration:none;
+  font-size:11px;
+  line-height:20px;
+  padding-top:0px;
+}
+#details ul li span img{
+  vertical-align:central;
+  
+}
+
+#social-5 li{
+  margin-left: -10px;
+
+}
+
+#temp6{
+  /* display:contents; */
+ 
+}
+#name6{
+  white-space:nowrap;
+  text-align:right;
+  color:#007fe6;
+  font-size:18px;
+  padding-right:5px;
+  padding-top:3px;
+}
+#designation6{
+white-space:nowrap;
+ text-align:right;
+ color:#333333; 
+ font-size:10px;
+ padding-right:5px;
+
+}
+#social6 ul li a{
+  margin-left:-15px; 
+}
+#border6{
+  border-left:#007fe6 solid 3px;
+  padding:5px;
+
+  }
+
+
+#intro7{
+  padding-left:20px;
+}
+#intro7 li #name{
+  font-size:16px;
+  color:#007fe6;
+}
+#intro7 li #name span{
+   font-size:14px;
+   color:#333333;
+}
+#image-r{
+  border-radius:50%;
+  padding:5px;
+  height:80px;
+  width: 80px;
+}
+
+#right8,
+#right9{
+  text-align:right;
+}
+
+#designation9{
+  font-size:13px;
+  color:#007fe6;
+}
+#name9{
+  font-size:16px;
+  color:#333333;
+  padding-top:5px; 
+  line-height:18px; 
+  font-weight:bold;
+}
+.social-R img{
+  margin-top: 10px;
+  border-radius: 50%;
+  padding-right:0px;
+}
+
+
+/* --------------last row  */
+
+#details9{
+  width: fit-content;
+  padding: 0%;
+  margin: 0%;
+}
+#temp9{
+  margin:10px;
+  border: 2px double black;
+}
+#photo9{
+height:50px;
+width:50px;
+}
+
+
+#temp10{
+  margin:10px;
+  padding-top:5px;
+  padding-bottom:5px;
+  border:2px solid #999999; 
+}
+
+#name10{
+  font-size:20px;
+  font-weight:900;
+  color:#007fe6; 
+  line-height:25px;
+  letter-spacing: 3px;
+}
+#designation10{
+  font-size:17px;
+  font-weight:500;
+  color:#757373; 
+  line-height:20px;
+  letter-spacing: 2px;
+}
+#social10 a img{
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
 }

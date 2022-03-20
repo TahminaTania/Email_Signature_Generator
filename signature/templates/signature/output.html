@@ -10,11 +10,11 @@
         {%block Template-1%}   
 <div class="col-md-12" id="table" >
   <div class="row"> 
-      <div  class="col-md-4 d-flex align-items-center justify-content-center" id="photo">
+      <div  class="col-md-4 d-flex align-items-center justify-content-center" id="photo-big">
         <img class="img-fluid" src="/static/signature/media/blank profile.png" alt=""> 
       </div>
     
-      <div class="col-md-8">
+      <div class="col-md-8" id="col2">
         
          <div class="text-center" id="name">Robert Long <span> Designer</span></div>
         <div id="others">
@@ -41,7 +41,7 @@
       </div>
     </div>
     <div class="col-md-6" id="template"> 
-      <div class=""> 
+      <div class="">
         {%block Template-2%}  
         <div id="table">
           <div class="text-center"id="name"> Robert Long</div>
@@ -69,25 +69,31 @@ i am just copy pasting table templates {% endcomment %}
 <div class="col-md-12"> 
   <div class="row">
     <div class="col-md-6" id="template">
-     
       <div class="">
         {%block Template-3%}
         <div class="row">
          <div class="col-md-12">
-           <div id="into">
-           <ul>
-             <li><div id="photo"><img class="img-fluid" src="/static/signature/media/blank profile.png" alt=""></div></li>
-             <li><div id="name">Robert Long</div></li>
-             <li><div id="job">Designer</div></li>
-            </ul>
+            <div id="into">
+              <ul>
+                  <li><div id="photo"><img class="img-fluid" src="/static/signature/media/blank profile.png" alt=""></div></li>
+                  <li><div id="name">Robert Long</div></li>
+                  <li><div id="job">Designer</div></li>
+                  <li><div id="address">7743 Street, Blue Park, Suite 233, Smalltown,Stateville, USA 774386</div></li>
+                  <li><div id="number"><span><i class="fa-solid fa-phone"></i></span> +1 (234) 567 - 890  |  <span><i class="fa-solid fa-mobile"></i></span> 0123 - 456 - 789</div></li>
+                  <li><div id="contract"><span><i class="fa-solid fa-envelope"></i></span> <a href="#">contact@robertlong.com</a> | <span>w</span> <a href="#">www.robertlong.com</a></div></li>
+              </ul>
             </div>
-           <div class="details"> 
-            <ul>
-              <li><div id="address">7743 Street, Blue Park, Suite 233, Smalltown,Stateville, USA 774386</div></li>
-              <li><div><span><i class="fa-solid fa-phone"></i></span> +1 (234) 567 - 890  |  <span><i class="fa-solid fa-mobile"></i></span> 0123 - 456 - 789</div></li>
-              <li><span><i class="fa-solid fa-envelope"></i></span> <a href="#">contact@robertlong.com</a> | <span>w</span> <a href="#">www.robertlong.com</a></li>
-            </ul> 
-          </div>
+           
+            <div id="social">
+              <ul>
+                <li>
+                  <a href="#"><img src="/static/signature/media/fb.png"  alt="" /></a>
+                  <a href="#"><img src="/static/signature/media/git.png"  alt="" /></a>
+                  <a href="#"><img src="/static/signature/media/le.png"  alt="" /></a>
+                  <a href="#"><img src="/static/signature/media/yt.png"  alt="" /></a>                                           
+                </li>
+              </ul>
+            </div>
 
          </div>
         </div>
@@ -95,72 +101,383 @@ i am just copy pasting table templates {% endcomment %}
       </div>
     </div>
     <div class="col-md-6" id="template"> 
-      <div class="text-center"> 
-        <h2>Template-4</h2>
-        {%block Template-4%}
-       
-        {%endblock%}
+      <div class="row">
+          {%block Template-5%}
+            <div class="col-md-12">
+              <div class="row">
+                  <div class="col-md-3 d-flex align-items-center justify-content-center" id="photo-big">
+                      <img class="img-fluid" src="/static/signature/media/blank profile.png" alt=""> 
+                  </div>
+                  <div class="col-md-8" id="details" >
+                      <ul>
+                        <li><div class="text-center" id="name-5">Robert Long <span> Designer</span></div></li>
+                        <li><div id="address">7743 Street, Blue Park, Suite 233, Smalltown,Stateville, USA 774386</div></li>
+                        <li><div id="number"><span><img src="/static/signature/media/icon_phone.png"  alt="p" /></span> +1 (234) 567 - 890  |  <span><img src="/static/signature/media/icon_mobile.png"  alt="p" /></span> 0123 - 456 - 789</div></li>
+                        <li><div id="contract"><span><img src="/static/signature/media/icon_email.png"  alt="p" /></span> <a href="#">contact@robertlong.com</a> | <span><img src="/static/signature/media/icon_website.png"  alt="p" /></span> <a href="#">www.robertlong.com</a></div></li>
+                      </ul>  
+                  </div>
+
+                  <div class="col-md-1">
+                    <div class="" id="social-5">
+                      <li><a href="#"><img src="/static/signature/media/fb.png"  alt="" /></a></li>
+                      <li><a href="#"><img src="/static/signature/media/twiter.png"  alt="" /></a></li>
+                      <li><a href="#"><img src="/static/signature/media/le.png"  alt="" /></a></li>
+                      <li><a href="#"><img src="/static/signature/media/yt.png"  alt="" /></a></li>
+                    </div>
+                  </div>
+              </div>
+            </div>  
+          {%endblock%}
       </div>  
     </div>
-    </div>
-</div>  
-
-<div class="col-md-12"> 
-  <div class="row">
-    <div class="col-md-6" id="template">
-      <div class="text-center">
-        <h2>Template-5</h2>  
-        {%block Template-5%}
-        {%endblock%}
-      </div>
-    </div>
-    <div class="col-md-6" id="template"> 
-      <div class="text-center"> 
-        <h2>Template-6</h2>
-        {%block Template-6%}
-        {%endblock%}
-      </div>  
-    </div>
-    </div>
-</div>  
-
+  </div>
+</div>
 
 <div class="col-md-12"> 
   <div class="row">
     <div class="col-md-6"  id="template">
-      <div class="text-center">
-        <h2>Template-7</h2>  
-        {%block Template-7%}
+      <div class="row"> 
+        {%block Template-4%} 
+        <div class="col-md-12" id="temp5">
+          <div id="name4">Robert <span> Long</span></div>
+          <div id="designation4">GRAPHIC DESIGNER</div>
+          <div id="social">
+                <a href="#"><img src="/static/signature/media/icon_fb.png"  alt="" /></a>
+                <a href="#"><img src="/static/signature/media/icon_tw.png"  alt="" /></a>
+                <a href="#"><img src="/static/signature/media/icon_li.png"  alt="" /></a>
+                <a href="#"><img src="/static/signature/media/icon_gl.png"  alt="" /></a>                        
+          </div>
+        </div>    
         {%endblock%}
       </div>
     </div>
     <div class="col-md-6" id="template"> 
-      <div class="text-center"> 
-        <h2>Template-8</h2>
-        {%block Template-8%}
+      <div class="row"> 
+        {%block Template-6%}
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-5"> 
+                <div id="name6">ROBERT LONG</div>
+                <div id="designation6">GRAPHIC DESIGNER</div>
+                <div class="social6">
+                  <ul>
+                  <li>
+                    <a href="#"><img src="/static/signature/media/fb.png"  alt="" /></a>
+                    <a href="#"><img src="/static/signature/media/git.png"  alt="" /></a>
+                    <a href="#"><img src="/static/signature/media/le.png"  alt="" /></a>
+                    <a href="#"><img src="/static/signature/media/yt.png"  alt="" /></a>                                           
+                  </li>
+                </ul>
+                </div> 
+            </div>           
+            <div class="col-md-7" id="details">
+              <div id="border6"> 
+                <div id="number"><span><img src="/static/signature/media/icon_phone.png"  alt="p" /></span> +1 (234) 567 - 890  |  <span><img src="/static/signature/media/icon_mobile.png"  alt="p" /></span> 0123 - 456 - 789</div>
+                <div id="contract"><span><img src="/static/signature/media/icon_email.png"  alt="p" /></span> <a href="#">contact@robertlong.com</a> | <span><img src="/static/signature/media/icon_website.png"  alt="p" /></span> <a href="#">www.robertlong.com</a></div>
+              </div>  
+           </div>  
+         </div>
+       </div>  
         {%endblock%}
       </div>  
     </div>
-    </div>
+  </div>
 </div>   
+
+
+{% comment %}----------------------- 4th row design --------------{% endcomment %}
+
 <div class="col-md-12"> 
   <div class="row">
-    <div class="col-md-6" id="template">
-      <div class="text-center">
-        <h2>Template-9</h2>  
-        {%block Template-9%}
+    <div class="col-md-6"  id="template">
+      <div class="">
+        {%block Template-7%}
+        <div class="row">
+            <div id="table" class="col-md-12">     
+              <div class="row">
+                  <div class="col-md-4 d-flex align-items-center justify-content-center">
+                    <img class="img-fluid" id="image-r" src="/static/signature/media/blank profile.png" alt="">
+                  </div>
+
+                  <div class="col-md-8">
+                    <div id="intro7">
+                      <li>
+                        <div id="name">ROBERT LONG <span>Designer</span></div>
+                      </li>
+                      <li>
+                      <div id="address">7743 Street, Blue Park, Suite 233, Smalltown,Stateville, USA 774386</div>
+                      </li>
+                      <li>
+                        <div valign="bottom">
+                          <div>
+                            <li>
+                              <div id="number"><span><img src="/static/signature/media/icon_phone.png"  alt="p" /></span> +1 (234) 567 - 890 </div>
+                            </li>
+
+                            <li>
+                              <div id="contract"><span><img src="/static/signature/media/icon_email.png"  alt="p" /></span> <a href="#">contact@robertlong.com</a></div>
+                            </li>
+
+                            <li>
+                              <div id="social">
+                                <a href="#"><img src="/static/signature/media/icon_fb.png"  alt="" /></a>
+                                <a href="#"><img src="/static/signature/media/icon_tw.png"  alt="" /></a>
+                                <a href="#"><img src="/static/signature/media/icon_li.png"  alt="" /></a>
+                                <a href="#"><img src="/static/signature/media/icon_gl.png"  alt="" /></a>                        
+                              </div>
+                                {% comment %} <div>&nbsp;</div> {% endcomment %}
+                            </li>
+                          </div> 
+                        </div>
+                      </li>
+              </div>
+            </div>          
+        </div>
         {%endblock%}
       </div>
     </div>
     <div class="col-md-6" id="template"> 
-      <div class="text-center"> 
-        <h2>Template-10</h2>
-        {%block Template-10%}
+      <div class="col-md-12"> 
+        {%block Template-8%}
+          <div class="row">
+            <div class="col-md-12">     
+              <div class="row">
+                  <div class="col-md-8" id="right8">
+                    <div id="intro7">
+                      <li>
+                        <div id="name">ROBERT LONG <span>Designer</span></div>
+                      </li>
+                      <li>
+                        <div id="address">7743 Street, Blue Park, Suite 233, Smalltown,Stateville, USA 774386</div>
+                      </li>
+                      
+                      <li>
+                        <div id="contract"><span><img src="/static/signature/media/icon_email.png"  alt="p" /></span> <a href="#">contact@robertlong.com</a></div>
+                      </li>
+                        <div id="number"><span><img src="/static/signature/media/icon_phone.png"  alt="p" /></span> +1 (234) 567 - 890 </div>
+                      </li>
+                      <li>
+                        <div valign="bottom">
+                                <a href="#"><img src="/static/signature/media/icon_fb.png"  alt="" /></a>
+                                <a href="#"><img src="/static/signature/media/icon_tw.png"  alt="" /></a>
+                                <a href="#"><img src="/static/signature/media/icon_li.png"  alt="" /></a>
+                                <a href="#"><img src="/static/signature/media/icon_gl.png"  alt="" /></a>                      
+                        <div>&nbsp;</div>
+                          </div> 
+                      </li>
+                     
+                    </div>
+                  </div> 
+                  
+                  <div class="col-md-4 d-flex align-items-center justify-content-center">
+                    <img class="img-fluid" id="image-r" src="/static/signature/media/blank profile.png" alt="">
+                  </div>
+                  
+                 </div>
+              </div>          
+           </div>
         {%endblock%}
       </div>  
     </div>
+  </div>
+</div> 
+
+<div class="col-md-12">
+  <div class="row"> 
+    <div class="col-md-6" id="template">
+      <div class="row"> 
+        
+          {%block template-9%}
+          <div class="col-md-12" id="table" >
+            <div class="row" id="temp9"> 
+                <div class="col-md-8">
+                  
+                   <div class="" id="name">Robert Long</div>
+                   <div id="designation">Designer</div>
+                  
+                    <div class="details9">   
+                      <div id="address"><span>Address : </span>7743 Street, Blue Park, Suite 233, Smalltown, Stateville, USA 774386</div>
+                      <div id="number"><span>Phone : </span>0123 - 456 - 789</div>
+                      <div id="contract"><span>Email : </span> <a href="#">contact@robertlong.com</a></div>
+                    
+                        <li valign="bottom">
+                          <a href="#"><img src="/static/signature/media/icon_fb.png"  alt="" /></a>
+                          <a href="#"><img src="/static/signature/media/icon_tw.png"  alt="" /></a>
+                          <a href="#"><img src="/static/signature/media/icon_li.png"  alt="" /></a>
+                          <a href="#"><img src="/static/signature/media/icon_gl.png"  alt="" /></a>                        
+                                              
+                        </li>
+                    </div>
+                </div>
+                
+                <div  class="col-md-4 d-flex align-items-center justify-content-center" id="photo-big">
+                  <img class="img-fluid" src="/static/signature/media/blank profile.png" alt=""> 
+                </div>
+            </div>  
+          </div>
+          {%endblock%}
+         
+      </div>
     </div>
-</div>  
+    <div class="col-md-6" id="template">
+      <div class="row"> 
+        <div class="col-md-12">
+          {%block template-10%}
+          <div class="row" id="temp10"> 
+            <div class="col-md-8"> 
+              <div id="designation10">Designer</div>
+              <div class="" id="name10">Robert Long</div>
+              <div id="number"><span>Tel : </span> +1 (234) 567 - 890 </div>
+              <div id="contract"><span>Website : </span><a href="#">www.robertlong.com</a></div>
+              <div id="social10">
+                  <a href="#"><img src="/static/signature/media/fb.png"  alt="" /></a>
+                  <a href="#"><img src="/static/signature/media/git.png"  alt="" /></a>
+                  <a href="#"><img src="/static/signature/media/le.png"  alt="" /></a>
+                  <a href="#"><img src="/static/signature/media/yt.png"  alt="" /></a>                                           
+              </div>
+              
+            </div>
+            <div class="col-md-4"> 
+              <img id="big-image" class="img-fluid" src="/static/signature/media/blank profile.png" alt="">
+            </div>
+          </div>
+          {%endblock%}
+          </div>
+      </div>
+    </div>
+  </div>
+ </div>
+
+
+ {% comment %}--------------- second ten (10) starts from here {% endcomment %}
+
+  <div class="col-md-12"> 
+    <div class="row"> 
+      <div class="col-md-6" id="template">
+        <div class="row"> 
+          <div clas="col-md-12">
+            {%block template-11%}
+            <h1>Template-11</h1>
+            {%endblock%}
+          </div>
+        </div> 
+      </div>
+      <div class="col-md-6" id="template"> 
+      <div class="row"> 
+        <div clas="col-md-12">
+          {%block template-12%}
+          <h1>Template-12</h1>
+          {%endblock%}
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+  {% comment %} Template no ---13 and 14 {% endcomment %}
+
+  <div class="col-md-12"> 
+  <div class="row"> 
+    <div class="col-md-6" id="template">
+      <div class="row"> 
+        <div clas="col-md-12">
+          {%block template-13%}
+          <h1>Template-13</h1>
+          {%endblock%}
+        </div>
+      </div> 
+      </div>
+    <div class="col-md-6" id="template"> 
+      <div class="row"> 
+        <div clas="col-md-12">
+          {%block template-14%}
+          <h1>Template-14</h1>
+          {%endblock%}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% comment %} ------------template no 15 and 16 {% endcomment %}
+
+<div class="col-md-12"> 
+  <div class="row"> 
+    <div class="col-md-6" id="template">
+      <div class="row"> 
+        <div clas="col-md-12">
+          {%block template-15%}
+          <h1>Template-15</h1>
+          {%endblock%}
+        </div>
+      </div> 
+     </div>
+    <div class="col-md-6" id="template"> 
+     <div class="row"> 
+       <div clas="col-md-12">
+         {%block template-16%}
+         <h1>Template-16</h1>
+         {%endblock%}
+       </div>
+     </div>
+    </div>
+  </div>
+</div>
+
+{% comment %} ------------template no 17 and 18 {% endcomment %}
+
+<div class="col-md-12"> 
+  <div class="row"> 
+    <div class="col-md-6" id="template">
+      <div class="row"> 
+        <div clas="col-md-12">
+          {%block template-17%}
+          <h1>Template-17</h1>
+          {%endblock%}
+        </div>
+      </div> 
+     </div>
+    <div class="col-md-6" id="template"> 
+     <div class="row"> 
+       <div clas="col-md-12">
+         {%block template-18%}
+         <h1>Template-18</h1>
+         {%endblock%}
+       </div>
+     </div>
+    </div>
+  </div>
+</div>
+
+{% comment %} ------------template no 19 and 20 {% endcomment %}
+
+<div class="col-md-12"> 
+  <div class="row"> 
+    <div class="col-md-6" id="template">
+      <div class="row"> 
+        <div clas="col-md-12">
+          {%block template-19%}
+          <h1>Template-19</h1>
+          {%endblock%}
+        </div>
+      </div> 
+     </div>
+    <div class="col-md-6" id="template"> 
+     <div class="row"> 
+       <div clas="col-md-12">
+         {%block template-20%}
+         <h1>Template-20</h1>
+         {%endblock%}
+       </div>
+     </div>
+    </div>
+  </div>
+</div>
+
+
+
 
 
 
