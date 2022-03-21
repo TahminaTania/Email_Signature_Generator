@@ -140,6 +140,11 @@ li a img{
   color:blue;
   padding-right:15px;
 }
+#social a img{
+height:15px;
+width:15px;
+}
+
 
  /*------------------------- 3rd file */
  /* #photo-big{
@@ -309,4 +314,19 @@ width:50px;
   width: 15px;
   border-radius: 50%;
   margin-right: 5px;
+}
+
+#backgrund12{
+  padding:5px;
+  background-color: #007fe6;
+  color:white;
+  font-size: 11px;
+}
+
+#contract12 a{
+  color:white;
+  text-decoration:none;
+  font-size:11px;
+  line-height:20px;
+  padding-top:0px;
 }
