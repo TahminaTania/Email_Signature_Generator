@@ -71,7 +71,7 @@
   text-decoration:none;
 }
 
-#address, #number ,#contract{
+#address, #number ,#Contact{
   white-space: normal;
   font-size:10px; 
   color:#999999; 
@@ -81,11 +81,11 @@
 }
 #address span,
 #number span,
-#contract span{
+#Contact span{
   color:#007fe6;
 }
 
-#contract a{
+#Contact a{
   color:#999;
   text-decoration:none;
 }
@@ -243,7 +243,6 @@ white-space:nowrap;
 }
 #image-r{
   border-radius:50%;
-  padding:5px;
   height:80px;
   width: 80px;
 }
@@ -323,10 +322,126 @@ width:50px;
   font-size: 11px;
 }
 
-#contract12 a{
+#Contact12 a{
   color:white;
   text-decoration:none;
   font-size:11px;
   line-height:20px;
   padding-top:0px;
+}
+#intro13{
+  font-size:16px;
+  color:#007fe6;
+  font-weight:bold; 
+  border-left: #007fe6 solid 2px; 
+  padding-left: 10px;
+}
+
+#designation13{
+  font-size:12px;
+   color:#555555;
+}
+#phone13{
+  font-size:11px;
+  color:#999999; 
+  padding-top:6px; 
+  line-height:18px; 
+  padding-top:15px; 
+  padding-left: 12px;
+}
+#email13,
+#contact13,
+#address13{
+  font-size:11px;
+   color:#999999; 
+   line-height:20px; 
+   padding-left: 12px; 
+}
+#email13 a,
+#contact13 a,
+#address13 a
+{
+  color:#0a48fa;
+  text-decoration: none;
+}
+#social13{
+  padding-top:12px;
+  padding-left:12px; 
+}
+#social13 a{
+  padding-right:8px;
+}
+#social13 img{
+  height:17px;
+  width: 16px;
+}
+#summery{
+  font-size:8px;
+  color:#999999; 
+  padding-left:12px; 
+  line-height:15px; 
+  padding-top:12px;
+}
+
+#intro14{
+  font-size:14px; 
+  color:#333333; 
+  font-weight:bold; 
+  padding-top:11px; 
+}
+
+#intro14 span{
+  font-size:12px; 
+  color:#007fe6; 
+  font-weight:normal;
+}
+#number img,
+#Contact img{
+  margin-right: 5px;
+}
+
+#social-link li {
+  padding-bottom:8px;
+}
+#social-link span{
+  padding-bottom:8px; 
+  color:#999999; 
+  font-size:11px;
+}
+#border15{
+  padding:2px;
+  border:1px solid #999999;
+}
+#into15{
+  margin:4px;
+  border-bottom:1px solid #999999;
+}
+
+#photo15{
+  height: 90px;
+  width: 85px;
+
+}
+
+#social-15 a{
+ padding:2px;
+}
+#social-15 a img{
+  height:12px;
+  width: 12px;
+}
+#image-R{
+  height: 90px;
+  width:120px;
+  border-radius: 50%;
+}
+#bod16{
+  border-left: 2px solid blue;
+}
+
+#temp17 #number a,
+#temp17 #Contact a
+{
+  padding-bottom: 3px;
+  border-bottom: 1px solid #c9c9c9;
 }
