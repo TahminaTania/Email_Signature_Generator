@@ -1,6 +1,6 @@
 {% extends 'signature/base.html' %}
 {%block input%}
-<h4 class="text-center alert alert-info">Input-form field Here</h4>
+{% comment %} <h4 class="text-center alert alert-info">Input-form field Here</h4> {% endcomment %}
 <div class="row">
     <div class="col-md-12"> 
         <div class="tab">
@@ -21,24 +21,24 @@
              
             <div class="d-flex justify-content-center form_container">
                 <li style="list-style:none">  
-                    <div class="input-group mt-3 mb-4"> 
-                      {{form.name}}
+                    <div class="mt-3 mb-4">
+                      <input type="text" name="name" class="form-control" > 
                     </div>
-                   <div class="input-group mb-4"> 
-                      {{form.email}}
+                   <div class="mb-4"> 
+                    <input type="email" name="email" class="form-control" > 
                     </div>
-                    <div class="input-group mb-4">
-                      {{form.Job_Title}}
+                    <div class="mb-4">
+                      <input type="text" name="designation" class="form-control" > 
                     </div>
-                    <div class="input-group mb-4">
-                      {{form.Department}}
+                    <div class="mb-4">
+                      <input type="text" name="Department" class="form-control" > 
                     </div>
-                    <div class="input-group mb-5">
-                      {{form.Company}}
+                    <div class="mb-5">
+                      <input type="text" name="Company" class="form-control" > 
                     </div>
                     
-                     <div class="d-grid text-center col-12">
-                        <input class="btn btn-lg btn-info" id="next-btn" value="NEXT">
+                     <div class="col-md-12">
+                      <button type="submit" class="btn btn-lg btn-primary" id="next-btn">NEXT</button>
                     </div> 
                  </li>   
             </div>
@@ -49,25 +49,25 @@
             
             <div class="d-flex justify-content-center form_container">
                 <li style="list-style:none">  
-                    <div class="input-group mt-3 mb-4">
-                      {{form.Address}}
+                    <div class="mt-3 mb-4">
+                      <input type="text" name="Address" class="form-control" > 
                     </div>
                     <div class="input-group mb-4">
-                        {{form.Website}}
+                      <input type="text" name="Website" class="form-control" > 
                     </div>
                      
                     <div class="input-group mb-4">
-                        {{form.Phone}}
+                      <input type="text" name="Phone" class="form-control" > 
                       </div>
                     <div>
                         <div class="form-group">
                         <div>
                             <p><strong>Upload Your Image Here :</strong></p>
                         </div>
-                        {{form.Image}}
+                        <input type="file" name="Image" class="form-control-file" > 
                         </div>
                         <div class="d-grid text-center col-12">
-                            <input class="btn btn-lg btn-Success" id="next-btn" type="submit" value="NEXT">
+                           <button type="submit" class="btn btn-lg " id="next-btn">NEXT</button>
                         </div>
                  </li>   
             </div>
@@ -78,25 +78,24 @@
         <div id="Social" class="tabcontent">
             <div class="d-flex justify-content-center form_container">
                 <li style="list-style:none">  
-                    <div class="input-group mt-3 mb-4">
-                      {{form.Facebook}}
+                    <div class="mt-3 mb-4">
+                      <input type="url" name="Facebok" class="form-control" > 
                     </div>
-                   <div class="input-group mb-4">
-                      {{form.Twiter}}
+                   <div class="mb-4">
+                    <input type="url" name="Twiter" class="form-control" > 
                     </div>
-                    <div class="input-group mb-4">
-                      {{form.Github}}
+                    <div class="mb-4">
+                      <input type="url" name="Github" class="form-control" > 
                     </div>
-                    <div class="input-group mb-4">
-                      {{form.Linkedin}}
+                    <div class="mb-4">
+                      <input type="url" name="Linkedin" class="form-control" > 
                     </div>
-                    <div class="input-group mb-5">
-                      {{form.Youtube}}
+                    <div class="mb-5">
+                      <input type="url" name="Youtube" class="form-control" > 
                     </div>
                     <div class="d-grid text-center col-12">
-                        <input class="btn btn-lg btn-info" id="next-btn" value="SUBMIT">
-                    </div>
-
+                      <button type="submit" class="btn btn-lg " id="next-btn">SUBMIT</button>
+                   </div>
                  </li>   
             </div>
         

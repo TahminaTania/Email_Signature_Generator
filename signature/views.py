@@ -2,7 +2,7 @@ from pickle import NONE
 from unicodedata import name
 from django.shortcuts import redirect, render,redirect,HttpResponseRedirect
 from django.http import HttpResponse
-from .forms import registration,Uregistration
+from .forms import registration
 from .models import person
 from django.contrib import messages
 from django.views.generic import UpdateView
