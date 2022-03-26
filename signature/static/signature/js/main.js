@@ -1,3 +1,8 @@
+function updateInput(name){
+  document.getElementById("name").value = name;
+}
+
+
 function Copy(i){
   if (i==1){
     var templateID = 'template1'; 

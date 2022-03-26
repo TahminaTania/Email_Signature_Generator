@@ -57,11 +57,20 @@ button{
   font-size:12px; 
   color:#333333;
 }
+#name span span{
+  font-size:9px; 
+  color:#616060;
+}
 #designation{
   font-size:13px;
   color:black; 
   line-height:20px;
   letter-spacing: 2px;
+}
+#designation span{
+  color:#0d5b9b;
+  font-size:11px; 
+  letter-spacing:normal;
 }
 .details{
   /* margin-left:10px; */
@@ -133,14 +142,23 @@ li a img{
 #job{
   font-size:20px;
   padding-top:3px;
-  color:#333333
+  color:#333333;
 }
-
+#job span{
+  color: #206abe;
+  font-weight: bolder;
+}
 #border-down{
   border-bottom: 3px solid #007fe6;
   
 }
-
+#Company{
+  font-size:11px;
+  letter-spacing:1px;
+  color:#000000; 
+  line-height:18px; 
+  font-weight:200;
+}
 #name4{
   font-size:20px; 
   color:#007fe6;
@@ -530,7 +548,7 @@ width:50px;
 
 #name24{
   font-size:14px; 
-  color:#313131; 
+  color:#1b1b1b; 
   line-height:25px; 
   font-weight:bold; 
   padding-bottom:2px;
@@ -539,7 +557,13 @@ width:50px;
 
 #name24 span{
   font-size:12px; 
-  color:#666666; 
+  color:#4e4e4e; 
+  font-weight:normal;
+
+}
+#name24 span span{
+  font-size:9px; 
+  color:#807e7e; 
   font-weight:normal;
 
 }
