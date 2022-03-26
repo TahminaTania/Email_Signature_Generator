@@ -71,7 +71,8 @@
   text-decoration:none;
 }
 
-#address, #number ,#Contact{
+#address, #number ,#Contact,
+#addressP, #numberP ,#ContactP{
   white-space: normal;
   font-size:10px; 
   color:#999999; 
@@ -81,11 +82,19 @@
 }
 #address span,
 #number span,
-#Contact span{
+#Contact span,
+{
   color:#007fe6;
 }
-
-#Contact a{
+#ContactP span img,
+#numberP span img,
+#addressP span img{
+  height: 15px;
+  width: 15px;
+  padding-right: 5px;
+}
+#Contact a,
+#ContactP a{
   color:#999;
   text-decoration:none;
 }
@@ -391,7 +400,8 @@ width:50px;
   font-weight:normal;
 }
 #number img,
-#Contact img{
+#Contact img,
+{
   margin-right: 5px;
 }
 
@@ -692,4 +702,53 @@ padding-left:13px;
 }
 #border36{
   border-left: #eeeeee solid 2px;
+}
+#border37{
+  border-left: 3px solid #007fe6 ;
+}
+#sign37{
+  padding-left:15px;
+}
+#sign38{
+  padding-top: 15px;
+  text-align: right;
+}
+#image40 img{
+height: 60px;
+width: 60px;
+border-radius: 50%;
+}
+#designation41{
+  padding-bottom:5px;
+  border-bottom: #007fe6 dashed 1px; 
+  font-size:13px;
+  color:black; 
+  line-height:20px;
+  letter-spacing: 2px;
+}
+#address41{
+  white-space: normal;
+  font-size:10px; 
+  color:white; 
+  line-height:16px;
+  padding-top:8px;
+  padding-bottom: 8px;
+ 
+}
+#name42{
+  font-size: 16px;
+  font-weight: bolder;
+  color:black; 
+}
+#designation42{
+  font-size:12px;
+  font-weight: lighter;
+  color:rgb(61, 60, 60); 
+  /* color: #007fe6; */
+}
+#social43 a{
+  padding:5px;
+}
+#sign-44{
+  padding-top: 10px;
 }
