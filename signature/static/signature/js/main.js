@@ -1,8 +1,13 @@
-function updateInput(name){
-  document.getElementById("name").value = name;
+function updatename(){
+  var name= document.getElementById("nameT").value;
+  document.getElementById("name").innerHTML= name;
 }
-
-
+function updatedesignation(){
+  var des= document.getElementById("desT").value;
+  document.querySelector('#name span').innerText=des;
+  
+  // document.getElementById("name").getElementsByTagName('span').innerText= des;
+}
 function Copy(i){
   if (i==1){
     var templateID = 'template1'; 

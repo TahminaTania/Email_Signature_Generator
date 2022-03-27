@@ -103,7 +103,7 @@ button{
 }
 #address span,
 #number span,
-#Contact span,
+#Contact span
 {
   color:#007fe6;
 }
@@ -126,8 +126,8 @@ li{
 }
 
 li a img{
-  padding-right:5px;
-  height:16px;
+  /* padding-right:5px; */
+  height:18px;
   width: 18px; 
 }
 
@@ -232,9 +232,9 @@ width:15px;
   
 }
 
-#social-5 li{
-  margin-left: -10px;
-
+#social5 li a img{
+  margin:0;
+  padding: 0;
 }
 
 

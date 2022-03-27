@@ -107,7 +107,10 @@
 
 
  /* ------------color choosing */
-
+#colors{
+  margin: 0;
+  padding: 0;
+}
  #color1{
    background-color: aquamarine;
    height: 50px;
