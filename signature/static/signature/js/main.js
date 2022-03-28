@@ -1,13 +1,42 @@
 function updatename(){
-  var name= document.getElementById("nameT").value;
+  var name= document.getElementById("nameI").value;
   document.getElementById("name").innerHTML= name;
 }
 function updatedesignation(){
-  var des= document.getElementById("desT").value;
-  document.querySelector('#name span').innerText=des;
-  
-  // document.getElementById("name").getElementsByTagName('span').innerText= des;
+  var des= document.getElementById("desI").value;
+  document.getElementById("designation").innerHTML= des;
+  // document.querySelector('#name span').innerText=des;
+  console.log(des);
+ 
 }
+function updatemail(){
+  var email= document.getElementById("emailI").value;
+  document.getElementById("email").innerHTML= email;
+}
+function updatecompany(){
+  var Company= document.getElementById("CompI").value;
+  document.getElementById("Company").innerHTML= Company;
+}
+
+function updateaddress(){
+  var add= document.getElementById("addressI").value;
+  document.getElementById("address").innerHTML= add;
+}
+function updatewebsite(){
+  var web= document.getElementById("websiteI").value;
+  document.getElementById("website").innerText=web;
+  console.log(web)
+}
+function updatephone(){
+  var phone= document.getElementById("numberI").value;
+  document.getElementById("phone").innerHTML= phone;
+}
+function updatemobile(){
+  var mobile= document.getElementById("mobileI").value;
+  document.getElementById("mobile").innerHTML= mobile;
+}
+
+
 function Copy(i){
   if (i==1){
     var templateID = 'template1'; 

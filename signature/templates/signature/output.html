@@ -11,12 +11,14 @@
 <div class="col-md-12" id="table" >
 
 {% comment %} two button {% endcomment %}
+
 <div class="row">
   <div class="col-md-4" id="button">
         <button onclick="Copy(1)"><img class="img-fluid" src="/static/signature/media/copy_icon.png" alt=""></button>
         <button ><img class="img-fluid" src="/static/signature/media/code_icon.png" alt=""></button>  
   </div>
 </div>
+
 {% comment %} two button {% endcomment %}
   <div class="row"  id="template1"> 
       <div  class="col-md-4 d-flex align-items-center justify-content-center" id="photo-big">
@@ -25,13 +27,13 @@
     
       <div class="col-md-8" id="col2">
         
-         <div class="text-center" id="name">Robert Long <span> Designer</span></div>
+         <div class="text-center" id="name"> Robert Long <span id="designation1"> Designer</span></div>
         <div id="others">
           <div class="details">
             
-            <div >7743 Street, Blue Park, Suite 233, Smalltown,Stateville, USA 774386</div>
+            <div id="address">7743 Street, Blue Park, Suite 233, Smalltown,Stateville, USA 774386</div>
             <div><span>t</span> +1 (234) 567 - 890  |  <span>m</span> 0123 - 456 - 789</div>
-            <div><span>e</span> <a href="#">contact@robertlong.com</a> | <span>w</span> <a href="#">www.robertlong.com</a></div>
+            <div><span>e</span> <a href="#" id="email">contact@robertlong.com</a> | <span>w</span> <a href="#" id="website">www.robertlong.com</a></div>
           </div> 
         </div> 
         <ul>
