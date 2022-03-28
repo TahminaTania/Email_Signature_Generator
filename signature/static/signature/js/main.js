@@ -1,6 +1,11 @@
 function updatename(){
   var name= document.getElementById("nameI").value;
-  document.getElementById("name").innerHTML= name;
+  var elms = document.querySelectorAll("[id='name']"); 
+  for(var i = 0; i < elms.length; i++) 
+  elms[i].innerHTML=name;
+  
+  // document.getElementById("name").innerHTML= name;
+  
 }
 function updatedesignation(){
   var des= document.getElementById("desI").value;
