@@ -1,3 +1,16 @@
+function updatephoto(){
+  var img= document.getElementById("photoI").value.replace('C:\\fakepath\\',''); 
+
+  // if (img) {
+  //   //process input
+  // var image= img.value.replace("C: \\fakepath\\", "");
+  // } 
+  console.log(img)
+  document.getElementById("photo-big").src =img; 
+ 
+}
+
+
 function updatename(){
   var name= document.getElementById("nameI").value;
   var elms = document.querySelectorAll("[id='name']"); 
@@ -56,18 +69,20 @@ function updatewebsite(){
   console.log(web)
 }
 function updatephone(){
-  var phone= document.getElementById("numberI").value;
+  var phone= document.getElementById("phoneI").value;
   var phn = document.querySelectorAll("[id='phone']"); 
   for(var p = 0; p < phn.length; p++) 
   phn[p].innerHTML=phone;
-  document.getElementById("phone").innerHTML= phone;
+  console.log(phone)
+
+  //document.getElementById("phone").innerHTML= phone;
 }
 function updatemobile(){
   var mobile= document.getElementById("mobileI").value;
   var mbl = document.querySelectorAll("[id='mobile']"); 
   for(var q = 0; q < mbl.length; q++) 
   mbl[q].innerHTML= mobile;
-  document.getElementById("mobile").innerHTML= mobile;
+  //document.getElementById("mobile").innerHTML= mobile;
 }
 
 
