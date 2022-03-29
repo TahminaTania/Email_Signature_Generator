@@ -4,40 +4,69 @@ function updatename(){
   for(var i = 0; i < elms.length; i++) 
   elms[i].innerHTML=name;
   
-  // document.getElementById("name").innerHTML= name;
-  
+  // document.getElementById("name").innerHTML= name; 
 }
+
 function updatedesignation(){
   var des= document.getElementById("desI").value;
-  document.getElementById("designation").innerHTML= des;
+  var designation = document.querySelectorAll("[id='designation']"); 
+  for(var j = 0; j < designation.length; j++) 
+  designation[j].innerHTML=des;
+  document.getElementById("job").innerHTML= des;
+  document.getElementById("designation3").innerHTML= des;
+
   // document.querySelector('#name span').innerText=des;
-  console.log(des);
+  //console.log(des);
  
 }
 function updatemail(){
   var email= document.getElementById("emailI").value;
-  document.getElementById("email").innerHTML= email;
+  var mail = document.querySelectorAll("[id='email']"); 
+  for(var l = 0; l < mail.length; l++) 
+  mail[l].innerHTML=email;
+ 
+  // document.getElementById("email").innerHTML= email;
 }
 function updatecompany(){
   var Company= document.getElementById("CompI").value;
-  document.getElementById("Company").innerHTML= Company;
+  var comp = document.querySelectorAll("[id='Company']"); 
+  for(var m = 0; m < comp.length; m++) 
+  comp[m].innerHTML=Company;
+
+  document.getElementById("Company3").innerHTML= Company;
+
+  //document.getElementById("Company").innerHTML= Company;
 }
 
 function updateaddress(){
   var add= document.getElementById("addressI").value;
-  document.getElementById("address").innerHTML= add;
+  var addr = document.querySelectorAll("[id='address']"); 
+  for(var n = 0; n < addr.length; n++) 
+  addr[n].innerHTML=add;
+
+  //document.getElementById("address").innerHTML= add;
 }
 function updatewebsite(){
   var web= document.getElementById("websiteI").value;
-  document.getElementById("website").innerText=web;
+  var site = document.querySelectorAll("[id='website']"); 
+  for(var o = 0; o < site.length; o++) 
+  site[o].innerHTML=web;
+
+  //document.getElementById("website").innerText=web;
   console.log(web)
 }
 function updatephone(){
   var phone= document.getElementById("numberI").value;
+  var phn = document.querySelectorAll("[id='phone']"); 
+  for(var p = 0; p < phn.length; p++) 
+  phn[p].innerHTML=phone;
   document.getElementById("phone").innerHTML= phone;
 }
 function updatemobile(){
   var mobile= document.getElementById("mobileI").value;
+  var mbl = document.querySelectorAll("[id='mobile']"); 
+  for(var q = 0; q < mbl.length; q++) 
+  mbl[q].innerHTML= mobile;
   document.getElementById("mobile").innerHTML= mobile;
 }
 
