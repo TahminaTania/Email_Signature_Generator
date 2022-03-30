@@ -10,6 +10,11 @@ button{
   width: 20px;
   padding: 2px;
 }
+.att_color{
+  font-size:10px; 
+  /* color:#999999;  */
+  line-height:16px;
+}
 
 
 #template{
@@ -28,9 +33,9 @@ button{
   background:#c2c0d3;
 }
 
-#others{
+#others .details{
   border-left:3px solid #007fe6;
-  padding: 10px;
+  padding-left:10px;
 }
 #output-container{
   justify-content: center;
@@ -44,7 +49,7 @@ button{
   
 }
 
-#photo img{
+#photo {
   height:50px;
   width:50px;
 }
@@ -103,10 +108,8 @@ a{
   line-height:16px;
   padding-top:3px;
 }
-.mid-line
-{
-  color:#007fe6;
-}
+
+
 #ContactP span img,
 #phoneP span img, #mobileP span img,
 #addressP span img{
@@ -139,21 +142,19 @@ li a img{
   line-height:25px; 
   font-weight:900;
 }
+
 #job,
 #designation3,
 #Company3{
-  font-size:20px;
+  font-size:15px;
   padding-top:3px;
   color:#333333;
 }
-.mid-line{
-  color: #206abe;
-  font-weight: bolder;
-}
+
 #border-down{
   border-bottom: 3px solid #007fe6;
-  
 }
+
 #Company{
   font-size:11px;
   letter-spacing:1px;
@@ -189,7 +190,7 @@ width:15px;
 
  /*------------------------- 3rd file */
 
-#photo-big img{
+#photo-big{
   height:100px;
   width:100px;
   /* margin-top: 10px; */
@@ -198,10 +199,10 @@ width:15px;
   margin:5px;
 }
 #name-5{
-  font-size:16px; 
+  font-size:20px; 
   color:#333333;
 }
-#name-5 span{
+#designation5{
   color:#007fe6;
   font-size:14px;
 }
@@ -216,7 +217,7 @@ width:15px;
 #details li{
   border-right:solid 1px #999999;
 }
-#details ul li #phone, #mobile{
+#details ul li #phone,#details ul li #mobile{
   font-size:11px;
   color:#999999;
   line-height:16px;
@@ -330,14 +331,16 @@ width:50px;
   border:2px solid #999999; 
 }
 
-#name10{
+#name10,
+#name38{
   font-size:20px;
   font-weight:900;
   color:#007fe6; 
   line-height:25px;
   letter-spacing: 3px;
 }
-#designation10{
+#designation10,
+#designation38{
   font-size:17px;
   font-weight:500;
   color:#757373; 
@@ -419,14 +422,15 @@ width:50px;
   padding-top:12px;
 }
 
-#intro14{
+#into14,
+#name37{
   font-size:13px; 
   color:#333333; 
   font-weight:bold; 
   padding-top:11px; 
 }
 
-#intro14 span{
+#into14 #designation14{
   font-size:11px; 
   color:#007fe6; 
   font-weight:normal;
@@ -439,6 +443,9 @@ width:50px;
 
 #social-link li {
   padding-bottom:8px;
+}
+#social-link li a {
+  margin-right:2px;
 }
 #social-link span{
   padding-bottom:8px; 
@@ -476,7 +483,7 @@ width:50px;
   border-left: 2px solid blue;
 }
 
-#temp17 #phone17, #mobile a,
+#temp17 #phone17, #mobile17 a,
 #temp17 #Contact a
 {
   padding-bottom: 3px;
@@ -509,11 +516,19 @@ width:50px;
   padding:5px; 
   letter-spacing:2px;
 }
-#designation20{
+#designation20,
+#designation39{
   color:#007fe6; 
   font-size:10px; 
   padding-top:10px; 
   letter-spacing:1px;
+}
+#social20 a{
+  padding-left: 10px;
+  justify-content: space-between;
+}
+#single-space{
+  padding-top: 10px;
 }
 
 #social21 a{
@@ -536,6 +551,10 @@ width:50px;
   margin-right: 3px;
   background: #007fe6;
 }
+#lower{
+  margin-top: 10px;
+  /* padding-top: 50px; */
+}
 #Contact23,
 #phone23, #mobile23{
   font-size:11px;
@@ -548,8 +567,8 @@ width:50px;
   color: #EAEAEA;
 }
 
-#name24{
-  font-size:14px; 
+#upper-part{
+  font-size:15px; 
   color:#1b1b1b; 
   line-height:25px; 
   font-weight:bold; 
@@ -557,16 +576,19 @@ width:50px;
   border-bottom:#eeeeee solid 2px;
 }
 
-#name24 span{
+#upper-part #designation{
+  padding-left: 8px;
   font-size:12px; 
   color:#4e4e4e; 
-  font-weight:normal;
+  font-weight:500;
 
 }
-#name24 span span{
+#upper-part #Company{
+  padding-left: 8px;
   font-size:9px; 
-  color:#807e7e; 
-  font-weight:normal;
+  color:#5c5a5a; 
+  font-family:'Times New Roman', Times, serif;
+  font-weight:500;
 
 }
 #social24 {
@@ -577,9 +599,12 @@ width:50px;
   padding-top:3px; 
   text-align:right
 }
-#social24 a{
+#social24 a img {
   padding-right: 2px;
+  height: 15px;
+  width: 15px;
 }
+
 #Contact25 a{
   text-decoration: none;
   font-size:11px;
@@ -611,9 +636,12 @@ width:50px;
   color:#ffffff; 
   font-weight:bold;
 }
+#address26,
 #Contact26 a,
-#phone26, #mobile26,
-#address26{
+#Contact26 span, 
+#number26,
+#number26 span
+{
   font-size:9px; 
   color:#ffffff; 
   line-height:20px; 
@@ -638,6 +666,7 @@ width:50px;
 }
 #sign27{
   padding-top:20px;
+  padding-bottom:10px;
 }
 
 #name28{
@@ -705,7 +734,7 @@ margin-left:10%
   border-top: 1px solid #cecece;
   border-bottom: 1px solid #cecece;
 }
-#image34 img{
+#image34 #photo-big{
   height: 60px;
   width: fit-content;
   border-radius: 50%;
@@ -722,7 +751,7 @@ padding-left:13px;
 #tem35-image{
   background-color: #cecece;
 }
-#tem35 img{
+#tem35 #photo{
   height:fit-content;
   width:fit-content;
   margin: none;

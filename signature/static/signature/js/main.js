@@ -1,23 +1,60 @@
-function updatephoto(){
-  var img= document.getElementById("photoI").value.replace('C:\\fakepath\\',''); 
+function updatephoto(event){
+  // var img= document.getElementById("photoI").value.replace('C:\\fakepath\\',''); 
+  // console.log(img)
+ var url=URL.createObjectURL(event.target.files[0]);
+   var imgs = document.querySelectorAll("[id='photo-big']");
+   var imgr = document.querySelectorAll("[id='image-r']");
+   var imgb = document.querySelectorAll("[id='big-image']");
+   var pht = document.querySelectorAll("[id='photo']");
+   var phl = document.querySelectorAll("[id='photo-l']");
 
-  // if (img) {
-  //   //process input
-  // var image= img.value.replace("C: \\fakepath\\", "");
-  // } 
-  console.log(img)
-  document.getElementById("photo-big").src =img; 
- 
-}
+   
+   for(var e = 0; e < imgs.length; e++){
+    console.log(imgs)
+    imgs[e].src =url;
+  }
+   for(var r = 0; r < imgr.length; r++){
+    imgr[r].src =url;
+  }
+  for(var eb = 0; eb < imgb.length; eb++){
+    imgb[eb].src =url;
+  }
+  for(var phL = 0; phL < phl.length; phL++){
+    phl[phL].src =url;
+  }
+  for(var ph = 0; ph < pht.length; ph++){
+    pht[ph].src =url;
+  }
+
+  
+  
+  //document.getElementById("photo-big").src =url;
+ }
 
 
 function updatename(){
   var name= document.getElementById("nameI").value;
+  //document.getElementsByClassName('name').innerHTML= name;
   var elms = document.querySelectorAll("[id='name']"); 
   for(var i = 0; i < elms.length; i++) 
   elms[i].innerHTML=name;
   
-  // document.getElementById("name").innerHTML= name; 
+  document.getElementById("name-5").innerHTML= name;
+  document.getElementById("name4").innerHTML= name;
+  document.getElementById("name6").innerHTML= name;
+  document.getElementById("name10").innerHTML= name;// used at name 27 too
+  document.getElementById("name14").innerHTML= name;// used at 28 too
+  document.getElementById("name19").innerHTML= name;
+  document.getElementById("name20").innerHTML= name;
+  document.getElementById("name24").innerHTML= name;
+  document.getElementById("name26").innerHTML= name;// white need loop
+  document.getElementById("name28").innerHTML= name;
+  document.getElementById("name34").innerHTML= name;
+  document.getElementById("name35").innerHTML= name;
+  document.getElementById("name36").innerHTML= name;
+  document.getElementById("name38").innerHTML= name; 
+  document.getElementById("name19").innerHTML= name;
+   
 }
 
 function updatedesignation(){
@@ -26,7 +63,27 @@ function updatedesignation(){
   for(var j = 0; j < designation.length; j++) 
   designation[j].innerHTML=des;
   document.getElementById("job").innerHTML= des;
-  document.getElementById("designation3").innerHTML= des;
+  document.getElementById("designation3").innerHTML= des; //2 tyme used need loop+
+  document.getElementById("designation4").innerHTML= des;
+  document.getElementById("designation5").innerHTML= des;
+  document.getElementById("designation6").innerHTML= des;
+  document.getElementById("designation10").innerHTML= des;
+  document.getElementById("designation13").innerHTML= des;
+  document.getElementById("designation14").innerHTML= des;
+  document.getElementById("designation19").innerHTML= des;
+  document.getElementById("designation20").innerHTML= des;
+  document.getElementById("designation25").innerHTML= des;
+  document.getElementById("designation26").innerHTML= des;//white need loop
+  document.getElementById("designation34").innerHTML= des;
+  document.getElementById("designation35").innerHTML= des;
+  document.getElementById("designation36").innerHTML= des;
+  document.getElementById("designation37").innerHTML= des;
+  document.getElementById("designation38").innerHTML= des;
+  document.getElementById("designation36").innerHTML= des;
+  document.getElementById("designation39").innerHTML= des;
+  document.getElementById("designation36").innerHTML= des;
+
+  document.getElementById("designation41").innerHTML= des;
 
   // document.querySelector('#name span').innerText=des;
   //console.log(des);
@@ -37,8 +94,9 @@ function updatemail(){
   var mail = document.querySelectorAll("[id='email']"); 
   for(var l = 0; l < mail.length; l++) 
   mail[l].innerHTML=email;
+  mail[l].href=email;
  
-  // document.getElementById("email").innerHTML= email;
+  document.getElementById("email13").href= email;
 }
 function updatecompany(){
   var Company= document.getElementById("CompI").value;
@@ -47,8 +105,9 @@ function updatecompany(){
   comp[m].innerHTML=Company;
 
   document.getElementById("Company3").innerHTML= Company;
+  document.getElementById("Company35").innerHTML= Company;
 
-  //document.getElementById("Company").innerHTML= Company;
+  //document.getElementById("Company35").innerHTML= Company;
 }
 
 function updateaddress(){
@@ -56,16 +115,23 @@ function updateaddress(){
   var addr = document.querySelectorAll("[id='address']"); 
   for(var n = 0; n < addr.length; n++) 
   addr[n].innerHTML=add;
+document.getElementById("address12").innerHTML= add;
+document.getElementById("address26").innerHTML= add;
+document.getElementById("address13").innerHTML= add;
+document.getElementById("address41").innerHTML= add;
 
-  //document.getElementById("address").innerHTML= add;
+
+
+
 }
 function updatewebsite(){
   var web= document.getElementById("websiteI").value;
   var site = document.querySelectorAll("[id='website']"); 
   for(var o = 0; o < site.length; o++) 
   site[o].innerHTML=web;
+  site[o].href=web;
 
-  //document.getElementById("website").innerText=web;
+  document.getElementById("website13").innerText=web;
   console.log(web)
 }
 function updatephone(){
@@ -75,14 +141,62 @@ function updatephone(){
   phn[p].innerHTML=phone;
   console.log(phone)
 
-  //document.getElementById("phone").innerHTML= phone;
+  document.getElementById("phone13").innerHTML= phone;
+  document.getElementById("phone12").innerHTML= phone;
+  document.getElementById("phone23").innerHTML= phone;
+  document.getElementById("phone12").innerHTML= phone;
+
 }
 function updatemobile(){
   var mobile= document.getElementById("mobileI").value;
   var mbl = document.querySelectorAll("[id='mobile']"); 
   for(var q = 0; q < mbl.length; q++) 
   mbl[q].innerHTML= mobile;
-  //document.getElementById("mobile").innerHTML= mobile;
+  document.getElementById("mobile12").innerHTML= mobile;
+  document.getElementById("mobile12").innerHTML= mobile;
+  document.getElementById("mobile12").innerHTML= mobile;
+}
+function updateGoogle(){
+  var gog= document.getElementById("GogleI").value;
+  var go = document.querySelectorAll("[id='gl']"); 
+  for(var g = 0; g < go.length; g++) {
+  go[g].href= gog; }
+  console.log(gog)
+  //document.getElementById("fb").href= fb;
+
+}
+function updateFacebook(){
+  var fb= document.getElementById("FacebookI").value;
+  var fab = document.querySelectorAll("[id='fb']"); 
+  for(var f = 0; f < fab.length; f++) {
+  fab[f].href= fb; }
+  console.log(fb)
+  //document.getElementById("fb").href= fb;
+
+}
+function updateLinkedin(){
+  var li= document.getElementById("LinkedinI").value;
+  console.log(li)
+  document.getElementById("le").href= li;
+
+}
+function updateTwiter(){
+  var tt= document.getElementById("TwiterI").value;
+  console.log(tt)
+  document.getElementById("tw").href= tt;
+
+}
+function updateGithub(){
+  var git= document.getElementById("GithubI").value;
+  console.log(git)
+  document.getElementById("gh").href= gh;
+
+}
+function updateYoutube(){
+  var you= document.getElementById("YoutubeI").value;
+  console.log(yt)
+  document.getElementById("yt").href=you;
+
 }
 
 

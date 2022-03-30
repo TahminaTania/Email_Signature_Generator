@@ -45,16 +45,15 @@
               <span class="mid-line"> | </span>
               <span class="att_color">website: </span> 
               <span id="website"><a href="#">www.robertlong.com</a></span>
-              
             </div>
           </div> 
         </div> 
         <ul>
           <li valign="bottom">
-            <a href="#"><img src="/static/signature/media/icon_fb.png"  alt="" /></a>
-            <a href="#"><img src="/static/signature/media/icon_tw.png"  alt="" /></a>
-            <a href="#"><img src="/static/signature/media/icon_li.png"  alt="" /></a>
-            <a href="#"><img src="/static/signature/media/icon_gl.png"  alt="" /></a>                        
+            <a id="fb" href="#"><img src="/static/signature/media/icon_fb.png"  alt="" /></a>
+            <a id="tw"href="#"><img src="/static/signature/media/icon_tw.png"  alt="" /></a>
+            <a id="le"href="#"><img src="/static/signature/media/icon_li.png"  alt="" /></a>
+            <a id="gh" href="#"><img src="/static/signature/media/icon_gl.png"  alt="" /></a>                        
                                  
           </li>
         </ul>
@@ -74,8 +73,20 @@
           <div class="text-center"id="job"> DESIGNER</div>
           <div class="details" id="border-down"> 
             <ul> 
-              <li><span>t</span> +1 (234) 567 - 890 <span>m</span> 0123 - 456 - 789 </li>
-              <li><span>e</span> <a href="#">contact@robertlong.com</a> | <span>w</span> <a href="#">www.robertlong.com</a></li>    
+              <li>
+                <span class="att_color">mobile: </span>
+                <span id="mobile"> +1 (234) 567 - 890 </span> 
+                <span class="mid-line"> | </span>
+                <span class="att_color">phone: </span> 
+                <span id="phone">0123 - 456 - 789 </span>
+              </li>
+              <li>
+                <span class="att_color">email: </span>
+                <span id="email"> <a href="#">contact@robertlong.com</a></span> 
+                <span class="mid-line"> | </span>
+                <span class="att_color">website: </span> 
+                <span id="website"><a href="#">www.robertlong.com</a></span>
+              </li>   
             </ul>
           </div>
           
@@ -99,24 +110,54 @@ i am just copy pasting table templates {% endcomment %}
         {%block Template-3%}
         <div class="row" onclick="Copy(3)">
          <div class="col-md-12">
-            <div id="into">
+            <div>
               <ul>
-                  <li><div id="photo"><img class="img-fluid" src="/static/signature/media/blank profile.png" alt=""></div></li>
-                  <li><div id="name">Robert Long</div></li>
-                  <li><div class="info-color"> <span id="designation3">Designer</span><span class="mid-line"> | </span> <span id="Company3">Company </span></div></li>
-                  <li><div id="address">7743 Street, Blue Park, Suite 233, Smalltown,Stateville, USA 774386</div></li>
-                  <li><div id="number"><span><i class="fa-solid fa-phone"></i></span> +1 (234) 567 - 890  |  <span><i class="fa-solid fa-mobile"></i></span> 0123 - 456 - 789</div></li>
-                  <li><div id="Contact"><span><i class="fa-solid fa-envelope"></i></span> <a href="#">contact@robertlong.com</a> | <span>w</span> <a href="#">www.robertlong.com</a></div></li>
+                  <li>
+                    <div>
+                      <img id="photo" class="img-fluid" src="/static/signature/media/blank profile.png" alt="">
+                    </div>
+                  </li>
+                  <li>
+                    <div id="name">Robert Long</div>
+                  </li>
+                  <li><div> 
+                    <span id="designation3">Designer</span> 
+                    <span class="mid-line"> | </span> 
+                    <span id="Company3">Company </span>
+                  </div>
+                </li>
+                  <li>
+                    <div id="address">7743 Street, Blue Park, Suite 233, Smalltown,Stateville, USA 774386</div>
+                  </li>
+
+                  <li>
+                    <div id="Contact">
+                     <span><img src="/static/signature/media/icon_phone.png"  alt="p" /></span>
+                     <span id="phone"> +1 (234) 567 - 890 </span>
+                     <span class="mid-line"> | </span>
+                     <span><img src="/static/signature/media/icon_mobile.png"  alt="m" /></span>
+                     <span id="mobile">0123 - 456 - 789 </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div id="Contact">
+                      <span><img src="/static/signature/media/icon_email.png"  alt="p" /></span> 
+                      <span id="email"><a href="#">contact@robertlong.com</a></span> 
+                      <span class="mid-line"> | </span>
+                      <span><img src="/static/signature/media/icon_website.png"  alt="p" /></span> 
+                      <span><a href="#">www.robertlong.com</a></span> 
+                      </div>
+                  </li>
               </ul>
             </div>
            
             <div id="social">
               <ul>
                 <li>
-                  <a href="#"><img src="/static/signature/media/fb.png"  alt="" /></a>
-                  <a href="#"><img src="/static/signature/media/git.png"  alt="" /></a>
-                  <a href="#"><img src="/static/signature/media/le.png"  alt="" /></a>
-                  <a href="#"><img src="/static/signature/media/yt.png"  alt="" /></a>                                           
+                  <a id="fb" href="#"><img src="/static/signature/media/fb.png"  alt="" /></a>
+                  <a id="gh" href="#"><img src="/static/signature/media/git.png"  alt="" /></a>
+                  <a id="le" href="#"><img src="/static/signature/media/le.png"  alt="" /></a>
+                  <a id="yt" href="#"><img src="/static/signature/media/yt.png"  alt="" /></a>                                           
                 </li>
               </ul>
             </div>
@@ -131,24 +172,44 @@ i am just copy pasting table templates {% endcomment %}
           {%block Template-5%}
             <div class="col-md-12" onclick="Copy(5)">
               <div class="row">
-                  <div class="col-md-3 d-flex align-items-center justify-content-center" id="photo-big">
-                      <img class="img-fluid" src="/static/signature/media/blank profile.png" alt=""> 
+                  <div class="col-md-3 d-flex align-items-center justify-content-center">
+                      <img id="photo-big" class="img-fluid" src="/static/signature/media/blank profile.png" alt=""> 
                   </div>
                   <div class="col-md-7" id="details" >
                       <ul>
-                        <li><div class="text-center" id="name-5">Robert Long <span> Designer</span></div></li>
+                        <li>
+                          <div class="text-center">
+                          <span id="name-5"> Robert Long</span>
+                          <span id="designation5"> Designer</span>
+                        </div>
+                      </li>
                         <li><div id="address">7743 Street, Blue Park, Suite 233, Smalltown,Stateville, USA 774386</div></li>
-                        <li><div id="number"><span><img src="/static/signature/media/icon_phone.png"  alt="p" /></span> +1 (234) 567 - 890  |  <span><img src="/static/signature/media/icon_mobile.png"  alt="p" /></span> 0123 - 456 - 789</div></li>
-                        <li><div id="Contact"><span><img src="/static/signature/media/icon_email.png"  alt="p" /></span> <a href="#">contact@robertlong.com</a> | <span><img src="/static/signature/media/icon_website.png"  alt="p" /></span> <a href="#">www.robertlong.com</a></div></li>
+                        <li><div id="number">
+                          <span><img src="/static/signature/media/icon_phone.png"  alt="p" /></span>
+                          <span id="phone"> +1 (234) 567 - 890 </span> 
+                          <span class="mid-line"> | </span>
+                          <span><img src="/static/signature/media/icon_mobile.png"  alt="p" /></span>
+                          <span id="mobile"> 0123 - 456 - 789 </span> 
+                          
+                          </div>
+                        </li>
+                        <li><div id="Contact">
+                          <span><img src="/static/signature/media/icon_email.png"  alt="p" /></span> 
+                          <span id="email"><a href="#">contact@robertlong.com</a> </span>
+                          <span id="mid-line">  |  </span>
+                          <span><img src="/static/signature/media/icon_website.png"  alt="p" /></span> 
+                          <span id="website"><a href="#">www.robertlong.com</a> </span>
+                        </div>
+                      </li>
                       </ul>  
                   </div>
 
-                  <div class="col-md-2 d-flex align-items-center justify-content-center">
-                    <div class="text-center" id="social5">
-                      <li><a href="#"><img src="/static/signature/media/fb.png"  alt="" /></a></li>
-                      <li><a href="#"><img src="/static/signature/media/tw.png"  alt="" /></a></li>
-                      <li><a href="#"><img src="/static/signature/media/le.png"  alt="" /></a></li>
-                      <li><a href="#"><img src="/static/signature/media/yt.png"  alt="" /></a></li>
+                  <div class="col-md-2 d-flex align-items-center">
+                    <div class="" id="social5">
+                      <li><a id="fb" href="#"><img src="/static/signature/media/fb.png"  alt="" /></a></li>
+                      <li><a id="tw" href="#"><img src="/static/signature/media/tw.png"  alt="" /></a></li>
+                      <li><a id="le" href="#"><img src="/static/signature/media/le.png"  alt="" /></a></li>
+                      <li><a id="yt" href="#"><img src="/static/signature/media/yt.png"  alt="" /></a></li>
                     </div>
                   </div>
               </div>
@@ -168,10 +229,10 @@ i am just copy pasting table templates {% endcomment %}
           <div id="name4">Robert <span> Long</span></div>
           <div id="designation4">GRAPHIC DESIGNER</div>
           <div id="social">
-                <a href="#"><img src="/static/signature/media/icon_fb.png"  alt="" /></a>
-                <a href="#"><img src="/static/signature/media/icon_tw.png"  alt="" /></a>
-                <a href="#"><img src="/static/signature/media/icon_li.png"  alt="" /></a>
-                <a href="#"><img src="/static/signature/media/icon_gl.png"  alt="" /></a>                        
+                <a id="fb" href="#"><img src="/static/signature/media/icon_fb.png"  alt="" /></a>
+                <a id="tw" href="#"><img src="/static/signature/media/icon_tw.png"  alt="" /></a>
+                <a id="le" href="#"><img src="/static/signature/media/icon_li.png"  alt="" /></a>
+                <a id="gl" href="#"><img src="/static/signature/media/icon_gl.png"  alt="" /></a>                        
           </div>
         </div>    
         {%endblock%}
@@ -188,18 +249,30 @@ i am just copy pasting table templates {% endcomment %}
                 <div class="social6">
                   <ul>
                   <li>
-                    <a href="#"><img src="/static/signature/media/fb.png"  alt="" /></a>
-                    <a href="#"><img src="/static/signature/media/git.png"  alt="" /></a>
-                    <a href="#"><img src="/static/signature/media/le.png"  alt="" /></a>
-                    <a href="#"><img src="/static/signature/media/yt.png"  alt="" /></a>                                           
+                    <a id="fb" href="#"><img src="/static/signature/media/fb.png"  alt="" /></a>
+                    <a id="gh" href="#"><img src="/static/signature/media/git.png"  alt="" /></a>
+                    <a id="le" href="#"><img src="/static/signature/media/le.png"  alt="" /></a>
+                    <a id="yt" href="#"><img src="/static/signature/media/yt.png"  alt="" /></a>                                           
                   </li>
                 </ul>
                 </div> 
             </div>           
             <div class="col-md-7" id="details">
               <div id="border6"> 
-                <div id="number"><span><img src="/static/signature/media/icon_phone.png"  alt="p" /></span> +1 (234) 567 - 890  |  <span><img src="/static/signature/media/icon_mobile.png"  alt="p" /></span> 0123 - 456 - 789</div>
-                <div id="Contact"><span><img src="/static/signature/media/icon_email.png"  alt="p" /></span> <a href="#">contact@robertlong.com</a> | <span><img src="/static/signature/media/icon_website.png"  alt="p" /></span> <a href="#">www.robertlong.com</a></div>
+                <div id="number">
+                  <span><img src="/static/signature/media/icon_phone.png"  alt="p" /></span>
+                  <span id="phone">+1 (234) 567 - 890  </span>
+                   <span id="mid-line"> |  </span>
+                  <span><img src="/static/signature/media/icon_mobile.png"  alt="p" /></span>
+                  <span id="mobile">0123 - 456 - 789</span>
+                  </div>
+                <div id="Contact">
+                  <span><img src="/static/signature/media/icon_email.png"  alt="p" /></span> 
+                  <span id="email"><a href="#">contact@robertlong.com</a></span>
+                  <span id="mid-line"> | </span>
+                   <span><img src="/static/signature/media/icon_website.png"  alt="p" /></span>
+                   <span id="website"><a href="#">www.robertlong.com</a></span>
+                  </div>
               </div>  
            </div>  
          </div>
@@ -237,19 +310,25 @@ i am just copy pasting table templates {% endcomment %}
                         <div valign="bottom">
                           <div>
                             <li>
-                              <div id="number"><span><img src="/static/signature/media/icon_phone.png"  alt="p" /></span> +1 (234) 567 - 890 </div>
+                              <div id="number">
+                                <span><img src="/static/signature/media/icon_phone.png"  alt="p" /></span>
+                                 <span id="phone"> +1 (234) 567 - 890 </span> 
+                                </div>
                             </li>
 
                             <li>
-                              <div id="Contact"><span><img src="/static/signature/media/icon_email.png"  alt="p" /></span> <a href="#">contact@robertlong.com</a></div>
+                              <div id="Contact">
+                                <span><img src="/static/signature/media/icon_email.png"  alt="p" /></span>
+                                <span id="email"> <a href="#">contact@robertlong.com</a></span>
+                                </div>
                             </li>
 
                             <li>
                               <div id="social">
-                                <a href="#"><img src="/static/signature/media/icon_fb.png"  alt="" /></a>
-                                <a href="#"><img src="/static/signature/media/icon_tw.png"  alt="" /></a>
-                                <a href="#"><img src="/static/signature/media/icon_li.png"  alt="" /></a>
-                                <a href="#"><img src="/static/signature/media/icon_gl.png"  alt="" /></a>                        
+                                <a id="fb" href="#"><img src="/static/signature/media/icon_fb.png"  alt="" /></a>
+                                <a id="tw" href="#"><img src="/static/signature/media/icon_tw.png"  alt="" /></a>
+                                <a id="le" href="#"><img src="/static/signature/media/icon_li.png"  alt="" /></a>
+                                <a id="gl" href="#"><img src="/static/signature/media/icon_gl.png"  alt="" /></a>                        
                               </div>
                                 {% comment %} <div>&nbsp;</div> {% endcomment %}
                             </li>
@@ -278,16 +357,22 @@ i am just copy pasting table templates {% endcomment %}
                       </li>
                       
                       <li>
-                        <div id="Contact"><span><img src="/static/signature/media/icon_email.png"  alt="p" /></span> <a href="#">contact@robertlong.com</a></div>
+                        <div id="Contact">
+                          <span><img src="/static/signature/media/icon_email.png"  alt="p" /></span> 
+                          <span id="email"> <a href="#">contact@robertlong.com</a> </span>
+                        </div>
                       </li>
-                        <div id="number"><span><img src="/static/signature/media/icon_phone.png"  alt="p" /></span> +1 (234) 567 - 890 </div>
+                        <div id="number">
+                          <span><img src="/static/signature/media/icon_phone.png"  alt="p" /></span>
+                          <span id="phone">+1 (234) 567 - 890 </span>
+                          </div>
                       </li>
                       <li>
                         <div valign="bottom">
-                                <a href="#"><img src="/static/signature/media/icon_fb.png"  alt="" /></a>
-                                <a href="#"><img src="/static/signature/media/icon_tw.png"  alt="" /></a>
-                                <a href="#"><img src="/static/signature/media/icon_li.png"  alt="" /></a>
-                                <a href="#"><img src="/static/signature/media/icon_gl.png"  alt="" /></a>                      
+                                <a id="fb" href="#"><img src="/static/signature/media/icon_fb.png"  alt="" /></a>
+                                <a id="tw" href="#"><img src="/static/signature/media/icon_tw.png"  alt="" /></a>
+                                <a id="le" href="#"><img src="/static/signature/media/icon_li.png"  alt="" /></a>
+                                <a id="gl" href="#"><img src="/static/signature/media/icon_gl.png"  alt="" /></a>                      
                         <div>&nbsp;</div>
                           </div> 
                       </li>
@@ -323,21 +408,27 @@ i am just copy pasting table templates {% endcomment %}
                   
                     <div class="details9">   
                       <div id="address"><span>Address : </span>7743 Street, Blue Park, Suite 233, Smalltown, Stateville, USA 774386</div>
-                      <div id="number"><span>Phone : </span>0123 - 456 - 789</div>
-                      <div id="Contact"><span>Email : </span> <a href="#">contact@robertlong.com</a></div>
+                      <div id="Contact">
+                        <span class="att_color">Phone : </span>
+                        <span id="mobile">0123 - 456 - 789</span>
+                      </div>
+                      <div id="Contact">
+                        <span class="att_color">Email : </span> 
+                        <span id="email"> <a href="#">contact@robertlong.com</a></span>
+                      </div>
                     
                         <li valign="bottom">
-                          <a href="#"><img src="/static/signature/media/icon_fb.png"  alt="" /></a>
-                          <a href="#"><img src="/static/signature/media/icon_tw.png"  alt="" /></a>
-                          <a href="#"><img src="/static/signature/media/icon_li.png"  alt="" /></a>
-                          <a href="#"><img src="/static/signature/media/icon_gl.png"  alt="" /></a>                        
+                          <a id="fb" href="#"><img src="/static/signature/media/icon_fb.png"  alt="" /></a>
+                          <a id="tw" href="#"><img src="/static/signature/media/icon_tw.png"  alt="" /></a>
+                          <a id="le" href="#"><img src="/static/signature/media/icon_li.png"  alt="" /></a>
+                          <a id="gl" href="#"><img src="/static/signature/media/icon_gl.png"  alt="" /></a>                        
                                               
                         </li>
                     </div>
                 </div>
                 
-                <div  class="col-md-4 d-flex align-items-center justify-content-center" id="photo-big">
-                  <img class="img-fluid" src="/static/signature/media/blank profile.png" alt=""> 
+                <div  class="col-md-4 d-flex align-items-center justify-content-center" >
+                  <img id="photo-big" class="img-fluid" src="/static/signature/media/blank profile.png" alt=""> 
                 </div>
             </div>  
           </div>
@@ -353,13 +444,19 @@ i am just copy pasting table templates {% endcomment %}
             <div class="col-md-8"> 
               <div id="designation10">Designer</div>
               <div class="" id="name10">Robert Long</div>
-              <div id="number"><span>Tel : </span> +1 (234) 567 - 890 </div>
-              <div id="Contact"><span>Website : </span><a href="#">www.robertlong.com</a></div>
+              <div id="Contact">
+                <span class="att_color">Tel : </span>
+                <span id="phone"> +1 (234) 567 - 890 </span>
+                </div>
+              <div id="Contact">
+                <span class="att_color">Website : </span>
+                <span id="website"><a href="#">www.robertlong.com</a></span>
+                </div>
               <div id="social10">
-                  <a href="#"><img src="/static/signature/media/fb.png"  alt="" /></a>
-                  <a href="#"><img src="/static/signature/media/git.png"  alt="" /></a>
-                  <a href="#"><img src="/static/signature/media/le.png"  alt="" /></a>
-                  <a href="#"><img src="/static/signature/media/yt.png"  alt="" /></a>                                           
+                  <a id="fb" href="#"><img src="/static/signature/media/fb.png"  alt="" /></a>
+                  <a id="gh"href="#"><img src="/static/signature/media/git.png"  alt="" /></a>
+                  <a id="le"href="#"><img src="/static/signature/media/le.png"  alt="" /></a>
+                  <a id="yt"href="#"><img src="/static/signature/media/yt.png"  alt="" /></a>                                           
               </div>
               
             </div>
@@ -384,16 +481,25 @@ i am just copy pasting table templates {% endcomment %}
           <div clas="col-md-12" id="template11">
             {%block template-11%}
             <div class="" id="name">Robert Long</div>
-            <div id="designation">Designer <span>| </span><span>Company<span></div>
+            <div>
+              <span id="designation">Designer </span> <span class="mid-line">| </span><span id="Company">Company<span></div>
             <div id="address"><span>Address : </span>7743 Street, Blue Park, Suite 233, Smalltown, Stateville, USA 774386</div>
-            <div id="number"><span>Tel : </span> +1 (234) 567 - 890 </div>
-            <div id="Contact"><span>Website : </span><a href="#">www.robertlong.com</a></div>
-            <div id="photo-big"> <img class="img-fluid" src="/static/signature/media/blank profile.png" alt=""></div>
+            <div id="Contact">
+              <span class="att_color">Tel : </span>
+              <span id="phone"> +1 (234) 567 - 890 </span>
+              </div>
+            <div id="Contact">
+              <span class="att_color">Website : </span>
+              <span id="website"><a href="#">www.robertlong.com</a></span>
+            </div>
+            <div> 
+              <img id="photo-big" class="img-fluid" src="/static/signature/media/blank profile.png" alt="">
+            </div>
             <div id="social">
-              <a href="#"><img src="/static/signature/media/fb.png"  alt="" /></a>
-              <a href="#"><img src="/static/signature/media/git.png"  alt="" /></a>
-              <a href="#"><img src="/static/signature/media/le.png"  alt="" /></a>
-              <a href="#"><img src="/static/signature/media/yt.png"  alt="" /></a>                                           
+              <a id="fb" href="#"><img src="/static/signature/media/fb.png"  alt="" /></a>
+              <a id="gh" href="#"><img src="/static/signature/media/git.png"  alt="" /></a>
+              <a id="le" href="#"><img src="/static/signature/media/le.png"  alt="" /></a>
+              <a id="yt" href="#"><img src="/static/signature/media/yt.png"  alt="" /></a>                                           
             </div>
 
             {%endblock%}
@@ -407,16 +513,30 @@ i am just copy pasting table templates {% endcomment %}
           <div class="text-center"> 
               <div class="" id="name">Robert Long</div>
               <div id="designation">Designer</div>
-              <div id="photo-big"> <img id="image-r"class="img-fluid" src="/static/signature/media/blank profile.png" alt=""></div>
+              <div> 
+                <img id="image-r"class="img-fluid" src="/static/signature/media/blank profile.png" alt="">
+              </div>
            <div id="backgrund12"> 
-                <div id=""><span></span>7743 Street, Blue Park, Suite 233, Smalltown, Stateville, USA 774386</div>
-                <div id=""><span>M</span> +1 (234) 567 - 890  |  <span>P</span> 0123 - 456 - 789</div>
-                <div id="Contact12"><span>E</span> <a href="#">contact@robertlong.com</a> | <span>W</span> <a href="#">www.robertlong.com</a></div>
+                <div id="address12">7743 Street, Blue Park, Suite 233, Smalltown, Stateville, USA 774386</div>
+                <div id="">
+                  <span class="att_color">Phone :</span>
+                    <span id="phone12">+1 (234) 567 - 890 </span>
+                    <span class="mid-line"> |  </span>
+                    <span class="att_color">Mobile :</span>
+                    <span id="mobile12">0123 - 456 - 789</span>
+                    </div>
+                <div id="Contact12">
+                  <span class="att_color">mail :</span>
+                  <span id="email"><a href="#">contact@robertlong.com</a></span>
+                  <span class="mid-line"> | </span>
+                  <span class="att_color">Web :</span> 
+                  <span id="website"><a href="#">www.robertlong.com</a></span>
+                  </div>
                 <div id="social">
-                  <a href="#"><img src="/static/signature/media/icon_fb_W.png"  alt="" /></a>
-                  <a href="#"><img src="/static/signature/media/icon_tw_W.png"  alt="" /></a>
-                  <a href="#"><img src="/static/signature/media/icon_li_W.png"  alt="" /></a>
-                  <a href="#"><img src="/static/signature/media/icon_gl_W.png"  alt="" /></a>                                           
+                  <a id="fb" href="#"><img src="/static/signature/media/icon_fb_W.png"  alt="" /></a>
+                  <a id="tw" href="#"><img src="/static/signature/media/icon_tw_W.png"  alt="" /></a>
+                  <a id="le" href="#"><img src="/static/signature/media/icon_li_W.png"  alt="" /></a>
+                  <a id="gl" href="#"><img src="/static/signature/media/icon_gl_W.png"  alt="" /></a>                                           
                 </div>
                 
             </div>
@@ -441,17 +561,22 @@ i am just copy pasting table templates {% endcomment %}
             <div class="" id="name">Robert Long</div>
             <div id="designation13">Designer</div>
           </div>
-          <div id="phone13">Phone: 0123 - 456 - 789</div>
-          <div id="email13" valign="bottom"><span>Email: </span> <a href="#" >contact@robertlong.com</a></div>
-          <div id="contact13" valign="bottom"><span> Website: </span><a href="#" >robertlong.com</a></div>
-          <div id="address13" valign="bottom"><span> Address: </span>7743 Street, Blue Park, Suite 233, Smalltown, Stateville, USA 774386</div>
-          <div id="social13">
-            <a href="#"><img src="/static/signature/media/icon_fb.png"  alt="" /></a>
-            <a href="#"><img src="/static/signature/media/icon_tw.png"  alt="" /></a>
-            <a href="#"><img src="/static/signature/media/icon_li.png"  alt="" /></a>
-            <a href="#"><img src="/static/signature/media/icon_gl.png"  alt="" /></a>
+          <div id="phone13">
+            <span class="att_color"> Phone: </span>
+            <span id="mobile">0123 - 456 - 789 </span>
+            </div>
+          <div id="email13" valign="bottom"><span class="att_color">Email: </span> <a id="email" href="#" >contact@robertlong.com</a></div>
+          <div id="contact13" valign="bottom"><span class="att_color"> Website: </span><a id="website" href="#" >www.robertlong.com</a></div>
+          <div id="contact13" valign="bottom"><span class="att_color"> Address: </span>
+           <span id="address13"> 7743 Street, Blue Park, Suite 233, Smalltown, Stateville, USA 774386 </span>
           </div>
-          <div id="summery" valign="bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra ipsum quis dui posuere, et efficitur tellus pretium. Vestibulum suscipit dui at risus elementum dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis pharetra quat risus elementum dt risus elementum dm lacinia egestas. Sed convallis diam non risus eleifend vehicula. Vestibulum ullamcorper ullamcorper interdum. Nulla dapibus vulputate ultrices. Mauris m</div>
+          <div id="social13">
+            <a id="fb" href="#"><img src="/static/signature/media/icon_fb.png"  alt="" /></a>
+            <a id="tw" href="#"><img src="/static/signature/media/icon_tw.png"  alt="" /></a>
+            <a id="le" href="#"><img src="/static/signature/media/icon_li.png"  alt="" /></a>
+            <a id="gl" href="#"><img src="/static/signature/media/icon_gl.png"  alt="" /></a>
+          </div>
+          {% comment %} <div id="summery" valign="bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra ipsum quis dui posuere, et efficitur tellus pretium. Vestibulum suscipit dui at risus elementum dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis pharetra quat risus elementum dt risus elementum dm lacinia egestas. Sed convallis diam non risus eleifend vehicula. Vestibulum ullamcorper ullamcorper interdum. Nulla dapibus vulputate ultrices. Mauris m</div> {% endcomment %}
           {%endblock%}
         </div>
       </div> 
@@ -462,26 +587,41 @@ i am just copy pasting table templates {% endcomment %}
           {%block template-14%}
           <div class="row">
             <div class="col-md-9"> 
-              <div id="intro14">JENIFFER SMITH <span>Freelancer</span></div>
+              <div id="into14">
+                <span id="name14">JENIFFER SMITH </span>
+                <span id="designation14">Freelancer</span>
+              </div>
               <div id="address">7743 Street, Blue Park, Suite 233, Smalltown,Stateville, USA 774386</div>
-              <div id="number"><span><img src="/static/signature/media/icon_mobile_b.png"></span> +1 (234) 567 - 890  |  <span><img src="/static/signature/media/icon_phone_b.png"></span> 0123 - 456 - 789</div>
-              <div id="Contact"><span><img src="/static/signature/media/icon_email_b.png"></span><a href="#">contact@robertlong.com</a> | <span><img src="/static/signature/media/icon_website_b.png"></span><a href="#">www.robertlong.com</a></div>
+              <div id="Contact">
+                <span><img src="/static/signature/media/icon_mobile_b.png"></span> 
+                <span id="phone">+1 (234) 567 - 890  </span>
+                <span class="mid-line"> | </span>
+                <span><img src="/static/signature/media/icon_phone_b.png"></span> 
+                <span id="mobile"> 0123 - 456 - 789</span>
+              </div>
+              <div id="Contact">
+                <span><img src="/static/signature/media/icon_email_b.png"></span>
+                <span id="email"><a href="#">contact@robertlong.com</a></span>
+                <span class="mid-line"> | </span>
+                <span><img src="/static/signature/media/icon_website_b.png"></span>
+                <span id="website"><a href="#">www.robertlong.com</a></span>
+                </div>
             
 
             </div>
             <div class="col-md-3"> 
               <div id="social-link"> 
                   <li >
-                    <div><a href="#"><img src="/static/signature/media/fb.png" alt="" /></a><span>/jsmith</span></div>
+                    <div><a id="fb" href="#"><img src="/static/signature/media/fb.png" alt="" /></a><span>/jsmith</span></div>
                   </li>
                   <li >
-                    <div><a href="#"><img src="/static/signature/media/li.png" alt="" /></a><span>#jsmith</span></div>
+                    <div><a id="le" href="#"><img src="/static/signature/media/li.png" alt="" /></a><span>#jsmith</span></div>
                   </li>
                   <li >
-                    <div><a href="#"><img src="/static/signature/media/tw.png" alt="" /></a><span>@jsmith</span></div>
+                    <div><a id="tw" href="#"><img src="/static/signature/media/tw.png" alt="" /></a><span>@jsmith</span></div>
                   </li>
                   <li >
-                    <div><a href="#"><img src="/static/signature/media/gl.png" alt="" /></a><span>~jsmith</span></div>
+                    <div><a id="gl" href="#"><img src="/static/signature/media/gl.png" alt="" /></a><span>~jsmith</span></div>
                   </li>
               </div>
 
@@ -505,8 +645,8 @@ i am just copy pasting table templates {% endcomment %}
           {%block template-15%}
           <div id="border15"> 
           <div class="row" id="into15">    
-                <div  class="col-md-4 d-flex align-items-center justify-content-center" id="photo15">
-                  <img class="img-fluid" src="/static/signature/media/blank profile.png" alt=""> 
+                <div  class="col-md-4 d-flex align-items-center justify-content-center">
+                  <img id="big-image"class="img-fluid" src="/static/signature/media/blank profile.png" alt=""> 
                 </div>
                 <div class="col-md-8">
                   <div class="" id="name">Robert Long</div>
@@ -519,22 +659,28 @@ i am just copy pasting table templates {% endcomment %}
                <div class="row">
                  <div class="col-md-4">
                     <div class="row">
-                      <div id="number" class="col-md-12"><img src="/static/signature/media/icon_phone_b.png">0123 -456-789</div>  
+                      <div id="number" class="col-md-12">
+                        <img src="/static/signature/media/icon_phone_b.png">
+                        <span id="mobile"> 0123 -456-789 </span>
+                       </div>  
                     </div> 
                  </div>
                  <div class="col-md-4">
                     <div class="row">
-                       <div id="Contact" class="col-md-12"><img src="/static/signature/media/icon_email_b.png"><a href="#">email@long.com</a></div>  
+                       <div id="Contact" class="col-md-12">
+                         <img src="/static/signature/media/icon_email_b.png">
+                        <span id="email"><a href="#">email@long.com</a></span>
+                        </div>  
                     </div> 
                 </div>
                 <div class="col-md-4">
                   <div class="row">
                      <div class="col-md-12">
                        <div id="social-15">
-                      <a href="#"><img src="/static/signature/media/fb.png"  alt="" /></a>
-                      <a href="#"><img src="/static/signature/media/tw.png"  alt="" /></a>
-                      <a href="#"><img src="/static/signature/media/li.png"  alt="" /></a>
-                      <a href="#"><img src="/static/signature/media/gl.png"  alt="" /></a>                        
+                      <a id="fb" href="#"><img src="/static/signature/media/fb.png"  alt="" /></a>
+                      <a id="tw" href="#"><img src="/static/signature/media/tw.png"  alt="" /></a>
+                      <a id="le" href="#"><img src="/static/signature/media/li.png"  alt="" /></a>
+                      <a id="gl" href="#"><img src="/static/signature/media/gl.png"  alt="" /></a>                        
                      </div>
                   </div>  
                   </div> 
@@ -552,19 +698,23 @@ i am just copy pasting table templates {% endcomment %}
        <div clas="col-md-12" id="template16">
          {%block template-16%}
          <div class="row"> 
-          <div class="col-md-4" > 
-            <img id="image-R" class="img-fluid" src="/static/signature/media/blank profile.png" alt="">
+          <div class="col-md-4 d-flex align-items-center justify-content-center"> 
+            <img id="image-r" class="img-fluid" src="/static/signature/media/blank profile.png" alt="">
           </div>
           <div class="col-md-8" id="bod16"> 
             <div id="name">Robert Long</div>
-            <div id="designation10">Designer</div>
-            <div id="number"><span>Tel : </span> +1 (234) 567 - 890 </div>
-            <div id="Contact"><span>Website : </span><a href="#">www.robertlong.com</a></div>
+            <div id="designation3">Designer</div>
+            <div id="Contact"><span class="att_color">Tel : </span>
+            <span id="phone"> +1 (234) 567 - 890 </span>
+              </div>
+            <div id="Contact"><span class="att_color">Website : </span>
+            <span><a id="website" href="#">www.robertlong.com</a></span>
+            </div>
             <div id="social10">
-                <a href="#"><img src="/static/signature/media/fb.png"  alt="" /></a>
-                <a href="#"><img src="/static/signature/media/git.png"  alt="" /></a>
-                <a href="#"><img src="/static/signature/media/le.png"  alt="" /></a>
-                <a href="#"><img src="/static/signature/media/yt.png"  alt="" /></a>                                           
+                <a id="fb" href="#"><img src="/static/signature/media/fb.png"  alt="" /></a>
+                <a id="gh" href="#"><img src="/static/signature/media/git.png"  alt="" /></a>
+                <a id="le" href="#"><img src="/static/signature/media/le.png"  alt="" /></a>
+                <a id="yt" href="#"><img src="/static/signature/media/yt.png"  alt="" /></a>                                           
             </div>
             
           </div>
@@ -590,13 +740,13 @@ i am just copy pasting table templates {% endcomment %}
                   </div>
                   <div id="name">Robert Long</div>
                   <div id="designation">Designer</div>
-                  <div id="number"><span>Phone : </span><a>0123 - 456 - 789 </a></div>
-                  <div id="Contact"><span>Contact : </span> <a href="#">contact@robertlong.com</a> <span> | </span><a href="#">www.robertlong.com</a></div>
+                  <div id="Contact"><span class="att_color">Phone : </span><span id="mobile">0123 - 456 - 789 </span></div>
+                  <div id="Contact"><span class="att_color">Contact : </span> <a id="email" href="#">contact@robertlong.com</a> <span class="mid-line"> | </span><a id="website" href="#">www.robertlong.com</a></div>
                   <div id="social">
-                    <a href="#"><img src="/static/signature/media/icon_fb.png"  alt="" /></a>
-                    <a href="#"><img src="/static/signature/media/icon_tw.png"  alt="" /></a>
-                    <a href="#"><img src="/static/signature/media/icon_li.png"  alt="" /></a>
-                    <a href="#"><img src="/static/signature/media/icon_gl.png"  alt="" /></a>                                           
+                    <a id="fb" href="#"><img src="/static/signature/media/icon_fb.png"  alt="" /></a>
+                    <a id="tw" href="#"><img src="/static/signature/media/icon_tw.png"  alt="" /></a>
+                    <a id="le" href="#"><img src="/static/signature/media/icon_li.png"  alt="" /></a>
+                    <a id="gl" href="#"><img src="/static/signature/media/icon_gl.png"  alt="" /></a>                                           
                   </div>
             
           </div>
@@ -610,23 +760,35 @@ i am just copy pasting table templates {% endcomment %}
          {%block template-18%}
          <div class="col-md-12" id="table" >
           <div class="row">  
-              <div class="col-md-8" id="col2">    
-                 <div class="text-center" id="name">Robert Long <span>.Ul Designer</span></div>
+              <div class="col-md-8">    
+                 <div class="text-center"><span id="name">Robert Long</span> <span id="designation3">.Ul Designer</span></div>
                 <div id="others">
                   <div class="details">
-                    <div><span>t</span> +1 (234) 567 - 890  |  <span>m</span> 0123 - 456 - 789</div>
-                    <div><span>e</span> <a href="#">contact@robertlong.com</a> | <span>w</span> <a href="#">www.robertlong.com</a></div>
+                    <div>
+                      <span class="att_color">t </span>
+                      <span id="phone"> +1 (234) 567 - 890 </span>  
+                      <span id="mid-line"> |  </span> 
+                      <span class="att_color">m </span> 
+                      <span id="mobile"> 0123 - 456 - 789</span> 
+                      </div>
+                    <div>
+                      <span class="att_color">e </span> 
+                      <span><a id="email" href="#">contact@robertlong.com</a></span> 
+                      <span class="mid-line">|</span> 
+                      <span class="att_color">w</span> 
+                      <span><a id="website" href="#">www.robertlong.com</a></span>
+                     </div>
                   </div> 
                   <div class="social"> 
-                    <a href="#"><img src="/static/signature/media/icon_fb.png"  alt="" /></a>
-                    <a href="#"><img src="/static/signature/media/icon_tw.png"  alt="" /></a>
-                    <a href="#"><img src="/static/signature/media/icon_li.png"  alt="" /></a>
-                    <a href="#"><img src="/static/signature/media/icon_gl.png"  alt="" /></a>                                                
+                    <a id="fb" href="#"><img src="/static/signature/media/icon_fb.png"  alt="" /></a>
+                    <a id="tw" href="#"><img src="/static/signature/media/icon_tw.png"  alt="" /></a>
+                    <a id="le" href="#"><img src="/static/signature/media/icon_li.png"  alt="" /></a>
+                    <a id="gl" href="#"><img src="/static/signature/media/icon_gl.png"  alt="" /></a>                                                
                   </div>
               </div> 
               </div>
-              <div  class="col-md-4 d-flex align-items-center justify-content-center" id="photo-big">
-                <img class="img-fluid" src="/static/signature/media/blank profile.png" alt=""> 
+              <div  class="col-md-4 d-flex align-items-center justify-content-center">
+                <img id="photo-big" class="img-fluid" src="/static/signature/media/blank profile.png" alt=""> 
               </div>
           </div>  
         </div>
@@ -653,13 +815,26 @@ i am just copy pasting table templates {% endcomment %}
               </div>
             </div>
             <div class="col-md-6">
-              <div id="number"><span>M</span> +1 (234) 567 - 890  |  <span>P</span> 0123 - 456 - 789</div>
-                <div id="Contact"><span>E</span> <a href="#">contact@robertlong.com</a> | <span>W</span> <a href="#">www.robertlong.com</a></div>
+              <div id="Contact">
+                <span class="att_color">P</span>
+                <span id="phone"> +1 (234) 567 - 890 </span>
+                <span id="mid-line"> | </span>
+                <span class="att_color">M</span> 
+                <span id="mobile">0123 - 456 - 789</span>
+                  </div>
+
+                <div id="Contact">
+                  <span class="att_color">E</span> 
+                  <span id="email"> <a href="#">contact@robertlong.com</a></span>
+                  <span class="mid-line"> | </span>
+                  <span class="att_color">W</span> 
+                  <span> <a id="website" href="#">www.robertlong.com</a></span>
+                  </div>
                 <div id="social">
-                  <a href="#"><img src="/static/signature/media/icon_fb.png"  alt="" /></a>
-                  <a href="#"><img src="/static/signature/media/icon_tw.png"  alt="" /></a>
-                  <a href="#"><img src="/static/signature/media/icon_li.png"  alt="" /></a>
-                  <a href="#"><img src="/static/signature/media/icon_gl.png"  alt="" /></a>                                           
+                  <a id="fb" href="#"><img src="/static/signature/media/icon_fb.png"  alt="" /></a>
+                  <a id="tw" href="#"><img src="/static/signature/media/icon_tw.png"  alt="" /></a>
+                  <a id="le" href="#"><img src="/static/signature/media/icon_li.png"  alt="" /></a>
+                  <a id="gl" href="#"><img src="/static/signature/media/icon_gl.png"  alt="" /></a>                                           
                 </div>
             </div>
           </div>
@@ -678,18 +853,30 @@ i am just copy pasting table templates {% endcomment %}
                <div id="name20">ROBERT LONG</div>
 
                <div id="designation20">PHOTOGRAPHER</div>
-               <div id="social">
-                <a href="#"><img src="/static/signature/media/fb.png"  alt="" /></a>
-                <a href="#"><img src="/static/signature/media/tw.png"  alt="" /></a>
-                <a href="#"><img src="/static/signature/media/li.png"  alt="" /></a>
-                <a href="#"><img src="/static/signature/media/gl.png"  alt="" /></a>                                           
+               <div id="social20">
+                <a id="fb" href="#"><img src="/static/signature/media/fb.png"  alt="" /></a>
+                <a id="tw" href="#"><img src="/static/signature/media/tw.png"  alt="" /></a>
+                <a id="le" href="#"><img src="/static/signature/media/li.png"  alt="" /></a>
+                <a id="gl" href="#"><img src="/static/signature/media/gl.png"  alt="" /></a>                                           
               </div>
             
           </div>
           <div class="col-md-6">
-            <div id="number"><span><img src="/static/signature/media/icon_mobile_b.png"></span> +1 (234) 567 - 890  |  <span><img src="/static/signature/media/icon_phone_b.png"></span> 0123 - 456 - 789</div>
-            <div id="Contact"><span><img src="/static/signature/media/icon_email_b.png"></span> <a href="#">contact@robertlong.com</a> | <span><img src="/static/signature/media/icon_website_b.png"></span> <a href="#">www.robertlong.com</a></div>
-            <div>&nbsp;</div>
+            <div id="Contact">
+              <span><img src="/static/signature/media/icon_mobile_b.png"></span>
+              <span id="phone">+1 (234) 567 - 890 </span> 
+                <span class="mid-line"> |  </span>
+               <span><img src="/static/signature/media/icon_phone_b.png"></span>
+               <span id="mobile"> 0123 - 456 - 789 </span>
+              </div>
+            <div id="Contact">
+              <span><img src="/static/signature/media/icon_email_b.png"></span>
+              <span id="email"><a href="#">contact@robertlong.com</a></span>
+                <span class="mid-line"> | </span>
+                <span><img src="/static/signature/media/icon_website_b.png"></span> 
+                <span id="website"> <a href="#">www.robertlong.com</a></span>
+              </div>
+            <div id="single-space"></div>
             <div id="address">7743 Street, Blue Park, Suite 233, Smalltown,Stateville, USA 774386</div>
              
           </div>
@@ -718,14 +905,26 @@ i am just copy pasting table templates {% endcomment %}
             <div class="col-md-9">
               <div id="designation">PHOTOGRAPHER</div>
               <div id="name">ROBERT LONG</div>
-              <div id="number"><span><img src="/static/signature/media/icon_phone_b.png"></span> +1 (234) 567 - 890  |  <span><img src="/static/signature/media/icon_mobile_b.png"></span> 0123 - 456 - 789</div>
-              <div id="Contact"><span><img src="/static/signature/media/icon_email_b.png"></span> <a href="#">contact@robertlong.com</a></div>
+              <div id="Contact">
+                <span><img src="/static/signature/media/icon_phone_b.png"></span> 
+                 <span id="phone">+1 (234) 567 - 890 </span>
+                 </span class="mid-line"> |  </span>
+                 <span ><img src="/static/signature/media/icon_mobile_b.png"></span>
+                 <span id="mobile"> 0123 - 456 - 789</span>
+                </div>
+              <div id="Contact">
+                <span>
+                  <img src="/static/signature/media/icon_email_b.png"></span> 
+                  </span>
+                    <a id="email" href="#">contact@robertlong.com</a>
+                  </span>
+              </div>
               <div id="address">7743 Street, Blue Park, Suite 233, Smalltown,Stateville, USA 774386</div>
               <div id="social21">
-                <a href="#"><img src="/static/signature/media/fb.png"  alt="" /></a>
-                <a href="#"><img src="/static/signature/media/tw.png"  alt="" /></a>
-                <a href="#"><img src="/static/signature/media/li.png"  alt="" /></a>
-                <a href="#"><img src="/static/signature/media/gl.png"  alt="" /></a>                                           
+                <a id="fb" href="#"><img src="/static/signature/media/fb.png"  alt="" /></a>
+                <a id="tw" href="#"><img src="/static/signature/media/tw.png"  alt="" /></a>
+                <a id="le" href="#"><img src="/static/signature/media/li.png"  alt="" /></a>
+                <a id="gl" href="#"><img src="/static/signature/media/gl.png"  alt="" /></a>                                           
               </div> 
             </div>
           </div>
@@ -740,10 +939,10 @@ i am just copy pasting table templates {% endcomment %}
          <div class="row">
           <div class="col-md-4">
             <div id="social22" class="text-center">
-              <a href="#"><img src="/static/signature/media/fb.png"  alt="" /></a>
-              <a href="#"><img src="/static/signature/media/tw.png"  alt="" /></a>
-              <a href="#"><img src="/static/signature/media/li.png"  alt="" /></a>
-              <a href="#"><img src="/static/signature/media/gl.png"  alt="" /></a>                                           
+              <a id="fb" href="#"><img src="/static/signature/media/fb.png"  alt="" /></a>
+              <a id="tw" href="#"><img src="/static/signature/media/tw.png"  alt="" /></a>
+              <a id="le" href="#"><img src="/static/signature/media/li.png"  alt="" /></a>
+              <a id="gl" href="#"><img src="/static/signature/media/gl.png"  alt="" /></a>                                           
             </div>  
           </div>
           <div class="col-md-8">
@@ -753,8 +952,20 @@ i am just copy pasting table templates {% endcomment %}
 
             <div id="designation">DEVELOPER | <span>Company</span></div>
             <div id="name">ROBERT LONG</div>
-            <div id="number"><span><img src="/static/signature/media/icon_phone_b.png"></span> +1 (234) 567 - 890  |  <span><img src="/static/signature/media/icon_mobile_b.png"></span> 0123 - 456 - 789</div>
-            <div id="Contact"><span><img src="/static/signature/media/icon_email_b.png"></span> <a href="#">contact@robertlong.com</a> | <span><img src="/static/signature/media/icon_website_b.png"></span> <a href="#">www.robertlong.com</a></div>
+            <div id="Contact">
+              <span><img src="/static/signature/media/icon_phone_b.png"></span>
+              <span id="phone">+1 (234) 567 - 890 </span>
+              <span class="mid-line"> |  </span>
+              <span><img src="/static/signature/media/icon_mobile_b.png"></span> 
+              <span id="mobile">0123 - 456 - 789</span>
+            </div>
+            <div id="Contact">
+              <span><img src="/static/signature/media/icon_email_b.png"></span> 
+              <span><a id="email" href="#">contact@robertlong.com</a> </span>
+              <span class="mid-line"> | </span>
+              <span><img src="/static/signature/media/icon_website_b.png"></span> 
+              <span> <a id="website" href="#">www.robertlong.com</a><span>
+            </div>
            
              
 
@@ -777,35 +988,41 @@ i am just copy pasting table templates {% endcomment %}
           {%block template-23%}   
             <div class="row">    
                   <div  class="col-md-5 d-flex align-items-center justify-content-center" id="photo15">
-                    <img class="img-fluid" src="/static/signature/media/blank profile.png" alt=""> 
+                    <img id="big-image" class="img-fluid" src="/static/signature/media/blank profile.png" alt=""> 
                   </div>
                   <div class="col-md-7">
                     <div id="designation">Designer</div> 
-                    <div class="" id="name">Robert Long</div>
+                    <div id="name">Robert Long</div>
                     <div id="address">7743 Street, Blue Park, Suite 233, Smalltown, Stateville, USA 774386</div>
                   </div>
             </div>
-             <div class="row">
+             <div class="row" id="lower">
                <div class="col-md-12">
                  <div class="row" id="backgrund23">
                     <div class="col-md-4">
                         <div class="row">
-                          <div id="number23" class="col-md-12"><img src="/static/signature/media/icon_phone_W.png">   0123 -456-789</div>  
+                          <div id="number23" class="col-md-12">
+                            <img src="/static/signature/media/icon_phone_W.png">
+                            <span id="phone23">0123 -456-789</span>
+                          </div>  
                         </div> 
                     </div>
                     <div class="col-md-4">
                         <div class="row">
-                          <div id="Contact23" class="col-md-12"><img src="/static/signature/media/icon_email_W.png"><a href="#">  email@X.com</a></div>  
+                          <div id="Contact23" class="col-md-12">
+                            <img src="/static/signature/media/icon_email_W.png">
+                          <span id="email"><a href="#">  email@x.com</a></span>
+                          </div>  
                         </div> 
                      </div>
                     <div class="col-md-4">
                         <div class="row">
                           <div class="col-md-12">
                             <div id="social-15">
-                            <a href="#"><img src="/static/signature/media/icon_fb_W.png"  alt="" /></a>
-                            <a href="#"><img src="/static/signature/media/icon_tw_W.png"  alt="" /></a>
-                            <a href="#"><img src="/static/signature/media/icon_li_W.png"  alt="" /></a>
-                            <a href="#"><img src="/static/signature/media/icon_gl_W.png"  alt="" /></a>                        
+                            <a id="fb" href="#"><img src="/static/signature/media/icon_fb_W.png"  alt="" /></a>
+                            <a id="tw" href="#"><img src="/static/signature/media/icon_tw_W.png"  alt="" /></a>
+                            <a id="le" href="#"><img src="/static/signature/media/icon_li_W.png"  alt="" /></a>
+                            <a id="gl" href="#"><img src="/static/signature/media/icon_gl_W.png"  alt="" /></a>                        
                           </div>
                         </div>  
                         </div> 
@@ -823,28 +1040,36 @@ i am just copy pasting table templates {% endcomment %}
        <div clas="col-md-12">
          {%block template-24%}
          <div class="row"> 
-            <div  class="col-md-3 d-flex align-items-center justify-content-center" id="photo">
-              <img class="img-fluid" src="/static/signature/media/blank profile.png" alt=""> 
+            <div  class="col-md-3 d-flex align-items-center justify-content-center">
+              <img id="photo" class="img-fluid" src="/static/signature/media/blank profile.png" alt=""> 
             </div> 
 
            <div class="col-md-9"> 
-             <div class="row">
-               <div class="col-md-12">
-                <div id="name24">Robert Long <span> Designer <span> Company</span></span></div>
-                </div>
-             </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div id="upper-part">
+                        <span id="name24"> Robert Long</span> 
+                        <span id="designation"> Designer</span>
+                        <span id="Company">Company</span>
+                      </div>
+                    </div>
+                  </div> 
              <div class="row">
               <div class="col-md-12">
                 <div class="row">
                   <div class="col-md-4">
-                      <div class="row">
-                        <div id="number" class="col-md-12"><img src="/static/signature/media/icon_phone.png">   0123 -456-789</div>  
-                      </div> 
+                      
+                        <div id="Contact" class="col-md-12 text-center">
+                           <span><img src="/static/signature/media/icon_phone.png">  </span>
+                           <span id="mobile"> 0123 -456-789</span>
+                          </div>  
+                       
                   </div>
                   <div class="col-md-4">
-                      <div class="row">
-                        <div id="Contact" class="col-md-12"><img src="/static/signature/media/icon_email.png"><a href="#">email @X.com</a></div>  
-                      </div> 
+                        <div id="Contact" class="col-md-12 text-center">
+                          <span> <img src="/static/signature/media/icon_email.png"></span>
+                          <span> <a id="email" href="#">email @X.com</a></span>
+                        </div> 
                    </div>
                   <div class="col-md-4">
                       <div class="row">
@@ -885,12 +1110,12 @@ i am just copy pasting table templates {% endcomment %}
                <div><img id="image-r" class="img-fluid" src="/static/signature/media/blank profile.png" alt=""> </div> 
                 <div id="name">Robert Long</div>
                 <div id="designation25">Graphic Designer</div>
-                <div id="Contact25"><a href="#">www.robertlong.com</a></div>
+                <div id="Contact25"><a id="website"href="#">www.robertlong.com</a></div>
                 <div id="social">
-                  <a href="#"><img src="/static/signature/media/icon_fb.png"  alt="" /></a>
-                  <a href="#"><img src="/static/signature/media/icon_tw.png"  alt="" /></a>
-                  <a href="#"><img src="/static/signature/media/icon_li.png"  alt="" /></a>
-                  <a href="#"><img src="/static/signature/media/icon_gl.png"  alt="" /></a>                        
+                  <a id="fb" href="#"><img src="/static/signature/media/icon_fb.png"  alt="" /></a>
+                  <a id="tw" href="#"><img src="/static/signature/media/icon_tw.png"  alt="" /></a>
+                  <a id="le" href="#"><img src="/static/signature/media/icon_li.png"  alt="" /></a>
+                  <a id="gl" href="#"><img src="/static/signature/media/icon_gl.png"  alt="" /></a>                        
                 </div>
           </div>
           {%endblock%}
@@ -903,21 +1128,26 @@ i am just copy pasting table templates {% endcomment %}
          {%block template-26%}
          <div class="row" id="horizontal">
            <div class="col-md-4 d-flex align-items-center justify-content-center" id="blue0">
-             <div class="col-md-12"><img id="photo" class="img-fluid" src="/static/signature/media/blank profile.png" alt=""></div>
+             <div class="col-md-12"> <img id="photo-big" class="img-fluid" src="/static/signature/media/blank profile.png" alt=""></div>
           </div>
            <div class="col-md-4" id="blue1">
             <div id="designation26">Designer</div>
             <div id="name26">Robert Long</div>
-            <div id="number26" class="col-md-12"><img src="/static/signature/media/icon_phone.png"> 0123 -456-789</div>
-            <div id="Contact26" class="col-md-12"><img src="/static/signature/media/icon_email.png"><a href="#">email@Robertlong.com</a></div>
+            <div id="number26" class="col-md-12">
+              <span>-</span>
+              <span id="mobile26"> 0123 -456-789</span>
+              </div>
+            <div id="Contact26" class="col-md-12">
+              <span>-</span>
+              <a id="email"href="#">email@Robertlong.com</a></div>
            </div>
            <div class="col-md-4" id="blue2">
             <div id="address26">7743 Street, Blue Park, Suite 233, Smalltown, Stateville, USA 774386</div>
             <div id="social26">
-              <a href="#"><img src="/static/signature/media/fb_W.png"  alt="" /></a>
-              <a href="#"><img src="/static/signature/media/tw_W.png"  alt="" /></a>
-              <a href="#"><img src="/static/signature/media/li_W.png"  alt="" /></a>
-              <a href="#"><img src="/static/signature/media/gl_W.png"  alt="" /></a>                        
+              <a id="fb" href="#"><img src="/static/signature/media/fb_W.png"  alt="" /></a>
+              <a id="tw" href="#"><img src="/static/signature/media/tw_W.png"  alt="" /></a>
+              <a id="le"href="#"><img src="/static/signature/media/li_W.png"  alt="" /></a>
+              <a id="gl"href="#"><img src="/static/signature/media/gl_W.png"  alt="" /></a>                        
             </div>
            </div>
           </div>
@@ -946,16 +1176,21 @@ i am just copy pasting table templates {% endcomment %}
               <div class="row">
                   <div class="col-md-8">
                     <div>
-                        <div id="intro14">ROBERT LONG</div>
+                        <div id="name10">ROBERT LONG</div>
                         <div id="designation">Designer</div>
                         <div id="address">7743 Street, Blue Park, Suite 233, Smalltown,Stateville, USA 774386</div>
-                        <div id="Contact"><span><img src="/static/signature/media/icon_email_b.png"  alt="p" /></span> <a href="#">contact@robertlong.com</a></div>
-                        <div id="number"><span><img src="/static/signature/media/icon_phone_b.png"  alt="p" /></span> +1 (234) 567 - 890 </div>
+                        <div id="Contact">
+                          <span><img src="/static/signature/media/icon_email_b.png"  alt="p" /></span> 
+                          <a  id="email"href="#">contact@robertlong.com</a></div>
+                        <div id="Contact">
+                          <img src="/static/signature/media/icon_phone_b.png"  alt="p" />
+                          <span id="phone">+1 (234) 567 - 890</span>  
+                        </div>
                         <div valign="bottom">
-                                <a href="#"><img src="/static/signature/media/icon_fb.png"  alt="" /></a>
-                                <a href="#"><img src="/static/signature/media/icon_tw.png"  alt="" /></a>
-                                <a href="#"><img src="/static/signature/media/icon_li.png"  alt="" /></a>
-                                <a href="#"><img src="/static/signature/media/icon_gl.png"  alt="" /></a>                      
+                                <a id="fb" href="#"><img src="/static/signature/media/icon_fb.png"  alt="" /></a>
+                                <a id="tw" href="#"><img src="/static/signature/media/icon_tw.png"  alt="" /></a>
+                                <a id="le" href="#"><img src="/static/signature/media/icon_li.png"  alt="" /></a>
+                                <a id="gl" href="#"><img src="/static/signature/media/icon_gl.png"  alt="" /></a>                      
                         <div>&nbsp;</div>
                           </div> 
                     </div>
@@ -977,29 +1212,39 @@ i am just copy pasting table templates {% endcomment %}
        <div clas="col-md-12" >
          {%block template-28%}
          <div class="row" >
-          <div class="col-md-4 d-flex align-items-center justify-content-center">
-            <div class="col-md-12"><img  id="photo" class="img-fluid" src="/static/signature/media/blank profile.png" alt=""></div>
+          <div class="col-4 d-flex align-items-center justify-content-center">
+            <div class="col-md-12">
+              <img  id="photo-big" class="img-fluid" src="/static/signature/media/blank profile.png" alt="">
+            </div>
          </div>
-          <div class="col-md-4">
+          <div class="col-4">
            <div id="designation">Designer</div>
-           <div id="name28">Robert Long</div>
-           <div id="Contact" class="col-md-12"><img src="/static/signature/media/icon_website_b.png"><a href="#">www.robertlong.com</a></div>
+           <div id="name14">Robert Long</div>
+           <div id="Contact" class="col-md-12">
+             <img src="/static/signature/media/icon_website_b.png">
+             <a id="website" href="#">www.robertlong.com</a></div>
            
           <div id="social28">
-            <a href="#"><img src="/static/signature/media/fb.png"  alt="" /></a>
-            <a href="#"><img src="/static/signature/media/tw.png"  alt="" /></a>
-            <a href="#"><img src="/static/signature/media/li.png"  alt="" /></a>
-            <a href="#"><img src="/static/signature/media/gl.png"  alt="" /></a>                        
+            <a id="fb" href="#"><img src="/static/signature/media/fb.png"  alt="" /></a>
+            <a id="tw" href="#"><img src="/static/signature/media/tw.png"  alt="" /></a>
+            <a id="le" href="#"><img src="/static/signature/media/li.png"  alt="" /></a>
+            <a id="gl" href="#"><img src="/static/signature/media/gl.png"  alt="" /></a>                        
           </div>
           </div>
-          <div class="col-md-4">
-            <div id="number" class="col-md-12"><img src="/static/signature/media/icon_phone.png"> 0123 -456-789</div>
-           <div id="Contact" class="col-md-12"><img src="/static/signature/media/icon_email.png"><a href="#">email@Robertlong.com</a></div>
+          <div class="col-4">
+            <div>&nbsp;</div>
+            <div id="number" class="col-md-12">
+              <img src="/static/signature/media/icon_phone.png">
+              <span id="mobile"> 0123 -456-789 </span>
+              </div>
+           <div id="Contact" class="col-md-12">
+             <img src="/static/signature/media/icon_email.png">
+             <a id="email"href="#">email@Robertlong.com</a></div>
            
           </div>
          </div>
          <div>&nbsp;</div>
-         <div class="col-md-12"id="address">7743 Street, Blue Park, Suite 233, Smalltown, Stateville, USA 774386</div>
+         <div class="col-md-12 text-center" id="address">7743 Street, Blue Park, Suite 233, Smalltown, Stateville, USA 774386</div>
 
          {%endblock%}
        </div>
@@ -1019,7 +1264,7 @@ i am just copy pasting table templates {% endcomment %}
           {%block template-29%}
           <div class="row">
             <div class="col-md-4">
-              <div class="col-md-12 d-flex align-items-center justify-content-center"  id="photo-l"><img class="img-fluid" src="/static/signature/media/pic.png" alt=""></div>
+              <div class="col-md-12 d-flex align-items-center justify-content-center"><img id="photo-l" class="img-fluid" src="/static/signature/media/pic.png" alt=""></div>
             </div>
             <div class="col-md-8"> 
               <div id="name">Robert Long</div>
@@ -1028,14 +1273,21 @@ i am just copy pasting table templates {% endcomment %}
                 <div class="col-md-2" id="top-border"></div>
               </div>
               <div id="address">7743 Street, Blue Park, Suite 233, Smalltown,Stateville, USA 774386</div>
-              <div id="Contact29" class="col-md-12"><span>Phone :</span> 0123 -456-789</div>
-              <div id="Contact29" class="col-md-12"><span>Email :</span><a href="#">Contact@robertlong.com</a></div>
-              <div id="Contact29" class="col-md-12"><span>Website :</span><a href="#">www.robertlong.com</a></div>
+              <div id="Contact29" class="col-md-12">
+                <span class="att_color">Mobine :</span>
+                <span id="mobile"> 0123 -456-789 </span>
+                </div>
+              <div id="Contact29" class="col-md-12">
+                <span class="att_color">Email :</span>
+                <a  id="email" href="#">Contact@robertlong.com</a></div>
+              <div id="Contact29" class="col-md-12">
+                <span class="att_color">Website :</span>
+                <a id="website"href="#">www.robertlong.com</a></div>
               <div id="social">
-                <a href="#"><img src="/static/signature/media/fb_b.png"  alt="" /></a>
-                <a href="#"><img src="/static/signature/media/tw_b.png"  alt="" /></a>
-                <a href="#"><img src="/static/signature/media/li_b.png"  alt="" /></a>
-                <a href="#"><img src="/static/signature/media/gl_b.png"  alt="" /></a>                        
+                <a id="fb" href="#"><img src="/static/signature/media/fb_b.png"  alt="" /></a>
+                <a id="tw" href="#"><img src="/static/signature/media/tw_b.png"  alt="" /></a>
+                <a id="le" href="#"><img src="/static/signature/media/li_b.png"  alt="" /></a>
+                <a id="gl" href="#"><img src="/static/signature/media/gl_b.png"  alt="" /></a>                        
               </div>
             </div>
           </div>
@@ -1050,20 +1302,21 @@ i am just copy pasting table templates {% endcomment %}
          {%block template-30%}
          <div class="row">
           <div class="col-md-4">
-            <div class="col-md-12 d-flex align-items-center justify-content-center"  id="photo-big"><img class="img-fluid" src="/static/signature/media/blank profile.png" alt=""></div>
+            <div class="col-md-12 d-flex align-items-center justify-content-center"><img id="photo-big" class="img-fluid" src="/static/signature/media/blank profile.png" alt=""></div>
           </div>
           <div class="col-md-8"> 
             <div id="name">Robert Long <span>Designer</span></div>
             <div id="address">7743 Street, Blue Park, Suite 233, Smalltown,Stateville, USA 774386</div>
             <div class="row">
               <div class="col-md-6"> 
-                <div id="Contact29" class="col-md-12"><a href="#">www.robertlong.com</a></div>
+                <div id="Contact29" class="col-md-12">
+                  <a id="email" href="#">www.robertlong.com</a></div>
               </div>
               <div class="col-md-6" id="social30"> 
-                  <a href="#"><img src="/static/signature/media/fb_b.png"  alt="" /></a>
-                  <a href="#"><img src="/static/signature/media/tw_b.png"  alt="" /></a>
-                  <a href="#"><img src="/static/signature/media/li_b.png"  alt="" /></a>
-                  <a href="#"><img src="/static/signature/media/gl_b.png"  alt="" /></a>                        
+                  <a id="fb"href="#"><img src="/static/signature/media/fb_b.png"  alt="" /></a>
+                  <a id="tw" href="#"><img src="/static/signature/media/tw_b.png"  alt="" /></a>
+                  <a id="le" href="#"><img src="/static/signature/media/li_b.png"  alt="" /></a>
+                  <a id="gl" href="#"><img src="/static/signature/media/gl_b.png"  alt="" /></a>                        
               </div>
             </div>
           </div>
@@ -1086,7 +1339,7 @@ i am just copy pasting table templates {% endcomment %}
           {%block template-31%} 
           <div class="row">
             <div class="col-md-3">
-              <div class="col-md-12 d-flex align-items-center justify-content-center"  id="photo-big"><img class="img-fluid" src="/static/signature/media/blank profile.png" alt=""></div>
+              <div class="col-md-12 d-flex align-items-center justify-content-center"><img id="photo-big" class="img-fluid" src="/static/signature/media/blank profile.png" alt=""></div>
             </div>
             <div class="col-md-9"> 
               <div id="name">Robert Long</div>
@@ -1095,23 +1348,23 @@ i am just copy pasting table templates {% endcomment %}
               <div>&nbsp;</div>
               <div class="row">
                 <div class="col-md-6">
-                    <div id="Contact29" class="col-md-12"><span>Phone : </span> 0123 -456-789</div>
-                    <div id="Contact29" class="col-md-12"><span>Email : </span><a href="#">Contact@robertlong.com</a></div>
-                    <div id="Contact29" class="col-md-12"><span>Website : </span><a href="#">www.robertlong.com</a></div>
+                    <div id="Contact29" class="col-md-12"><span class="att_color">Phone : </span><span id="mobile"> 0123 -456-789</span></div>
+                    <div id="Contact29" class="col-md-12"><span class="att_color">Email : </span><a id="email" href="#">Contact@robertlong.com</a></div>
+                    <div id="Contact29" class="col-md-12"><span class="att_color">Website : </span><a id="website" href="#">www.robertlong.com</a></div>
                 </div>
                 <div class="col-md-6">
                   <div id="social-link31"> 
                     <li >
-                      <div><a href="#"><img src="/static/signature/media/fb_b.png" alt="" /></a><span>/jsmith</span></div>
+                      <div><a id="fb" href="#"><img src="/static/signature/media/tw_b.png"  alt="" /></a><span>/jsmith</span></div>
                     </li>
                     <li >
-                      <div><a href="#"><img src="/static/signature/media/li_b.png" alt="" /></a><span>#jsmith</span></div>
+                      <div><a id="le" href="#"><img src="/static/signature/media/li_b.png" alt="" /></a><span>#jsmith</span></div>
                     </li>
                     <li >
-                      <div><a href="#"><img src="/static/signature/media/tw_b.png" alt="" /></a><span>@jsmith</span></div>
+                      <div><a id="tw" href="#"><img src="/static/signature/media/tw_b.png" alt="" /></a><span>@jsmith</span></div>
                     </li>
                     <li >
-                      <div><a href="#"><img src="/static/signature/media/gl_b.png" alt="" /></a><span>~jsmith</span></div>
+                      <div><a id="gl" href="#"><img src="/static/signature/media/gl_b.png" alt="" /></a><span>~jsmith</span></div>
                     </li>
                 </div>
                 </div>
@@ -1130,7 +1383,7 @@ i am just copy pasting table templates {% endcomment %}
          {%block template-32%}
          <div class="row">
           <div class="col-md-4">
-            <div class="col-md-12 d-flex align-items-center justify-content-center" ><img  id="image-R" class="img-fluid" src="/static/signature/media/blank profile.png" alt=""></div>
+            <div class="col-md-12 d-flex align-items-center justify-content-center" ><img  id="image-r" class="img-fluid" src="/static/signature/media/blank profile.png" alt=""></div>
           </div>
           <div class="col-md-8"> 
             <div id="name">Robert Long</div>
@@ -1139,14 +1392,23 @@ i am just copy pasting table templates {% endcomment %}
               <div class="col-md-2" id="top-border"></div>
             </div>
             <div id="address">7743 Street, Blue Park, Suite 233, Smalltown,Stateville, USA 774386</div>
-            <div id="number" class="col-md-12"><span><img src="/static/signature/media/icon_mobile_b.png"></span> 0123 -456-789</div>
-            <div id="Contact" class="col-md-12"><span><img src="/static/signature/media/icon_email_b.png"></span><a href="#">Contact@robertlong.com</a></div>
-            <div id="Contact" class="col-md-12"><span><img src="/static/signature/media/icon_website_b.png"></span><a href="#">www.robertlong.com</a></div>
+            <div id="number" class="col-md-12">
+              <span><img src="/static/signature/media/icon_mobile_b.png"></span>
+              <span id="mobile">0123 -456-789</span>
+              </div>
+            <div id="Contact" class="col-md-12">
+              <span><img src="/static/signature/media/icon_email_b.png"></span>
+              <a id="email" href="#">Contact@robertlong.com</a>
+            </div>
+            <div id="Contact" class="col-md-12">
+              <span><img src="/static/signature/media/icon_website_b.png"></span>
+              <a id="website" href="#">www.robertlong.com</a>
+            </div>
             <div id="social32">
-              <a href="#"><img src="/static/signature/media/icon_fb_k.png"  alt="" /></a>
-              <a href="#"><img src="/static/signature/media/icon_tw_k.png"  alt="" /></a>
-              <a href="#"><img src="/static/signature/media/icon_li_k.png"  alt="" /></a>
-              <a href="#"><img src="/static/signature/media/icon_gl_k.png"  alt="" /></a>                        
+              <a id="fb" href="#"><img src="/static/signature/media/fb_b.png"  alt="" /></a>
+              <a id="tw" href="#"><img src="/static/signature/media/tw_b.png"  alt="" /></a>
+              <a id="le" href="#"><img src="/static/signature/media/li_b.png"  alt="" /></a>
+              <a id="gl" href="#"><img src="/static/signature/media/gl_b.png"  alt="" /></a>                        
             </div>
           </div>
         </div>
@@ -1168,7 +1430,7 @@ i am just copy pasting table templates {% endcomment %}
           {%block template-33%}
           <div class="row">  
             <div class="col-md-3"> 
-              <div class="col-md-12 d-flex align-items-center justify-content-center" ><img  id="image-R" class="img-fluid" src="/static/signature/media/blank profile.png" alt=""></div>
+              <div class="col-md-12 d-flex align-items-center justify-content-center" ><img  id="image-r" class="img-fluid" src="/static/signature/media/blank profile.png" alt=""></div>
             </div>
               <div class="col-md-9"> 
                   <div id="name">Robert Long</div>
@@ -1177,16 +1439,25 @@ i am just copy pasting table templates {% endcomment %}
                     <div class="col-md-2" id="top-border"></div>
                   </div>
                   <div id="address">7743 Street, Blue Park, Suite 233, Smalltown, Stateville, USA 774386</div>
-                  <div id="number" class="col-md-12"><img src="/static/signature/media/icon_phone_b.png"> 0123 -456-789</div>
-                  <div id="Contact" class="col-md-12"><img src="/static/signature/media/icon_email_b.png"><a href="#">email@Robertlong.com</a> | <img src="/static/signature/media/icon_website_b.png"><a href="#">WWW.Robertlong.com</a></div>      
-                  <div id="social">
-                    <a href="#"><img src="/static/signature/media/icon_fb_blue.png"  alt="" /></a>
-                    <a href="#"><img src="/static/signature/media/icon_tw_blue.png"  alt="" /></a>
-                    <a href="#"><img src="/static/signature/media/icon_li_blue.png"  alt="" /></a>
-                    <a href="#"><img src="/static/signature/media/icon_gl_blue.png"  alt="" /></a>
+                  <div id="number" class="col-md-12">
+                    <img src="/static/signature/media/icon_phone_b.png"> 
+                    <span id="mobile">0123 -456-789 </span>
                   </div>
-                  <div id="summery33" valign="bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra ipsum quis dui posuere, et efficitur tellus pretium. Vestibulum suscipit dui at risus elementum dictum. Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit. Fusce sagittis pharetra quat risus elementum dt risus elementum dm lacinia egestas. Sed convallis diam non risus eleifend vehicula. Vestibulum ullamcorper ullamcorper interdum. Nulla dapibus vulputate ultrices. Mauris m</div>
+                  <div id="Contact" class="col-md-12">
+                    <img src="/static/signature/media/icon_email_b.png">
+                    <a  id="email" href="#">email@Robertlong.com</a>
+                    <span class="mid-line"> | </span>
+                     <img src="/static/signature/media/icon_website_b.png">
+                     <a id="website" href="#">WWW.Robertlong.com</a>
+                    </div>      
+                  <div id="social">
+                    <a id="fb" href="#"><img src="/static/signature/media/icon_fb_blue.png"  alt="" /></a>
+                    <a id="tw" href="#"><img src="/static/signature/media/icon_tw_blue.png"  alt="" /></a>
+                    <a id="le" href="#"><img src="/static/signature/media/icon_li_blue.png"  alt="" /></a>
+                    <a id="gl" href="#"><img src="/static/signature/media/icon_gl_blue.png"  alt="" /></a>
+                  </div>
+                  {% comment %} <div id="summery33" valign="bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra ipsum quis dui posuere, et efficitur tellus pretium. Vestibulum suscipit dui at risus elementum dictum. Lorem ipsum dolor sit amet,  {% endcomment %}
+                    {% comment %} consectetur adipiscing elit. Fusce sagittis pharetra quat risus elementum dt risus elementum dm lacinia egestas. Sed convallis diam non risus eleifend vehicula. Vestibulum ullamcorper ullamcorper interdum. Nulla dapibus vulputate ultrices. Mauris m</div> {% endcomment %}
               </div>         
           </div>
             
@@ -1200,20 +1471,30 @@ i am just copy pasting table templates {% endcomment %}
          {%block template-34%}
          <div class="row">
             <div class="col-md-2" id="image34">
-              <img class="img-fluid" src="/static/signature/media/blank profile.png" alt="">
+              <img id="photo-big"class="img-fluid" src="/static/signature/media/blank profile.png" alt="">
             </div>
            <div class="col-md-10">
             <div id="name34">JENIFFER SMITH</div>
             <div id="designation34">GRAPHIC DESIGNER</div>
             <div id="border34">
               <div id="address">7743 Street, Blue Park, Suite 233, Smalltown, Stateville, USA 774386</div>
-              <div id="Contact" class="col-md-12"><img src="/static/signature/media/icon_phone_b.png"> 0123 -456-789  | <span></span><img src="/static/signature/media/icon_email_b.png"><a href="#">email@Robertlong.com</a> | <img src="/static/signature/media/icon_website_b.png"><a href="#">WWW.Robertlong.com</a></div> 
+              <div id="Contact" class="col-md-12">
+                <img src="/static/signature/media/icon_phone_b.png"> 
+                <span id="mobile">0123 -456-789 </span>
+                <span class="mid-line"> | </span>
+                 
+                 <img src="/static/signature/media/icon_email_b.png">
+                 <a id="email" href="#">email@Robertlong.com</a>
+                  <span class="mid-line"> | </span>
+                  <img src="/static/signature/media/icon_website_b.png">
+                  <a id="website" href="#">WWW.Robertlong.com</a>
+                </div> 
             </div>
             <div id="social">
-              <a href="#"><img src="/static/signature/media/icon_fb_blue.png"  alt="" /></a>
-              <a href="#"><img src="/static/signature/media/icon_tw_blue.png"  alt="" /></a>
-              <a href="#"><img src="/static/signature/media/icon_li_blue.png"  alt="" /></a>
-              <a href="#"><img src="/static/signature/media/icon_gl_blue.png"  alt="" /></a>
+              <a id="fb" href="#"><img src="/static/signature/media/icon_fb_blue.png"  alt="" /></a>
+              <a id="tw" href="#"><img src="/static/signature/media/icon_tw_blue.png"  alt="" /></a>
+              <a id="le" href="#"><img src="/static/signature/media/icon_li_blue.png"  alt="" /></a>
+              <a id="gl" href="#"><img src="/static/signature/media/icon_gl_blue.png"  alt="" /></a>
             </div>
            </div>    
           </div>
@@ -1235,10 +1516,14 @@ i am just copy pasting table templates {% endcomment %}
           {%block template-35%}
           <div id="tem35">
             <div class="row"> 
-              <div class="col-3" id="tem35-image"><img class="img-fluid" src="/static/signature/media/blank profile.png" alt="">  </div>
+              <div class="col-3" id="tem35-image" ><img id="photo" class="img-fluid" src="/static/signature/media/blank profile.png" alt="">  </div>
               <div class="col-9" id="tem35-into"> 
                 <div id="name35">ROBERT LONG</div>
-                <div id="designation35">GRAPHIC DESIGNER <span>|</span> Company</div>
+                <div id="designation35" >
+                  <span  id="designation35">GRAPHIC DESIGNER </span>
+                  <span class="mid-line">|</span>
+                  <span  id="Company35">UPSTAL</span> 
+                </div>
               </div>
             </div>
          </div>
@@ -1248,15 +1533,27 @@ i am just copy pasting table templates {% endcomment %}
             </div>
             <div class="col-md-9"> 
               <div class="details">
-                <div >7743 Street, Blue Park, Suite 233, Smalltown,Stateville, USA 774386</div>
-                <div><span>t</span> +1 (234) 567 - 890  |  <span>m</span> 0123 - 456 - 789</div>
-                <div><span>e</span> <a href="#">contact@robertlong.com</a> | <span>w</span> <a href="#">www.robertlong.com</a></div>
+                <div id="address">7743 Street, Blue Park, Suite 233, Smalltown,Stateville, USA 774386</div>
+                <div>
+                  <span class="att_color">t</span> 
+                   <span>+1 (234) 567 - 890 </span>
+                   <span id="mid-line"> | </span>
+                  <span class="att_color">m</span> 
+                  <span>0123 - 456 - 789</span>
+                </div>
+                <div>
+                  <span class="att_color">e</span> 
+                  <a id="email" href="#">contact@robertlong.com</a> 
+                 <span id="mid-line"> | </span>
+                  <span class="att_color">w</span>
+                   <a id="website" href="#">www.robertlong.com</a>
+                  </div>
               </div>
               <div id="social">
-                <a href="#"><img src="/static/signature/media/fb.png"  alt="" /></a>
-                <a href="#"><img src="/static/signature/media/tw.png"  alt="" /></a>
-                <a href="#"><img src="/static/signature/media/li.png"  alt="" /></a>
-                <a href="#"><img src="/static/signature/media/gl.png"  alt="" /></a>
+                <a id="fb" href="#"><img src="/static/signature/media/fb.png"  alt="" /></a>
+                <a id="tw" href="#"><img src="/static/signature/media/tw.png"  alt="" /></a>
+                <a id="le" href="#"><img src="/static/signature/media/li.png"  alt="" /></a>
+                <a id="gl" href="#"><img src="/static/signature/media/gl.png"  alt="" /></a>
               </div> 
             </div>  
           
@@ -1273,11 +1570,11 @@ i am just copy pasting table templates {% endcomment %}
          <div id="tem35">
           <div class="row"> 
             <div class="col-3" id="tem35-image">
-              <img class="img-fluid" src="/static/signature/media/blank profile.png" alt="">  
+              <img id="photo" class="img-fluid" src="/static/signature/media/blank profile.png" alt="">  
             </div>
             <div class="col-9" id="tem35-into"> 
-              <div id="name35">ROBERT LONG</div>
-              <div id="designation35">GRAPHIC DESIGNER</div>
+              <div id="name36">ROBERT LONG</div>
+              <div id="designation36">GRAPHIC DESIGNER</div>
             </div>
           </div>
        </div>
@@ -1287,16 +1584,25 @@ i am just copy pasting table templates {% endcomment %}
           </div>
           <div class="col-md-9" id="border36"> 
             <div class="details">
-              <div >7743 Street, Blue Park, Suite 233, Smalltown,Stateville, USA 774386</div>
-              <div><span><img src="/static/signature/media/icon_mobile_b.png"></span> +1 (234) 567 - 890</div>
-              <div id="Contact" class="col-md-12"><img src="/static/signature/media/icon_email_b.png"><a href="#">email@Robertlong.com</a> | <img src="/static/signature/media/icon_website_b.png"><a href="#">WWW.Robertlong.com</a></div> 
+              <div id="address">7743 Street, Blue Park, Suite 233, Smalltown,Stateville, USA 774386</div>
+              <div>
+                <span><img src="/static/signature/media/icon_mobile_b.png"></span>
+              <span id="phone">+1 (234) 567 - 890</span>
+                </div>
+              <div id="Contact" class="col-md-12">
+                <img src="/static/signature/media/icon_email_b.png">
+                <a id="email" href="#">email@Robertlong.com</a>
+              <span class="mid-line"> | </span>
+              <img src="/static/signature/media/icon_website_b.png">
+              <a id="website" href="#">WWW.Robertlong.com</a>
+            </div> 
              
             </div>
             <div id="social">
-              <a href="#"><img src="/static/signature/media/icon_fb_k.png"  alt="" /></a>
-              <a href="#"><img src="/static/signature/media/icon_tw_k.png"  alt="" /></a>
-              <a href="#"><img src="/static/signature/media/icon_li_k.png"  alt="" /></a>
-              <a href="#"><img src="/static/signature/media/icon_gl_k.png"  alt="" /></a>                        
+              <a id="fb" href="#"><img src="/static/signature/media/fb_b.png"  alt="" /></a>
+              <a id="tw" href="#"><img src="/static/signature/media/tw_b.png"  alt="" /></a>
+              <a id="le" href="#"><img src="/static/signature/media/li_b.png"  alt="" /></a>
+              <a id="gl" href="#"><img src="/static/signature/media/gl_b.png"  alt="" /></a>                        
 
             </div> 
           </div>  
@@ -1321,20 +1627,34 @@ i am just copy pasting table templates {% endcomment %}
           {%block template-37%}
           <div class="row">
             <div class="col-md-8"> 
-              <div id="intro14">JENIFFER SMITH <span>Freelancer</span></div>
+              <div id="intro14">
+                <span id="name37">JENIFFER SMITH </span>
+                  <span id="designation">Freelancer</span></div>
               <div id="address">7743 Street, Blue Park, Suite 233, Smalltown,Stateville, USA 774386</div>
-              <div id="number"><span><img src="/static/signature/media/icon_mobile_b.png"></span> +1 (234) 567 - 890  |  <span><img src="/static/signature/media/icon_phone_b.png"></span> 0123 - 456 - 789</div>
-              <div id="Contact"><span><img src="/static/signature/media/icon_email_b.png"></span><a href="#">contact@jsmith.com</a> | <span><img src="/static/signature/media/icon_website_b.png"></span><a href="#">www.jwntfarsmith.com</a></div>
+              <div id="Contact">
+                <span><img src="/static/signature/media/icon_mobile_b.png"></span>
+                <span id="phone">+1 (234) 567 - 890 </span>
+                <span class="mid-line"> | </span>
+                <span><img src="/static/signature/media/icon_phone_b.png"></span>
+                <span id="mobile"> 0123 - 456 - 789</span>
+                </div>
+              <div id="Contact">
+                <span><img src="/static/signature/media/icon_email_b.png"></span>
+                <a id="email" href="#">contact@jsmith.com</a>
+                <span class="mid-line"> | </span>
+                <img src="/static/signature/media/icon_website_b.png">
+                <a id="website" href="#">www.jwntfarsmith.com</a>
+              </div>
               <div id="social">
-                <a href="#"><img src="/static/signature/media/icon_fb.png"  alt="" /></a>
-                <a href="#"><img src="/static/signature/media/icon_tw.png"  alt="" /></a>
-                <a href="#"><img src="/static/signature/media/icon_li.png"  alt="" /></a>
-                <a href="#"><img src="/static/signature/media/icon_gl.png"  alt="" /></a>                        
+                <a id="fb" href="#"><img src="/static/signature/media/icon_fb.png"  alt="" /></a>
+                <a id="tw" href="#"><img src="/static/signature/media/icon_tw.png"  alt="" /></a>
+                <a id="le" href="#"><img src="/static/signature/media/icon_li.png"  alt="" /></a>
+                <a id="gl" href="#"><img src="/static/signature/media/icon_gl.png"  alt="" /></a>                        
               </div>   
             </div>
             <div class="col-md-3 d-flex align-items-center justify-content-center" id="border37">
               <div id="sign37">
-                <img src="/static/signature/media/sign/sign.png"alt="" />
+                <img id="sign" src="/static/signature/media/sign/sign.png"alt="" />
               </div>  
             </div>  
           </div>  
@@ -1348,14 +1668,14 @@ i am just copy pasting table templates {% endcomment %}
          {%block template-38%}
          <div class="row">
           <div class="col-md-12"> 
-            <div id="name10">JENIFFER SMITH</div>
-            <div id="designation10">Freelancer</div>
-            <div id="numberP"><span><img src="/static/signature/media/mbl.png"></span> +1 (234) 567 - 890</div>
-            <div id="numberP"><span><img src="/static/signature/media/phone.jpg"></span> 0123 - 456 - 789</div>
-            <div id="ContactP"><span><img src="/static/signature/media/mail.jpg"></span><a href="#">contact@jsmith.com</a> </div>
-            <div id="ContactP"><span><img src="/static/signature/media/website.png"></span><a href="#">www.jwntfarsmith.com</a></div>
+            <div id="name38">JENIFFER SMITH</div>
+            <div id="designation38">Freelancer</div>
+            <div id="ContactP"><span><img src="/static/signature/media/phone.jpg"></span> <span id="phone">+1 (234) 567 - 890</span></div>
+            <div id="ContactP"><span><img src="/static/signature/media/mbl.png"></span><span id="mobile"> 0123 - 456 - 789</span></div>
+            <div id="ContactP"><span><img src="/static/signature/media/mail.jpg"></span><a id="email" href="#">contact@jsmith.com</a> </div>
+            <div id="ContactP"><span><img src="/static/signature/media/website.png"></span><a id="website" href="#">www.jwntfarsmith.com</a></div>
             <div id="sign38">
-              <img src="/static/signature/media/sign/sign.png"alt="" />
+              <img id="sign" src="/static/signature/media/sign/sign.png"alt="" />
             </div> 
               
           </div> 
@@ -1378,19 +1698,27 @@ i am just copy pasting table templates {% endcomment %}
           {%block template-39%}  
           <div class="row">
             <div class="col-md-12">
-              <img  id="image-R"class="img-fluid" src="/static/signature/media/blank profile.png" alt=""> 
-              <div id="intro14">JENIFFER SMITH <span>Freelancer</span></div>
-              <div id="addressP"><span><img src="/static/signature/media/address.jpg"></span>7743 Street, Blue Park, Suite 233, Smalltown,Stateville, USA 774386</div>
-              <div id="numberP"><span><img src="/static/signature/media/mbl.png"></span> +1 (234) 567 - 890</div>
-              <div id="ContactP"><span><img src="/static/signature/media/mail.jpg"></span><a href="#">contact@jsmith.com</a></div>
+              <img  id="image-r"class="img-fluid" src="/static/signature/media/blank profile.png" alt=""> 
+              <div >
+                <span id="name">JENIFFER SMITH</span> 
+                <span id="designation39">Freelancer</span></div>
+              <div id="addressP"><span><img src="/static/signature/media/address.jpg"></span>
+                <span id="address">7743 Street, Blue Park, Suite 233, Smalltown,Stateville, USA 774386</span>
+              </div>
+              <div id="ContactP"><span><img src="/static/signature/media/mbl.png"></span>
+                <span id="phone"> +1 (234) 567 - 890</span>
+                </div>
+              <div id="ContactP"><span><img src="/static/signature/media/mail.jpg"></span>
+                <span id="email"><a href="#">contact@jsmith.com</a></span>
+              </div>
               <div id="social">
-                <a href="#"><img src="/static/signature/media/icon_fb_b.png"  alt="" /></a>
-                <a href="#"><img src="/static/signature/media/icon_tw_b.png"  alt="" /></a>
-                <a href="#"><img src="/static/signature/media/icon_li_b.png"  alt="" /></a>
-                <a href="#"><img src="/static/signature/media/icon_gl_b.png"  alt="" /></a>                        
+                <a id="fb" href="#"><img src="/static/signature/media/icon_fb_b.png"  alt="" /></a>
+                <a id="tw" href="#"><img src="/static/signature/media/icon_tw_b.png"  alt="" /></a>
+                <a id="le" href="#"><img src="/static/signature/media/icon_li_b.png"  alt="" /></a>
+                <a id="gl" href="#"><img src="/static/signature/media/icon_gl_b.png"  alt="" /></a>                        
               </div>
               <div id="sign38">
-                <img src="/static/signature/media/sign/sign.png"alt="" />
+                <img id="sign" src="/static/signature/media/sign/sign.png"alt="" />
               </div>   
             </div>  
           </div>
@@ -1404,10 +1732,10 @@ i am just copy pasting table templates {% endcomment %}
          {%block template-40%}
           <div class="row" id="blue0"> 
             <div class="col-6" id="image40">
-              <img class="img-fluid" src="/static/signature/media/blank profile.png" alt=""> 
+              <img id="photo" class="img-fluid" src="/static/signature/media/blank profile.png" alt=""> 
             </div>
             <div class="col-6" id="sign38">
-              <img class="image-fluid" src="/static/signature/media/sign/logo.png"alt="" />
+              <img id="logo" class="image-fluid" src="/static/signature/media/sign/logo.png"alt="" />
             </div>  
           </div>
           <div>&nbsp;</div>
@@ -1420,9 +1748,21 @@ i am just copy pasting table templates {% endcomment %}
             <div id="name">ROBERT LONG</div>
             <div id="designation">GRAPHIC DESIGNER</div> 
             <div class="details">
-              <div >7743 Street, Blue Park, Suite 233, Smalltown,Stateville, USA 774386</div>
-              <div><span>t</span> +1 (234) 567 - 890  |  <span>m</span> 0123 - 456 - 789</div>
-              <div><span>e</span> <a href="#">contact@robertlong.com</a> | <span>w</span> <a href="#">www.robertlong.com</a></div>
+              <div id="address">7743 Street, Blue Park, Suite 233, Smalltown,Stateville, USA 774386</div>
+              <div>
+                <span class="att_color">t</span> 
+                <span id="phone">+1 (234) 567 - 890</span>  
+                <span class="mid-line">|</span> 
+                <span class="att_color">m</span> 
+                <span id="mobile">0123 - 456 - 789</span>
+              </div>
+              <div>
+                <span class="att_color">e</span>
+                 <a id="email" href="#">contact@robertlong.com</a>
+                <span class="mid-line"> | </span>
+                <span class="att_color">w</span>
+                <a id="website" href="#">www.robertlong.com</a>
+              </div>
             </div>
             <div id="social">
               <a href="#"><img src="/static/signature/media/fb.png"  alt="" /></a>
@@ -1456,13 +1796,13 @@ i am just copy pasting table templates {% endcomment %}
                     <div id="name">Robert Long</div>
                     <div id="Company">Comapany</div>
                     <div id="designation41">Graphic Designer</div>
-                    <div id="Contact25"><a href="#">www.robertlong.com</a></div>
+                    <div id="Contact25"><a id="website"href="#">www.robertlong.com</a></div>
                     <div id="social">
-                      <a href="#"><img src="/static/signature/media/fb.png"  alt="" /></a>
-                      <a href="#"><img src="/static/signature/media/twt.png"  alt="" /></a>
-                      <a href="#"><img src="/static/signature/media/le.png"  alt="" /></a>
-                      <a href="#"><img src="/static/signature/media/git.png"  alt="" /></a>
-                      <a href="#"><img src="/static/signature/media/yt.png"  alt="" /></a>                        
+                      <a id="fb" href="#"><img src="/static/signature/media/fb.png"  alt="" /></a>
+                      <a id="tw" href="#"><img src="/static/signature/media/twt.png"  alt="" /></a>
+                      <a id="le" href="#"><img src="/static/signature/media/le.png"  alt="" /></a>
+                      <a id="gh" href="#"><img src="/static/signature/media/git.png"  alt="" /></a>
+                      <a id="yt" href="#"><img src="/static/signature/media/yt.png"  alt="" /></a>                        
                     </div>
                   </div>
               </div>
@@ -1482,21 +1822,27 @@ i am just copy pasting table templates {% endcomment %}
          {%block template-42%}
          <div class="row" id="horizontal">
            <div class="col-md-4 d-flex align-items-center justify-content-center">
-             <div class="col-md-12"><img id="photo" class="img-fluid" src="/static/signature/media/blank profile.png" alt=""></div>
+             <div class="col-md-12"><img id="photo-big" class="img-fluid" src="/static/signature/media/blank profile.png" alt=""></div>
           </div>
            <div class="col-md-4">
-            <div id="name42">Robert Long</div>
-            <div id="designation42">Designer</div>
-            <div id="number" class="col-md-12"><img src="/static/signature/media/icon_phone.png"> 0123 -456-789</div>
-            <div id="Contact" class="col-md-12"><img src="/static/signature/media/icon_email.png"><a href="#">email@Robertlong.com</a></div>
+            <div id="name">Robert Long</div>
+            <div id="designation3">Designer</div>
+            <div id="Conatct" class="col-md-12">
+              <img src="/static/signature/media/icon_phone.png">
+               <span id="mobile">0123 -456-789 <span>
+              </div>
+            <div id="Contact" class="col-md-12">
+              <img src="/static/signature/media/icon_email.png">
+              <a id="email" href="#">email@Robertlong.com</a>
+            </div>
            </div>
            <div class="col-md-4">
             <div id="address">7743 Street, Blue Park, Suite 233, Smalltown, Stateville, USA 774386</div>
             <div id="social42">
-              <a href="#"><img src="/static/signature/media/fb.png"  alt="" /></a>
-              <a href="#"><img src="/static/signature/media/tw.png"  alt="" /></a>
-              <a href="#"><img src="/static/signature/media/li.png"  alt="" /></a>
-              <a href="#"><img src="/static/signature/media/gl.png"  alt="" /></a>                        
+              <a id="fb" href="#"><img src="/static/signature/media/fb.png"  alt="" /></a>
+              <a id="tw" href="#"><img src="/static/signature/media/tw.png"  alt="" /></a>
+              <a id="le" href="#"><img src="/static/signature/media/li.png"  alt="" /></a>
+              <a id="gl"href="#"><img src="/static/signature/media/gl.png"  alt="" /></a>                        
             </div>
            </div>
           </div>
@@ -1521,22 +1867,34 @@ i am just copy pasting table templates {% endcomment %}
             <div class="col-md-5"> 
               <div  id="into19">
                 <div class="col-6" id="sign38">
-                  <img class="image-fluid" src="/static/signature/media/sign/logo.png"alt="" />
+                  <img id="logo" class="image-fluid" src="/static/signature/media/sign/logo.png"alt="" />
                 </div> 
                 <div>&nbsp;</div>
                   <div id="social43" class="text-center">
-                  <a href="#"><img src="/static/signature/media/fb_W.png"  alt="" /></a>
-                  <a href="#"><img src="/static/signature/media/tw_W.png"  alt="" /></a>
-                  <a href="#"><img src="/static/signature/media/li_W.png"  alt="" /></a>
-                  <a href="#"><img src="/static/signature/media/gl_W.png"  alt="" /></a>                                           
+                  <a id="fb" href="#"><img src="/static/signature/media/fb_W.png"  alt="" /></a>
+                  <a id="tw" href="#"><img src="/static/signature/media/tw_W.png"  alt="" /></a>
+                  <a id="le" href="#"><img src="/static/signature/media/li_W.png"  alt="" /></a>
+                  <a id="gl" href="#"><img src="/static/signature/media/gl_W.png"  alt="" /></a>                                           
                   </div>     
               </div>
             </div>
             <div class="col-md-7">
               <div id="name">ROBERT LONG</div>
                  <div id="designation">GRAPHIC DESIGNER</div>
-              <div id="number"><span>Mobile :</span> +1 (234) 567 - 890  |  <span>Phone :</span> 0123 - 456 - 789</div>
-                <div id="Contact"><span>Email :</span> <a href="#">contact@robertlong.com</a> | <span>Website :</span> <a href="#">www.robertlong.com</a></div>
+                <div id="Contact">
+                  <span class="att_color">mobile: </span>
+                  <span id="mobile"> +1 (234) 567 - 890 </span> 
+                  <span class="mid-line"> | </span>
+                  <span class="att_color">phone: </span> 
+                  <span id="phone">0123 - 456 - 789 </span>
+                </div>
+                <div id="Contact">
+                  <span class="att_color">email: </span>
+                  <span id="email"> <a href="#">contact@robertlong.com</a></span> 
+                  <span class="mid-line"> | </span>
+                  <span class="att_color">website: </span> 
+                  <span id="website"><a href="#">www.robertlong.com</a></span>
+                </div>
             </div>
           </div> 
           {%endblock%}
@@ -1551,23 +1909,28 @@ i am just copy pasting table templates {% endcomment %}
           <div class="col-md-5" id="blue2">
            <div id="name26">Robert Long</div>
            <div id="designation26">Designer</div>
-           <div id="number26" class="col-md-12"><img src="/static/signature/media/icon_phone_W.png"> 0123 -456-789</div>
-           <div id="Contact26" class="col-md-12"><img src="/static/signature/media/icon_email_W.png"><a href="#"> email@Robertlong.com</a></div>
+           <div id="number26" class="col-md-12">
+             <img src="/static/signature/media/icon_phone_W.png">
+             <span id="phone">0123 - 456 - 789 </span>
+            </div>
+           <div id="Contact26" class="col-md-12">
+             <img src="/static/signature/media/icon_email_W.png">
+             <a id="email" href="#"> email@Robertlong.com</a></div>
           </div>
           <div class="col-md-4" id="blue0">
            <div id="address26">7743 Street, Blue Park, Suite 233, Smalltown, Stateville, USA 774386</div>
            <div id="social26">
-             <a href="#"><img src="/static/signature/media/fb_W.png"  alt="" /></a>
-             <a href="#"><img src="/static/signature/media/tw_W.png"  alt="" /></a>
-             <a href="#"><img src="/static/signature/media/li_W.png"  alt="" /></a>
-             <a href="#"><img src="/static/signature/media/gl_W.png"  alt="" /></a>                        
+             <a id="fb" href="#"><img src="/static/signature/media/fb_W.png"  alt="" /></a>
+             <a id="tw" href="#"><img src="/static/signature/media/tw_W.png"  alt="" /></a>
+             <a id="le" href="#"><img src="/static/signature/media/li_W.png"  alt="" /></a>
+             <a id="gl" href="#"><img src="/static/signature/media/gl_W.png"  alt="" /></a>                        
            </div>
           </div>
           <div class="col-md-3 d-flex align-items-center justify-content-center" id="blue1">
             <div class="row">
               <div class="col-md-12"><img id="photo" class="img-fluid" src="/static/signature/media/blank profile.png" alt=""></div>
 
-              <div class="col-md-12" id="sign-44"><img class="img-fluid" src="/static/signature/media/sign/sign.png" alt=""></div>
+              <div class="col-md-12" id="sign-44"><img id="sign" class="img-fluid" src="/static/signature/media/sign/sign.png" alt=""></div>
             </div> 
          </div>
          </div>

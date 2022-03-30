@@ -37,7 +37,7 @@
                       <div>
                           <p><strong>Upload Your Image Here :</strong></p>
                       </div>
-                      <input type="file" name="Image" class="form-control-file" id="photoI" onchange="updatephoto()" > 
+                      <input type="file" name="Image" class="form-control-file" id="photoI" onchange="updatephoto(event)" > 
                     </div>
                     
                      <div class="col-md-12">
@@ -88,21 +88,24 @@
         
         <div id="Social" class="tabcontent">
             <div class="d-flex justify-content-center form_container">
-                <li style="list-style:none">  
+                <li style="list-style:none"> 
                     <div class="mt-3 mb-4">
-                      <input type="url" name="Facebok" class="form-control" > 
+                      <input type="url" id="GoogleI" class="form-control" onchange="updateGogle()" placeholder="https://www.Google.RobertLong"> 
+                    </div> 
+                    <div class="mt-3 mb-4">
+                      <input type="url" id="FacebookI" class="form-control" onchange="updateFacebook()" placeholder="https://www.facebook.com/Robert.Long/"> 
                     </div>
                    <div class="mb-4">
-                    <input type="url" name="Twiter" class="form-control" > 
+                    <input type="url" name="Twiter" class="form-control" id="TwiterI" onchange="updateTwiter()" placeholder="https://www.twiter.com/Robert.Long/"> 
                     </div>
                     <div class="mb-4">
-                      <input type="url" name="Github" class="form-control" > 
+                      <input type="url" name="Github" class="form-control" id="GithubI" onchange="updateGithub()" placeholder="https://www.github.com/Robert.Long/"> 
                     </div>
                     <div class="mb-4">
-                      <input type="url" name="Linkedin" class="form-control" > 
+                      <input type="url" name="Linkedin" class="form-control" id="LinkedinI" onchange="updateLinkedin()" placeholder="https://www.Linkedin.com/Robert.Long/" > 
                     </div>
                     <div class="mb-5">
-                      <input type="url" name="Youtube" class="form-control" > 
+                      <input type="url" name="Youtube" class="form-control" id="YoutubeI" onchange="updateYoutube()" placeholder="https://www.youtube.com/Robert.Long/"> 
                     </div>
                     <div class="d-grid text-center col-12">
                       <button type="submit" class="btn btn-lg " id="next-btn">SUBMIT</button>
