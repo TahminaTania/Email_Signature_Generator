@@ -524,6 +524,13 @@ function updateYoutube(){
 }
 
 
+function Code(){
+  console.log("code box")
+  var items = document.querySelectorAll('template1').innerHTML;
+  document.querySelector('#codebox')=items;
+}
+
+
 function Copy(i){
   if (i==1){
     var templateID = 'template1'; 
@@ -638,3 +645,6 @@ function Copy(i){
 
 
 
+ 
+
+ 
