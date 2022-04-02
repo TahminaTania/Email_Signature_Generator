@@ -17,6 +17,13 @@ button{
 }
 
 
+#sign38 img{
+  height: 30px;
+  width: 70px;
+  vertical-align:middle;
+  /* text-align:right; */
+}
+
 #template{
   background:white;
   border: 1px solid #EAEAEA;
@@ -33,7 +40,7 @@ button{
   background:#c2c0d3;
 }
 
-#others .details{
+#others #details{
   border-left:3px solid #007fe6;
   padding-left:10px;
 }
@@ -214,9 +221,10 @@ width:15px;
   line-height:18px;
   
 }
-#details li{
-  border-right:solid 1px #999999;
+#social5-b{
+  border-left:solid 1px #999999;
 }
+
 #details ul li #phone,#details ul li #mobile{
   font-size:11px;
   color:#999999;
@@ -274,7 +282,7 @@ white-space:nowrap;
   font-size:16px;
   color:#007fe6;
 }
-#intro7 li #name span{
+#intro7 li #desination8{
    font-size:14px;
    color:#333333;
 }
@@ -667,6 +675,18 @@ width:50px;
 #sign27{
   padding-top:20px;
   padding-bottom:10px;
+} 
+#sign27 img,
+#sign37 img,
+#sign38 img,
+#sign-44 img
+{
+  height:30px;
+  width: 90px;
+  /* background-color: yellowgreen; */
+}
+#logo, #sign{
+  /* background-color: rgb(231, 228, 58); */
 }
 
 #name28{

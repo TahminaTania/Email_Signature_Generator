@@ -39,7 +39,10 @@
   /* Style the tab content */
   .tabcontent {
     display: none;
-    padding: 6px 12px;
+    padding-top: 6px;
+    padding-right: 12px;
+    padding-left: 12px;
+   /* padding: 6px 12px; */
     border: 1px solid rgb(161, 194, 199);
     border-top: none;
   }
@@ -108,44 +111,60 @@
 
  /* ------------color choosing */
 #colors{
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
+}
+.colorP{
+  line-height: 15px;
+  font-size: 13px;
+  
 }
  #color1{
-   background-color: aquamarine;
+   background-color: rgb(7, 75, 52);
    height: 50px;
  }
  #color2{
-  background-color: rgb(213, 164, 247);
+  background-color: cyan;
+  height: 50px;
 }
 #color3{
-  background-color: rgb(255, 200, 127);
+  background-color: yellow;
+  height: 50px;
 }
 #color4{
   background-color: rgb(160, 4, 4);
-}
-#color5{
-  background-color: rgb(20, 73, 4);
-}
-#color6{
-  background-color: rgb(68, 161, 236);
-}
-#color7{
-  background-color: rgb(5, 54, 128);
-}
-#color8{
-  background-color: rgb(211, 28, 196);
-}
-#color9{
-  background-color: rgb(255, 255, 255);
-}
-#color10{
-  background-color: #5A46F1;
-}
-#color11{
-  background-color: rgb(10, 10, 10);
-}
-#color12{
-  background-color: rgba(245, 7, 98, 0.952);
   height: 50px;
 }
+#color5{
+  background-color: blue;
+  height: 50px;
+}
+#color6{
+  background-color: black;
+  height: 50px;
+}
+#color7{
+  background-color: white;
+  height: 50px;
+}
+#color8{
+  background-color:yellowgreen;
+  height: 50px;
+}
+#color9{
+  background-color:white;
+  height: 50px;
+}
+#color10{
+  background-color:rgb(211, 28, 196);
+  height: 50px;
+}
+#color11{
+  background-color: rgb(94, 18, 94);
+  height: 50px;
+}
+#color12{
+  background-color: yellowgreen;
+  height: 50px;
+}
+

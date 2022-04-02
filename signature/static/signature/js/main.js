@@ -1,3 +1,256 @@
+
+//  console.log('helo')
+//  var elements = document.getElementsByClassName('att_color'); // get all elements
+//   for(var i = 0; i < elements.length; i++){
+//  elements[i].style.color = "black";
+//   }
+
+function color(c) {
+  console.log("hello")
+  
+  if (c==1){
+    var elements = document.getElementsByClassName('borderC');
+     // get all elements
+      for(var i = 0; i < elements.length; i++){
+     elements[i].style.borderColor = "rgb(7, 75, 52)";
+      }
+    var mid = document.getElementsByClassName('mid-line');
+      for(var mi = 0; mi < mid.length; mi++){
+        mid[mi].style.color = "rgb(7, 75, 52)";
+         }
+    }
+  
+  if (c==2){
+    var elements = document.getElementsByClassName('borderC'); // get all elements
+      for(var i = 0; i < elements.length; i++){
+      elements[i].style.borderColor = "cyan";
+      }
+    var mid = document.getElementsByClassName('mid-line');
+    for(var mi = 0; mi < mid.length; mi++){
+      mid[mi].style.color = "cyan";
+        }  
+    }
+
+  if (c==3){
+    var elements = document.getElementsByClassName('borderC'); // get all elements
+      for(var i = 0; i < elements.length; i++){
+      elements[i].style.borderColor = "yellow";
+      }
+    var mid = document.getElementsByClassName('mid-line');
+    for(var mi = 0; mi < mid.length; mi++){
+      mid[mi].style.color = "yellow";
+        }  
+    }
+
+  if (c==4){
+    var elements = document.getElementsByClassName('borderC'); // get all elements
+      for(var i = 0; i < elements.length; i++){
+      elements[i].style.borderColor = "rgb(160, 4, 4)";
+      }
+    var mid = document.getElementsByClassName('mid-line');
+    for(var mi = 0; mi < mid.length; mi++){
+      mid[mi].style.color = "rgb(160, 4, 4)";
+        }  
+    }
+  if (c==5){
+    var elements = document.getElementsByClassName('borderC'); // get all elements
+      for(var i = 0; i < elements.length; i++){
+      elements[i].style.borderColor = "blue";
+      }
+    var mid = document.getElementsByClassName('mid-line');
+    for(var mi = 0; mi < mid.length; mi++){
+      mid[mi].style.color = "blue";
+        }  
+    }  
+  if (c==6){
+    var elements = document.getElementsByClassName('borderC'); // get all elements
+      for(var i = 0; i < elements.length; i++){
+      elements[i].style.borderColor = "black";
+      }
+    var mid = document.getElementsByClassName('mid-line');
+    for(var mi = 0; mi < mid.length; mi++){
+      mid[mi].style.color = "black";
+        }
+    }  
+
+  if (c==7){
+    var elements = document.getElementsByClassName('borderC'); // get all elements
+      for(var i = 0; i < elements.length; i++){
+      elements[i].style.borderColor = "white";
+      }
+    var mid = document.getElementsByClassName('mid-line');
+    for(var mi = 0; mi < mid.length; mi++){
+      mid[mi].style.color = "white";
+        }
+    }  
+
+  if (c==8){
+    var elements = document.getElementsByClassName('borderC'); // get all elements
+      for(var i = 0; i < elements.length; i++){
+      elements[i].style.borderColor = "yellowgreen";
+      }
+    var mid = document.getElementsByClassName('mid-line');
+    for(var mi = 0; mi < mid.length; mi++){
+      mid[mi].style.color = "yellowgreen";
+        }
+    }
+  
+  }
+
+    // document.getElementById("details").style.borderColor = "aquamarine";
+    // document.getElementById("border-down").style.borderColor = "aquamarine";
+    // document.getElementById("social5-b").style.borderColor = "aquamarine";
+    // document.getElementById("border6").style.borderColor = "aquamarine";
+    // document.getElementById("temp9").style.borderColor = "aquamarine";
+    // document.getElementById("temp10").style.borderColor = "aquamarine";
+    // document.getElementById("intro13").style.borderColor = "aquamarine";
+    // document.getElementById("border15").style.borderColor = "aquamarine";
+    // document.getElementById("into15").style.borderColor = "aquamarine";
+    // document.getElementById("bod16").style.borderColor = "aquamarine";
+    // document.getElementById("boder21").style.borderColor = "aquamarine";
+    // document.getElementById("border22").style.borderColor = "aquamarine";
+    // document.getElementById("upper-part").style.borderColor = "aquamarine";
+    // document.getElementById("designation25").style.borderColor = "aquamarine";
+    // document.getElementById("r-border").style.borderColor = "aquamarine";
+    // document.getElementById("top-border").style.borderColor = "aquamarine";// used 3 tym
+    // document.getElementById("border34").style.borderColor = "aquamarine";
+    // document.getElementById("border36").style.borderColor = "aquamarine";
+    // document.getElementById("border37").style.borderColor = "aquamarine";
+    // document.getElementById("designation41").style.borderColor = "aquamarine";
+   
+  
+function colorT(t) {
+  console.log("theme")
+  
+  if (t==1){
+    var elements = document.getElementsByClassName('att_color');
+     // get all elements
+      for(var i = 0; i < elements.length; i++){
+     elements[i].style.color = "rgb(7, 75, 52)";
+      }
+    }
+  
+  if (t==2){
+    var elements = document.getElementsByClassName('att_color'); // get all elements
+      for(var i = 0; i < elements.length; i++){
+      elements[i].style.color = "cyan";
+      }
+    }
+
+  if (t==3){
+    var elements = document.getElementsByClassName('att_color'); // get all elements
+      for(var i = 0; i < elements.length; i++){
+      elements[i].style.color = "yellow";
+      }
+    }
+
+  if (t==4){
+    var elements = document.getElementsByClassName('att_color'); // get all elements
+      for(var i = 0; i < elements.length; i++){
+      elements[i].style.color = "rgb(160, 4, 4)";
+      } 
+    }
+  if (t==5){
+    var elements = document.getElementsByClassName('att_color'); // get all elements
+      for(var i = 0; i < elements.length; i++){
+      elements[i].style.color = "blue";
+      } 
+    }  
+  if (t==6){
+    var elements = document.getElementsByClassName('att_color'); // get all elements
+      for(var i = 0; i < elements.length; i++){
+      elements[i].style.color = "black";
+      }
+    }  
+
+  if (t==7){
+    var elements = document.getElementsByClassName('att_color'); // get all elements
+      for(var i = 0; i < elements.length; i++){
+      elements[i].style.color = "white";
+      }
+    }  
+
+  if (t==8){
+    var elements = document.getElementsByClassName('att_color'); // get all elements
+      for(var i = 0; i < elements.length; i++){
+      elements[i].style.color = "yellowgreen";
+      }
+    }
+  
+  }
+
+
+  function colorF(f) {
+    console.log("font")
+    
+    if (f==1){
+      var elements = document.getElementsByClassName('font');
+       // get all elements
+        for(var i = 0; i < elements.length; i++){
+       elements[i].style.color = "rgb(7, 75, 52)";
+        }
+      }
+    
+    if (f==2){
+      var elements = document.getElementsByClassName('font'); // get all elements
+        for(var i = 0; i < elements.length; i++){
+        elements[i].style.color = "cyan";
+        }
+      }
+  
+    if (f==3){
+      var elements = document.getElementsByClassName('font'); // get all elements
+        for(var i = 0; i < elements.length; i++){
+        elements[i].style.color = "yellow";
+        }
+      }
+  
+    if (f==4){
+      var elements = document.getElementsByClassName('font'); // get all elements
+        for(var i = 0; i < elements.length; i++){
+        elements[i].style.color = "rgb(160, 4, 4)";
+        } 
+      }
+    if (f==5){
+      var elements = document.getElementsByClassName('font'); // get all elements
+        for(var i = 0; i < elements.length; i++){
+        elements[i].style.color = "blue";
+        } 
+      }  
+    if (f==6){
+      var elements = document.getElementsByClassName('font'); // get all elements
+        for(var i = 0; i < elements.length; i++){
+        elements[i].style.color = "black";
+        }
+      }  
+  
+    if (f==7){
+      var elements = document.getElementsByClassName('font'); // get all elements
+        for(var i = 0; i < elements.length; i++){
+        elements[i].style.color = "white";
+        }
+      }  
+  
+    if (f==8){
+      var elements = document.getElementsByClassName('font'); // get all elements
+        for(var i = 0; i < elements.length; i++){
+        elements[i].style.color = "yellowgreen";
+        }
+      }
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 function updatephoto(event){
   // var img= document.getElementById("photoI").value.replace('C:\\fakepath\\',''); 
   // console.log(img)
@@ -31,39 +284,99 @@ function updatephoto(event){
   //document.getElementById("photo-big").src =url;
  }
 
+function updatelogo(event){
+
+  //document.getElementById("logoI").src =URL.createObjectURL(event.target.files[0]);
+  var Lurl=URL.createObjectURL(event.target.files[0]);
+  console.log(Lurl)
+  var log = document.querySelectorAll("[id='logo']");
+  for(var lg = 0; lg < log.length; lg++){
+    log[lg].src =Lurl;
+  }
+}
+
+function updatesign(event){
+
+  //document.getElementById("logoI").src =URL.createObjectURL(event.target.files[0]);
+
+  var sin=URL.createObjectURL(event.target.files[0]);
+  console.log("sign got image :",sin)
+  var sign = document.querySelectorAll("[id='sign']");
+  for(var sg = 0; sg < sin.length; sg++){
+    sign[sg].src=sin;
+  }
+}
+
+
+
 
 function updatename(){
   var name= document.getElementById("nameI").value;
-  //document.getElementsByClassName('name').innerHTML= name;
+  
+ 
   var elms = document.querySelectorAll("[id='name']"); 
-  for(var i = 0; i < elms.length; i++) 
+  for(var i = 0; i < elms.length; i++)
   elms[i].innerHTML=name;
+var elm = document.querySelectorAll("[id='name10']");
+for(var s = 0; s < elm.length; s++) {
+elm[s].innerHTML=name;
+}
+var elm = document.querySelectorAll("[id='name14']"); 
+for(var s = 0; s < elm.length; s++) {
+elm[s].innerHTML=name;
+}
+var elm = document.querySelectorAll("[id='name26']");
+for(var s = 0; s < elm.length; s++) {
+  elm[s].innerHTML=name;
+  }
+
   
   document.getElementById("name-5").innerHTML= name;
   document.getElementById("name4").innerHTML= name;
   document.getElementById("name6").innerHTML= name;
-  document.getElementById("name10").innerHTML= name;// used at name 27 too
-  document.getElementById("name14").innerHTML= name;// used at 28 too
   document.getElementById("name19").innerHTML= name;
   document.getElementById("name20").innerHTML= name;
   document.getElementById("name24").innerHTML= name;
-  document.getElementById("name26").innerHTML= name;// white need loop
-  document.getElementById("name28").innerHTML= name;
   document.getElementById("name34").innerHTML= name;
   document.getElementById("name35").innerHTML= name;
   document.getElementById("name36").innerHTML= name;
+  document.getElementById("name37").innerHTML= name;
   document.getElementById("name38").innerHTML= name; 
-  document.getElementById("name19").innerHTML= name;
+  
+   //document.getElementsByClassName('name').innerHTML= name;
    
 }
 
 function updatedesignation(){
   var des= document.getElementById("desI").value;
-  var designation = document.querySelectorAll("[id='designation']"); 
-  for(var j = 0; j < designation.length; j++) 
-  designation[j].innerHTML=des;
+
+  var desig = document.querySelectorAll("[id='designation']"); 
+  for(var j = 0; j < desig.length; j++)
+    desig[j].innerHTML=des;
+
+  var desig = document.querySelectorAll("[id='designation3']"); 
+  for(var j = 0; j < desig.length; j++) {
+    desig[j].innerHTML=des;
+  }
+  var desig = document.querySelectorAll("[id='designation4']"); 
+  for(var j = 0; j < desig.length; j++) {
+    desig[j].innerHTML=des;
+  }
+  var desig = document.querySelectorAll("[id='designation8']");
+  for(var j = 0; j < desig.length; j++) {
+    desig[j].innerHTML=des;
+  }  
+  var desig = document.querySelectorAll("[id='desination10']");
+  for(var j = 0; j < desig.length; j++) {
+    desig[j].innerHTML=des;
+  } 
+  var desig = document.querySelectorAll("[id='designation26']");
+  for(var j = 0; j < desig.length; j++) {
+    desig[j].innerHTML=des;
+  }
+  console.log(designation)
+
   document.getElementById("job").innerHTML= des;
-  document.getElementById("designation3").innerHTML= des; //2 tyme used need loop+
   document.getElementById("designation4").innerHTML= des;
   document.getElementById("designation5").innerHTML= des;
   document.getElementById("designation6").innerHTML= des;
@@ -73,16 +386,9 @@ function updatedesignation(){
   document.getElementById("designation19").innerHTML= des;
   document.getElementById("designation20").innerHTML= des;
   document.getElementById("designation25").innerHTML= des;
-  document.getElementById("designation26").innerHTML= des;//white need loop
   document.getElementById("designation34").innerHTML= des;
   document.getElementById("designation35").innerHTML= des;
   document.getElementById("designation36").innerHTML= des;
-  document.getElementById("designation37").innerHTML= des;
-  document.getElementById("designation38").innerHTML= des;
-  document.getElementById("designation36").innerHTML= des;
-  document.getElementById("designation39").innerHTML= des;
-  document.getElementById("designation36").innerHTML= des;
-
   document.getElementById("designation41").innerHTML= des;
 
   // document.querySelector('#name span').innerText=des;
@@ -115,6 +421,9 @@ function updateaddress(){
   var addr = document.querySelectorAll("[id='address']"); 
   for(var n = 0; n < addr.length; n++) 
   addr[n].innerHTML=add;
+  var addre = document.querySelectorAll("[id='address26']"); 
+  for(var adr = 0; adr < addre.length; adr++) 
+  addre[adr].innerHTML=add;
 document.getElementById("address12").innerHTML= add;
 document.getElementById("address26").innerHTML= add;
 document.getElementById("address13").innerHTML= add;
@@ -175,25 +484,40 @@ function updateFacebook(){
 
 }
 function updateLinkedin(){
-  var li= document.getElementById("LinkedinI").value;
+  var linkedin= document.getElementById("LinkedinI").value;
+  var lin = document.querySelectorAll("[id='le']"); 
+  for(var li = 0; li < lin.length; li++) {
+  lin[li].href= linkedin; }
+
   console.log(li)
   document.getElementById("le").href= li;
 
 }
 function updateTwiter(){
   var tt= document.getElementById("TwiterI").value;
+  var twiter = document.querySelectorAll("[id='tw']"); 
+  for(var tw = 0; tw < twiter.length; tw++) {
+  twiter[tw].href= tt; }
   console.log(tt)
   document.getElementById("tw").href= tt;
 
 }
 function updateGithub(){
-  var git= document.getElementById("GithubI").value;
+  var github= document.getElementById("GithubI").value;
+  var git = document.querySelectorAll("[id='gh']"); 
+  for(var gi = 0; gi < git.length; gi++) {
+  git[gi].href= github; }
+ 
   console.log(git)
   document.getElementById("gh").href= gh;
 
 }
 function updateYoutube(){
-  var you= document.getElementById("YoutubeI").value;
+  var youtube= document.getElementById("YoutubeI").value;
+  var you = document.querySelectorAll("[id='yt']"); 
+  for(var yt = 0; yt < you.length; yt++) {
+  you[yt].href= youtube; }
+  
   console.log(yt)
   document.getElementById("yt").href=you;
 
@@ -301,7 +625,7 @@ function Copy(i){
     window.getSelection().addRange(range); /* to select text*/
     document.execCommand("copy");
     alert("copied")
-    templateID.select();
+    //templateID.select(); -- remove color
     window.getSelection().removeAllRanges();
     //alert("Copied the text: " + templateID.value);
  } 

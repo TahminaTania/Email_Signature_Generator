@@ -45,8 +45,29 @@
                     </div> 
                  </li>   
             </div>
-           
+
+
+<p class="mt-5 colorP"> <strong>Change Line & Border Colors by clicking on color :</strong></p>
+            <div class="row text-center" id="colors" onclick="color()">
+              <div class="col-md-12"> 
+                <div class="row" > 
+                  <div class="col-md-3"  id="color1" onclick="color(1)">1</div>
+                  <div class="col-md-3" id="color2" onclick="color(2)"> 2</div>
+                  <div class="col-md-3" id="color3" onclick="color(3)">3 </div>
+                  <div class="col-md-3" id="color4" onclick="color(4)">4 </div>
+                </div>
+                <div class="row"> 
+                  <div class="col-md-3" id="color5" onclick="color(5)">5</div>
+                  <div class="col-md-3" id="color6"onclick="color(6)">6</div>
+                  <div class="col-md-3" id="color7" onclick="color(7)">7</div>
+                  <div class="col-md-3" id="color8" onclick="color(8)">8 </div>
+                </div>
+              </div>
+            </div>
+
+
         </div>
+        
 
         <div id="Personal" class="tabcontent">
             
@@ -75,13 +96,36 @@
                           <div>
                               <p><strong>Upload Your Sign Here :</strong></p>
                           </div>
-                          <input type="file" name="Image" class="form-control-file" > 
+                          <input type="file" name="Image" class="form-control-file" id="signI" onchange="updatesign(event)"> 
                         </div>
+
                         <div class="d-grid text-center col-12">
                            <button type="submit" class="btn btn-lg " id="next-btn">NEXT</button>
                         </div>
                  </li>   
             </div>
+
+            <p class="mt-5 colorP"> <strong>Change Theme Colors by clicking on color :</strong></p>
+            <div class="row text-center" id="colors" onclick="colorT()">
+              <div class="col-md-12"> 
+                <div class="row" > 
+                  <div class="col-md-3"  id="color1" onclick="colorT(1)">1</div>
+                  <div class="col-md-3" id="color2" onclick="colorT(2)"> 2</div>
+                  <div class="col-md-3" id="color3" onclick="colorT(3)">3 </div>
+                  <div class="col-md-3" id="color4" onclick="colorT(4)">4 </div>
+                </div>
+                <div class="row"> 
+                  <div class="col-md-3" id="color5" onclick="colorT(5)">5</div>
+                  <div class="col-md-3" id="color6"onclick="colorT(6)">6</div>
+                  <div class="col-md-3" id="color7" onclick="colorT(7)">7</div>
+                  <div class="col-md-3" id="color8" onclick="colorT(8)">8</div>
+                </div>
+              </div>
+            </div>
+
+
+
+
         </div>
             
        
@@ -107,32 +151,47 @@
                     <div class="mb-5">
                       <input type="url" name="Youtube" class="form-control" id="YoutubeI" onchange="updateYoutube()" placeholder="https://www.youtube.com/Robert.Long/"> 
                     </div>
+
+                    <div class="form-group">
+                      <div>
+                          <p><strong>Upload Organization logo Here :</strong></p>
+                      </div>
+                      <input type="file" name="Image" class="form-control-file" id="logoI" onchange="updatelogo(event)" > 
+                    </div>
+
+
                     <div class="d-grid text-center col-12">
                       <button type="submit" class="btn btn-lg " id="next-btn">SUBMIT</button>
                    </div>
                  </li> 
               </div>  
+
+
+              <p class="mt-5 colorP"> <strong>Change Font Colors by clicking on color :</strong></p>
+              <div class="row text-center" id="colors" onclick="colorF()">
+                <div class="col-md-12"> 
+                  <div class="row" > 
+                    <div class="col-md-3"  id="color1" onclick="colorF(1)">1</div>
+                    <div class="col-md-3" id="color2" onclick="colorF(2)"> 2</div>
+                    <div class="col-md-3" id="color3" onclick="colorF(3)">3 </div>
+                    <div class="col-md-3" id="color4" onclick="colorF(4)">4 </div>
+                  </div>
+                  <div class="row"> 
+                    <div class="col-md-3" id="color5" onclick="colorF(5)">5</div>
+                    <div class="col-md-3" id="color6"onclick="colorF(6)">6</div>
+                    <div class="col-md-3" id="color7" onclick="colorF(7)">7</div>
+                    <div class="col-md-3" id="color8" onclick="colorF(8)">8 </div>
+                  </div>
+                </div>
+              </div>
+  
+
         </div>
        </div> 
       </form>
   
 {% comment %} color {% endcomment %}
-    <div class="row text-center" id="colors">
-      <div class="col-md-12"> 
-        <div class="row" > 
-          <div class="col-md-3" id="color1">1</div>
-          <div class="col-md-3" id="color2"> 2</div>
-          <div class="col-md-3" id="color3">3 </div>
-          <div class="col-md-3" id="color4">4 </div>
-        </div>
-        <div class="row"> 
-          <div class="col-md-3" id="color7">7</div>
-          <div class="col-md-3" id="color8">8</div>
-          <div class="col-md-3" id="color9">9</div>
-          <div class="col-md-3" id="color12">10 </div>
-        </div>
-      </div>
-    </div>
+    
 
         
     </div>    
