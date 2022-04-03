@@ -41,7 +41,7 @@
                     </div>
                     
                      <div class="col-md-12">
-                      <button type="submit" class="btn btn-lg btn-primary" id="next-btn">NEXT</button>
+                      <div class="btn btn-lg btn-primary" id="next-btn" onclick="opentab(event, 'Personal')">NEXT</div>
                     </div> 
                  </li>   
             </div>
@@ -100,7 +100,7 @@
                         </div>
 
                         <div class="d-grid text-center col-12">
-                           <button type="submit" class="btn btn-lg " id="next-btn">NEXT</button>
+                           <button type="submit" class="btn btn-lg " id="next-btn" onclick="opentab(event, 'Social')" >NEXT</button>
                         </div>
                  </li>   
             </div>
@@ -132,10 +132,7 @@
         
         <div id="Social" class="tabcontent">
             <div class="d-flex justify-content-center form_container">
-                <li style="list-style:none"> 
-                    <div class="mt-3 mb-4">
-                      <input type="url" id="GoogleI" class="form-control" onchange="updateGogle()" placeholder="https://www.Google.RobertLong"> 
-                    </div> 
+                <li style="list-style:none">  
                     <div class="mt-3 mb-4">
                       <input type="url" id="FacebookI" class="form-control" onchange="updateFacebook()" placeholder="https://www.facebook.com/Robert.Long/"> 
                     </div>
@@ -225,6 +222,8 @@
             // Show the current tab, and add an "active" class to the button that opened the tab
             document.getElementById(tabname).style.display = "block";
             evt.currentTarget.className += " active";
+
+            
         }
         opentab(event, 'General')
 

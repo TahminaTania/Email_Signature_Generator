@@ -12,55 +12,76 @@ function color(c) {
     var elements = document.getElementsByClassName('borderC');
      // get all elements
       for(var i = 0; i < elements.length; i++){
-     elements[i].style.borderColor = "rgb(7, 75, 52)";
+     elements[i].style.borderColor = "#00b894";
       }
     var mid = document.getElementsByClassName('mid-line');
       for(var mi = 0; mi < mid.length; mi++){
-        mid[mi].style.color = "rgb(7, 75, 52)";
+        mid[mi].style.color = "#00b894";
          }
+    var mid = document.getElementsByClassName('info-color');
+    for(var mi = 0; mi < mid.length; mi++){
+      mid[mi].style.color = "#00b894";
+      }
     }
   
   if (c==2){
     var elements = document.getElementsByClassName('borderC'); // get all elements
       for(var i = 0; i < elements.length; i++){
-      elements[i].style.borderColor = "cyan";
+      elements[i].style.borderColor = "#0984e3";
       }
     var mid = document.getElementsByClassName('mid-line');
     for(var mi = 0; mi < mid.length; mi++){
-      mid[mi].style.color = "cyan";
-        }  
+      mid[mi].style.color = "#0984e3";
+        }
+    var mid = document.getElementsByClassName('info-color');
+    for(var mi = 0; mi < mid.length; mi++){
+      mid[mi].style.color = "#0984e3";
+        }      
     }
 
   if (c==3){
     var elements = document.getElementsByClassName('borderC'); // get all elements
       for(var i = 0; i < elements.length; i++){
-      elements[i].style.borderColor = "yellow";
+      elements[i].style.borderColor = "#6c5ce7";
       }
     var mid = document.getElementsByClassName('mid-line');
     for(var mi = 0; mi < mid.length; mi++){
-      mid[mi].style.color = "yellow";
-        }  
+      mid[mi].style.color = "#6c5ce7";
+        } 
+    var mid = document.getElementsByClassName('info-color');
+    for(var mi = 0; mi < mid.length; mi++){
+      mid[mi].style.color = "#6c5ce7";
+        }   
     }
 
   if (c==4){
     var elements = document.getElementsByClassName('borderC'); // get all elements
       for(var i = 0; i < elements.length; i++){
-      elements[i].style.borderColor = "rgb(160, 4, 4)";
+      elements[i].style.borderColor = "#fd79a8";
       }
     var mid = document.getElementsByClassName('mid-line');
     for(var mi = 0; mi < mid.length; mi++){
-      mid[mi].style.color = "rgb(160, 4, 4)";
+      mid[mi].style.color = "#fd79a8";
         }  
+    var mid = document.getElementsByClassName('info-color');
+    for(var mi = 0; mi < mid.length; mi++){
+      mid[mi].style.color = "#fd79a8";
+        } 
     }
   if (c==5){
     var elements = document.getElementsByClassName('borderC'); // get all elements
       for(var i = 0; i < elements.length; i++){
-      elements[i].style.borderColor = "blue";
+      elements[i].style.borderColor = "#d63031";
       }
     var mid = document.getElementsByClassName('mid-line');
     for(var mi = 0; mi < mid.length; mi++){
-      mid[mi].style.color = "blue";
+      mid[mi].style.color = "#d63031";
+        }
+    var mid = document.getElementsByClassName('info-color');
+    for(var mi = 0; mi < mid.length; mi++){
+      mid[mi].style.color = "#d63031";
         }  
+         
     }  
   if (c==6){
     var elements = document.getElementsByClassName('borderC'); // get all elements
@@ -71,27 +92,39 @@ function color(c) {
     for(var mi = 0; mi < mid.length; mi++){
       mid[mi].style.color = "black";
         }
+    var mid = document.getElementsByClassName('info-color');
+    for(var mi = 0; mi < mid.length; mi++){
+      mid[mi].style.color = "black";
+        }    
     }  
 
   if (c==7){
     var elements = document.getElementsByClassName('borderC'); // get all elements
       for(var i = 0; i < elements.length; i++){
-      elements[i].style.borderColor = "white";
+      elements[i].style.borderColor = "#b2bec3";
       }
     var mid = document.getElementsByClassName('mid-line');
     for(var mi = 0; mi < mid.length; mi++){
-      mid[mi].style.color = "white";
+      mid[mi].style.color = "#b2bec3";
         }
+    var mid = document.getElementsByClassName('info-color');
+    for(var mi = 0; mi < mid.length; mi++){
+      mid[mi].style.color = "#b2bec3";
+    }
     }  
 
   if (c==8){
     var elements = document.getElementsByClassName('borderC'); // get all elements
       for(var i = 0; i < elements.length; i++){
-      elements[i].style.borderColor = "yellowgreen";
+      elements[i].style.borderColor = "#81ecec";
       }
     var mid = document.getElementsByClassName('mid-line');
     for(var mi = 0; mi < mid.length; mi++){
-      mid[mi].style.color = "yellowgreen";
+      mid[mi].style.color = "#81ecec";
+        }
+    var mid = document.getElementsByClassName('info-color');
+    for(var mi = 0; mi < mid.length; mi++){
+      mid[mi].style.color = "#81ecec";
         }
     }
   
@@ -126,34 +159,34 @@ function colorT(t) {
     var elements = document.getElementsByClassName('att_color');
      // get all elements
       for(var i = 0; i < elements.length; i++){
-     elements[i].style.color = "rgb(7, 75, 52)";
+     elements[i].style.color = "#00b894";
       }
     }
   
   if (t==2){
     var elements = document.getElementsByClassName('att_color'); // get all elements
       for(var i = 0; i < elements.length; i++){
-      elements[i].style.color = "cyan";
+      elements[i].style.color = "#0984e3";
       }
     }
 
   if (t==3){
     var elements = document.getElementsByClassName('att_color'); // get all elements
       for(var i = 0; i < elements.length; i++){
-      elements[i].style.color = "yellow";
+      elements[i].style.color = "#6c5ce7";
       }
     }
 
   if (t==4){
     var elements = document.getElementsByClassName('att_color'); // get all elements
       for(var i = 0; i < elements.length; i++){
-      elements[i].style.color = "rgb(160, 4, 4)";
+      elements[i].style.color = "#fd79a8";
       } 
     }
   if (t==5){
     var elements = document.getElementsByClassName('att_color'); // get all elements
       for(var i = 0; i < elements.length; i++){
-      elements[i].style.color = "blue";
+      elements[i].style.color = "#d63031";
       } 
     }  
   if (t==6){
@@ -166,14 +199,14 @@ function colorT(t) {
   if (t==7){
     var elements = document.getElementsByClassName('att_color'); // get all elements
       for(var i = 0; i < elements.length; i++){
-      elements[i].style.color = "white";
+      elements[i].style.color = "#b2bec3";
       }
     }  
 
   if (t==8){
     var elements = document.getElementsByClassName('att_color'); // get all elements
       for(var i = 0; i < elements.length; i++){
-      elements[i].style.color = "yellowgreen";
+      elements[i].style.color = "##81ecec";
       }
     }
   
@@ -187,34 +220,34 @@ function colorT(t) {
       var elements = document.getElementsByClassName('font');
        // get all elements
         for(var i = 0; i < elements.length; i++){
-       elements[i].style.color = "rgb(7, 75, 52)";
+       elements[i].style.color = "#00b894";
         }
       }
     
     if (f==2){
       var elements = document.getElementsByClassName('font'); // get all elements
         for(var i = 0; i < elements.length; i++){
-        elements[i].style.color = "cyan";
+        elements[i].style.color = "#0984e3";
         }
       }
   
     if (f==3){
       var elements = document.getElementsByClassName('font'); // get all elements
         for(var i = 0; i < elements.length; i++){
-        elements[i].style.color = "yellow";
+        elements[i].style.color = "#6c5ce7";
         }
       }
   
     if (f==4){
       var elements = document.getElementsByClassName('font'); // get all elements
         for(var i = 0; i < elements.length; i++){
-        elements[i].style.color = "rgb(160, 4, 4)";
+        elements[i].style.color = "#fd79a8";
         } 
       }
     if (f==5){
       var elements = document.getElementsByClassName('font'); // get all elements
         for(var i = 0; i < elements.length; i++){
-        elements[i].style.color = "blue";
+        elements[i].style.color = "#d63031";
         } 
       }  
     if (f==6){
@@ -227,14 +260,14 @@ function colorT(t) {
     if (f==7){
       var elements = document.getElementsByClassName('font'); // get all elements
         for(var i = 0; i < elements.length; i++){
-        elements[i].style.color = "white";
+        elements[i].style.color = "#b2bec3";
         }
       }  
   
     if (f==8){
       var elements = document.getElementsByClassName('font'); // get all elements
         for(var i = 0; i < elements.length; i++){
-        elements[i].style.color = "yellowgreen";
+        elements[i].style.color = "#81ecec";
         }
       }
     
@@ -374,6 +407,10 @@ function updatedesignation(){
   for(var j = 0; j < desig.length; j++) {
     desig[j].innerHTML=des;
   }
+  var desig = document.querySelectorAll("[id='designation35']");
+  for(var j = 0; j < desig.length; j++) {
+    desig[j].innerHTML=des;
+  }
   console.log(designation)
 
   document.getElementById("job").innerHTML= des;
@@ -387,8 +424,8 @@ function updatedesignation(){
   document.getElementById("designation20").innerHTML= des;
   document.getElementById("designation25").innerHTML= des;
   document.getElementById("designation34").innerHTML= des;
-  document.getElementById("designation35").innerHTML= des;
-  document.getElementById("designation36").innerHTML= des;
+  //document.getElementById("designation35").innerHTML= des;
+  //document.getElementById("designation36").innerHTML= des;
   document.getElementById("designation41").innerHTML= des;
 
   // document.querySelector('#name span').innerText=des;
@@ -631,6 +668,7 @@ function Copy(i){
     window.getSelection().removeAllRanges(); /* clear current selection*/
     window.getSelection().addRange(range); /* to select text*/
     document.execCommand("copy");
+    
     alert("copied")
     //templateID.select(); -- remove color
     window.getSelection().removeAllRanges();

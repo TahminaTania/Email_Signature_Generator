@@ -791,9 +791,15 @@ padding-left:13px;
   letter-spacing:5px; 
   font-weight:bold;
 }
+#name36{
+  color:#ffffff; 
+  font-size:20px; 
+  /* letter-spacing:1px;  */
+  font-weight:bold;
+}
 #designation35{
   color:#ffffff; 
-  font-size:9px;
+  font-size:10px;
 }
 #border36{
   border-left: #eeeeee solid 2px;
