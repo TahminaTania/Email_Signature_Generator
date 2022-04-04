@@ -1,9 +1,31 @@
 
-//  console.log('helo')
-//  var elements = document.getElementsByClassName('att_color'); // get all elements
-//   for(var i = 0; i < elements.length; i++){
-//  elements[i].style.color = "black";
-//   }
+
+function Code(){
+  console.log("code box")
+  var mod_btn=document.querySelector('.modal_btn');
+  var mod_cd=document.querySelector('.modal_cd');
+  var mod_cls=document.querySelector('.close');
+  
+  //var show = document.getElementsByClassName('templateCode');
+  var show =document.getElementById('template1').innerHTML;
+  console.log(show)
+  document.getElementById('templateCode').innerText=show;
+
+  mod_btn.addEventListener('click',function(){
+    mod_cd.classList.add('cd-active');
+  })
+ 
+  mod_cls.addEventListener('click',function(){
+    mod_cd.classList.remove('cd-active');
+  })
+
+ 
+ 
+  // mod_cd.classList.remove('cd-active');
+  
+}
+
+
 
 function color(c) {
   console.log("hello")
@@ -561,11 +583,7 @@ function updateYoutube(){
 }
 
 
-function Code(){
-  console.log("code box")
-  var items = document.querySelectorAll('template1').innerHTML;
-  document.querySelector('#codebox')=items;
-}
+
 
 
 function Copy(i){
