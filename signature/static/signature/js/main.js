@@ -569,32 +569,52 @@ function Code(){
 
 
 function Copy(i){
+  var C_btn=document.getElementsByClassName("button_cp");
+  for(var cp = 0; cp < C_btn.length; cp++){
+    C_btn[cp].innerHTML= "Copy";}
+
   if (i==1){
-    var templateID = 'template1'; 
+    var templateID = 'template1';
+    document.getElementById("button_copy").innerHTML="Copied"; 
   }else if (i==2){
     var templateID = 'template2'; 
+    document.getElementById("button_copy2").innerHTML="Copied";
   }else if (i==3){
     var templateID = 'template3'; 
+    document.getElementById("button_copy3").innerHTML="Copied";
   }else if (i==4){
-    var templateID = 'template4'; 
+    var templateID = 'template4';
+    document.getElementById("button_copy4").innerHTML="Copied"; 
+    
   }else if (i==5){
-    var templateID = 'template5'; 
+    var templateID = 'template5';
+    document.getElementById("button_copy5").innerHTML="Copied"; 
+    
   }else if (i==6){
-    var templateID = 'template6'; 
+    var templateID = 'template6';
+    document.getElementById("button_copy6").innerHTML="Copied";
+     
   }else if (i==7){
     var templateID = 'template7'; 
+    
   }else if (i==8){
-    var templateID = 'template8'; 
+    var templateID = 'template8';
+    
   }else if (i==9){
     var templateID = 'template9'; 
+    
   }else if (i==10){
     var templateID = 'template10'; 
+    
   }else if (i==11){
-    var templateID = 'template11'; 
+    var templateID = 'template11';
+    
   }else if (i==12){
-    var templateID = 'template12'; 
+    var templateID = 'template12';
+    
   }else if (i==13){
-    var templateID = 'template13'; 
+    var templateID = 'template13';
+    
   }else if (i==14){
     var templateID = 'template14'; 
   }else if (i==15){
@@ -660,18 +680,27 @@ function Copy(i){
   }
 
 
-  // navigator.clipboard.writeText(template);
 
-  //  var templateID = 'template'; 
    var range = document.createRange();
-    range.selectNode(document.getElementById(templateID));
-    window.getSelection().removeAllRanges(); /* clear current selection*/
-    window.getSelection().addRange(range); /* to select text*/
-    document.execCommand("copy");
-    
-    alert("copied")
-    //templateID.select(); -- remove color
-    window.getSelection().removeAllRanges();
+   range.selectNode(document.getElementById(templateID));
+   window.getSelection().removeAllRanges(); /* clear current selection*/
+   window.getSelection().addRange(range); /* to select text*/
+   document.execCommand("copy")
+  //  document.getElementById("button_copy").innerHTML="Copied";
+   templateID.select();
+   
+
+    // var btn=document.getElementById("button_copy").innerHTML;
+    // if(btn=="Copy"){
+    //   document.getElementById("button_copy").innerHTML="Copied"; 
+    //   templateID.select(); 
+    //   //alert("copied")
+    // }
+    // else{
+    // document.getElementById("button_copy").innerHTML="Copy";
+    // }
+    // window.getSelection().removeAllRanges();
+    // window.getSelection().removeAllRanges(range);
     //alert("Copied the text: " + templateID.value);
  } 
  

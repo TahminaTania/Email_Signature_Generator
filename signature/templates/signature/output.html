@@ -1,26 +1,25 @@
 {% extends 'signature/input.html' %}
 {% block output%}
-<div class="container-fluid">
+<div class="container-fluid mt-1">
 <div class="row" id="output-container">
 
 <div class="col-md-12"> 
   <div class="row">
     <div class="col-md-6" id="template">
-      <div class=""> 
+      <div class="row"> 
         {%block Template-1%}   
-<div class="col-md-12" id="table" >
-{% comment %} two button {% endcomment %}
+<div class="col-md-12">
 
+{% comment %} two button {% endcomment %}
 <div class="row">
-  <div class="col-md-4" id="button">
-        
-        <button onclick="Copy(1)"><img class="img-fluid" src="/static/signature/media/copy_icon.png" alt=""></button>
-        <button onclick="Code()" ><img class="img-fluid" src="/static/signature/media/code_icon.png" alt=""></button> 
+  <div class="col-md-12" id="button_C">   
+        <button onclick="Copy(1)" class="button_cp"id="button_copy">Copy</button>
+        <button onclick="Code()" id="button_code" >Code</button> 
          
   </div>
 </div>
-
 {% comment %} two button {% endcomment %}
+
   <div class="row"  id="template1"> 
       <div  class="col-md-4 d-flex align-items-center justify-content-center" >
         <img id="photo-big" class="img-fluid" src="/static/signature/media/blank profile.png" alt=""> 
@@ -70,10 +69,20 @@
         {%endblock%}
       </div>
     </div>
-    <div class="col-md-6" id="template" onclick="Copy(2)"> 
-      <div class="" id="template2">
-        {%block Template-2%}  
-        <div id="table">
+    <div class="col-md-6" id="template" > 
+      <div class="col-md-12">
+        {%block Template-2%} 
+{% comment %} two button {% endcomment %}
+<div class="row">
+  <div class="col-md-12" id="button_C">   
+        <button onclick="Copy(2)" class="button_cp" id="button_copy2">Copy</button>
+        <button onclick="Code()" id="button_code" >Code</button>    
+  </div>
+</div>
+{% comment %} two button {% endcomment %} 
+
+        <div  class="row" id="center">
+          <div class="col-md-12" id="template2">
           <div class="text-center info-color"id="name"> Robert Long</div>
           <div class="text-center"id="job"> DESIGNER</div>
           <div class="details borderC" id="border-down"> 
@@ -94,7 +103,7 @@
               </li>   
             </ul>
           </div>
-          
+        </div>
         </div>
 
           {%endblock%}
@@ -111,9 +120,17 @@ i am just copy pasting table templates {% endcomment %}
 <div class="col-md-12"> 
   <div class="row">
     <div class="col-md-6" id="template">
-      <div class="" id="template3">
+      <div class="" >
         {%block Template-3%}
-        <div class="row" onclick="Copy(3)">
+{% comment %} two button {% endcomment %}
+<div class="row">
+  <div class="col-md-12" id="button_C">   
+        <button onclick="Copy(3)" class="button_cp" id="button_copy3">Copy</button>
+        <button onclick="Code()" id="button_code" >Code</button>    
+  </div>
+</div>
+{% comment %} two button {% endcomment %} 
+        <div class="row" id="template3">
          <div class="col-md-12">
             <div>
               <ul>
@@ -173,9 +190,18 @@ i am just copy pasting table templates {% endcomment %}
       </div>
     </div>
     <div class="col-md-6" id="template"> 
-      <div class="row" id="template5">
+      <div class="col-md-12" >
+        {% comment %} two button {% endcomment %}
+<div class="row">
+  <div class="col-md-12" id="button_C">   
+        <button onclick="Copy(5)" class="button_cp"id="button_copy5">Copy</button>
+        <button onclick="Code()" id="button_code" >Code</button> 
+         
+  </div>
+</div>
+{% comment %} two button {% endcomment %}
           {%block Template-5%}
-            <div class="col-md-12" onclick="Copy(5)">
+            <div class="col-md-12" id="template5">
               <div class="row">
                   <div class="col-md-3 d-flex align-items-center justify-content-center">
                       <img id="photo-big" class="img-fluid" src="/static/signature/media/blank profile.png" alt=""> 
@@ -228,9 +254,18 @@ i am just copy pasting table templates {% endcomment %}
 <div class="col-md-12"> 
   <div class="row">
     <div class="col-md-6"  id="template">
-      <div class="row" id="template4"> 
+      <div class="col-md-12" > 
+{% comment %} two button {% endcomment %}
+<div class="row">
+  <div class="col-md-12" id="button_C">   
+        <button onclick="Copy(4)" class="button_cp"id="button_copy4">Copy</button>
+        <button onclick="Code()" id="button_code" >Code</button>   
+  </div>
+</div>
+{% comment %} two button {% endcomment %}
         {%block Template-4%} 
-        <div class="col-md-12" id="temp5" onclick="Copy(4)">
+        <div class="row" id="template4">
+        <div class="col-md-12" id="temp5">
           <div class="info-color" id="name4">Robert <span> Long</span></div>
           <div id="designation4">GRAPHIC DESIGNER</div>
           <div id="social">
@@ -239,14 +274,23 @@ i am just copy pasting table templates {% endcomment %}
                 <a id="le" href="#"><img src="/static/signature/media/icon_li.png"  alt="" /></a>
                 <a id="gl" href="#"><img src="/static/signature/media/icon_gl.png"  alt="" /></a>                        
           </div>
-        </div>    
+        </div> 
+      </div>   
         {%endblock%}
       </div>
     </div>
     <div class="col-md-6" id="template"> 
-      <div class="row" id="template6"> 
+      <div class="col-md-12" > 
+{% comment %} two button {% endcomment %}
+<div class="row">
+  <div class="col-md-12" id="button_C">   
+        <button onclick="Copy(6)" class="button_cp"id="button_copy6">Copy</button>
+        <button onclick="Code()" id="button_code" >Code</button>   
+  </div>
+</div>
+{% comment %} two button {% endcomment %}
         {%block Template-6%}
-        <div class="col-md-12" onclick="Copy(6)">
+        <div class="col-md-12" id="template6">
           <div class="row">
             <div class="col-md-5"> 
                 <div class="info-color" id="name6">ROBERT LONG</div>
