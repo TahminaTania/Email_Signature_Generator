@@ -1,19 +1,47 @@
 
 
-function Code(){
+function Code(C){
   console.log("code box")
-  var mod_btn=document.querySelector('.modal_btn');
+  var mod_btn=document.getElementsByClassName('modal_btn');
+  for(var i = 0; i < mod_btn.length; i++){
+    mod_btn[i].value = mod_btn;
+     }
+     console.log(mod_btn)
+  // var mod_btn=document.querySelector('.modal_btn');
   var mod_cd=document.querySelector('.modal_cd');
   var mod_cls=document.querySelector('.close');
   
   //var show = document.getElementsByClassName('templateCode');
-  var show =document.getElementById('template1').innerHTML;
+  if(C==1){
+    var show =document.getElementById('template1').innerHTML;
+  }else if(C==2){
+    var show =document.getElementById('template2').innerHTML;
+  }else if(C==3){
+    var show =document.getElementById('template3').innerHTML;
+  }else if(C==4){
+    var show =document.getElementById('template4').innerHTML;
+  }else if(C==5){
+    var show =document.getElementById('template5').innerHTML;
+  }else if(C==6){
+    var show =document.getElementById('template6').innerHTML;
+  }else if(C==7){
+    var show =document.getElementById('template7').innerHTML;
+  }else if(C==8){
+    var show =document.getElementById('template8').innerHTML;
+  }
+  
   console.log(show)
   document.getElementById('templateCode').innerText=show;
 
-  mod_btn.addEventListener('click',function(){
-    mod_cd.classList.add('cd-active');
-  })
+
+  for (var e = 0 ; e < mod_btn.length; e++) {
+    mod_btn[e].addEventListener('click' ,function() {
+      mod_cd.classList.add('cd-active');  
+    } ) ; 
+ }
+  // mod_btn.addEventListener('click',function(){
+  //   mod_cd.classList.add('cd-active');
+  // })
  
   mod_cls.addEventListener('click',function(){
     mod_cd.classList.remove('cd-active');
