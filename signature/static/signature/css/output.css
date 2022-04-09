@@ -22,7 +22,7 @@
 .modal_cd{
   position:absolute;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   /* top:0; */
   top:50px;
   left:0;
@@ -70,6 +70,8 @@
   /* color:#999999;  */
   line-height:16px;
 }
+
+
 
 
 #sign38 img{
@@ -272,6 +274,24 @@ width:15px;
   line-height:18px;
   
 }
+#horiz li,
+#backgrund23 li{
+  display: inline;
+  float: left;
+  justify-content:space-between;
+}
+
+#horiz #number,
+#horiz #Contact{
+  justify-content: space-between;
+  padding-right: 25px;
+}
+
+#social-15{
+  align-items: right;
+  justify-items: center;
+}
+
 #social5-b{
   border-left:solid 1px #999999;
 }
@@ -610,6 +630,14 @@ width:50px;
   margin-right: 3px;
   background: #007fe6;
 }
+#horiz #number23,
+#horiz #Contact23{
+padding-right: 20px;
+}
+#number23 #mobile{
+ color: #fff;
+}
+
 #lower{
   margin-top: 10px;
   /* padding-top: 50px; */
@@ -621,6 +649,7 @@ width:50px;
   color: #EAEAEA;
   padding-top: 3px;
 }
+
 #Contact23 a{
   text-decoration: none;
   color: #EAEAEA;
@@ -650,20 +679,43 @@ width:50px;
   font-weight:500;
 
 }
-#social24 {
+/* #social24 {
   width: fit-content;
   font-size:11px; 
   color:#999999; 
   line-height:10px; 
   padding-top:3px; 
   text-align:right
+} */
+
+#horiz #mobile,
+#horiz #Contact24{
+font-size:9px;
+padding: 0;
+margin: 0;
+}
+#Contact24 a{
+  text-decoration: none;
+  font-size: 9px;
+  color: #999999;
+
+}
+#social24{
+  margin: 0;
+  padding: 0;
 }
 #social24 a img {
-  padding-right: 2px;
-  height: 15px;
-  width: 15px;
+  padding-right: 1px;
+  height: 13px;
+  width: 13px;
 }
+#backgrund23 #address26{
+  font-size:9.5px;
+}
+#social-24 a{
+  padding: 10px;
 
+}
 #Contact25 a{
   text-decoration: none;
   font-size:11px;

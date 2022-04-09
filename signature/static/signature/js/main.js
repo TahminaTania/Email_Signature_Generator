@@ -28,6 +28,78 @@ function Code(C){
     var show =document.getElementById('template7').innerHTML;
   }else if(C==8){
     var show =document.getElementById('template8').innerHTML;
+  }else if(C==9){
+    var show =document.getElementById('template9').innerHTML;
+  }else if(C==10){
+    var show =document.getElementById('template10').innerHTML;
+  }else if(C==11){
+    var show =document.getElementById('template11').innerHTML;
+  }else if(C==12){
+    var show =document.getElementById('template12').innerHTML;
+  }else if(C==13){
+    var show =document.getElementById('template13').innerHTML;
+  }else if(C==14){
+    var show =document.getElementById('template14').innerHTML;
+  }else if(C==15){
+    var show =document.getElementById('template15').innerHTML;
+  }else if(C==16){
+    var show =document.getElementById('template16').innerHTML;
+  }else if(C==17){
+    var show =document.getElementById('template17').innerHTML;
+  }else if(C==18){
+    var show =document.getElementById('template18').innerHTML;
+  }else if(C==19){
+    var show =document.getElementById('template19').innerHTML;
+  }else if(C==20){
+    var show =document.getElementById('template20').innerHTML;
+  }else if(C==21){
+    var show =document.getElementById('template21').innerHTML;
+  }else if(C==22){
+    var show =document.getElementById('template22').innerHTML;
+  }else if(C==23){
+    var show =document.getElementById('template23').innerHTML;
+  }else if(C==24){
+    var show =document.getElementById('template24').innerHTML;
+  }else if(C==25){
+    var show =document.getElementById('template25').innerHTML;
+  }else if(C==26){
+    var show =document.getElementById('template26').innerHTML;
+  }else if(C==27){
+    var show =document.getElementById('template27').innerHTML;
+  }else if(C==28){
+    var show =document.getElementById('template28').innerHTML;
+  }else if(C==29){
+    var show =document.getElementById('template29').innerHTML;
+  }else if(C==30){
+    var show =document.getElementById('template30').innerHTML;
+  }else if(C==31){
+    var show =document.getElementById('template31').innerHTML;
+  }else if(C==32){
+    var show =document.getElementById('template32').innerHTML;
+  }else if(C==33){
+    var show =document.getElementById('template33').innerHTML;
+  }else if(C==34){
+    var show =document.getElementById('template34').innerHTML;
+  }else if(C==35){
+    var show =document.getElementById('template35').innerHTML;
+  }else if(C==36){
+    var show =document.getElementById('template36').innerHTML;
+  }else if(C==37){
+    var show =document.getElementById('template37').innerHTML;
+  }else if(C==38){
+    var show =document.getElementById('template38').innerHTML;
+  }else if(C==39){
+    var show =document.getElementById('template39').innerHTML;
+  }else if(C==40){
+    var show =document.getElementById('template40').innerHTML;
+  }else if(C==41){
+    var show =document.getElementById('template41').innerHTML;
+  }else if(C==42){
+    var show =document.getElementById('template42').innerHTML;
+  }else if(C==43){
+    var show =document.getElementById('template43').innerHTML;
+  }else if(C==44){
+    var show =document.getElementById('template44').innerHTML;
   }
   
   console.log(show)
@@ -642,87 +714,125 @@ function Copy(i){
      
   }else if (i==7){
     var templateID = 'template7'; 
+    document.getElementById("button_copy7").innerHTML="Copied";
     
   }else if (i==8){
     var templateID = 'template8';
+    document.getElementById("button_copy8").innerHTML="Copied";
     
   }else if (i==9){
-    var templateID = 'template9'; 
+    var templateID = 'template9';
+    document.getElementById("button_copy9").innerHTML="Copied"; 
     
   }else if (i==10){
-    var templateID = 'template10'; 
+    var templateID = 'template10';
+    document.getElementById("button_copy10").innerHTML="Copied"; 
     
   }else if (i==11){
     var templateID = 'template11';
+    document.getElementById("button_copy11").innerHTML="Copied";
     
   }else if (i==12){
     var templateID = 'template12';
+    document.getElementById("button_copy12").innerHTML="Copied";
     
   }else if (i==13){
     var templateID = 'template13';
+    document.getElementById("button_copy13").innerHTML="Copied";
     
   }else if (i==14){
-    var templateID = 'template14'; 
+    var templateID = 'template14';
+    document.getElementById("button_copy14").innerHTML="Copied"; 
   }else if (i==15){
-    var templateID = 'template15'; 
+    var templateID = 'template15';
+    document.getElementById("button_copy15").innerHTML="Copied"; 
   }else if (i==16){
-    var templateID = 'template16'; 
+    var templateID = 'template16';
+    document.getElementById("button_copy16").innerHTML="Copied"; 
   }else if (i==17){
-    var templateID = 'template17'; 
+    var templateID = 'template17';
+    document.getElementById("button_copy17").innerHTML="Copied"; 
   }else if (i==18){
-    var templateID = 'template18'; 
+    var templateID = 'template18';
+    document.getElementById("button_copy18").innerHTML="Copied"; 
   }else if (i==19){
-    var templateID = 'template19'; 
+    var templateID = 'template19';
+    document.getElementById("button_copy19").innerHTML="Copied"; 
   }else if (i==20){
-    var templateID = 'template20'; 
+    var templateID = 'template20';
+    document.getElementById("button_copy20").innerHTML="Copied"; 
   }else if (i==21){
-    var templateID = 'template21'; 
+    var templateID = 'template21';
+    document.getElementById("button_copy21").innerHTML="Copied"; 
   }else if (i==22){
-    var templateID = 'template22'; 
+    var templateID = 'template22';
+    document.getElementById("button_copy22").innerHTML="Copied"; 
   }else if (i==23){
-    var templateID = 'template23'; 
+    var templateID = 'template23';
+    document.getElementById("button_copy23").innerHTML="Copied"; 
   }else if (i==24){
-    var templateID = 'template24'; 
+    var templateID = 'template24';
+    document.getElementById("button_copy24").innerHTML="Copied"; 
   }else if (i==25){
-    var templateID = 'template25'; 
+    var templateID = 'template25';
+    document.getElementById("button_copy25").innerHTML="Copied"; 
   }else if (i==26){
-    var templateID = 'template26'; 
+    var templateID = 'template26';
+    document.getElementById("button_copy26").innerHTML="Copied"; 
   }else if (i==27){
-    var templateID = 'template27'; 
+    var templateID = 'template27';
+    document.getElementById("button_copy27").innerHTML="Copied"; 
   }else if (i==28){
-    var templateID = 'template28'; 
+    var templateID = 'template28';
+    document.getElementById("button_copy28").innerHTML="Copied";  
   }else if (i==29){
     var templateID = 'template29'; 
+    document.getElementById("button_copy29").innerHTML="Copied"; 
   }else if (i==30){
-    var templateID = 'template30'; 
+    var templateID = 'template30';
+    document.getElementById("button_copy30").innerHTML="Copied";  
   }else if (i==31){
-    var templateID = 'template31'; 
+    var templateID = 'template31';
+    document.getElementById("button_copy31").innerHTML="Copied";  
   }else if (i==32){
-    var templateID = 'template32'; 
+    var templateID = 'template32';
+    document.getElementById("button_copy32").innerHTML="Copied";  
   }else if (i==33){
-    var templateID = 'template33'; 
+    var templateID = 'template33';
+    document.getElementById("button_copy33").innerHTML="Copied";  
   }else if (i==34){
-    var templateID = 'template34'; 
+    var templateID = 'template34';
+    document.getElementById("button_copy34").innerHTML="Copied";  
   }else if (i==35){
-    var templateID = 'template35'; 
+    var templateID = 'template35';
+    document.getElementById("button_copy35").innerHTML="Copied";  
   }else if (i==36){
-    var templateID = 'template36'; 
+    var templateID = 'template36';
+    document.getElementById("button_copy36").innerHTML="Copied";  
   }else if (i==37){
-    var templateID = 'template37'; 
+    var templateID = 'template37';
+    document.getElementById("button_copy37").innerHTML="Copied";  
   }else if (i==38){
-    var templateID = 'template38'; 
+    var templateID = 'template38';
+    document.getElementById("button_copy38").innerHTML="Copied";  
   }else if (i==39){
-    var templateID = 'template39'; 
+    var templateID = 'template39';
+    document.getElementById("button_copy39").innerHTML="Copied";  
   }else if (i==40){
-    var templateID = 'template40'; 
+    var templateID = 'template40';
+    document.getElementById("button_copy40").innerHTML="Copied";  
   }else if (i==41){
-    var templateID = 'template41'; 
+    var templateID = 'template41';
+    document.getElementById("button_copy41").innerHTML="Copied";  
   }else if (i==42){
-    var templateID = 'template42'; 
+    var templateID = 'template42';
+    document.getElementById("button_copy42").innerHTML="Copied";  
   }else if (i==43){
-    var templateID = 'template43'; 
+    var templateID = 'template43';
+    document.getElementById("button_copy43").innerHTML="Copied";  
   }else if (i==44){
-    var templateID = 'template44'; 
+    var templateID = 'template44';
+    document.getElementById("button_copy44").innerHTML="Copied";  
   }
 
 
